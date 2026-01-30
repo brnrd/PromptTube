@@ -1,0 +1,41 @@
+.yt-tc-wrap {
+	display: inline-flex;
+	gap: 8px;
+	align-items: center;
+	margin-right: 8px;
+}
+
+.yt-tc-btn {
+	font: inherit;
+	border: 0;
+	border-radius: 18px;
+	padding: 8px 12px;
+	cursor: pointer;
+	line-height: 1;
+	font-weight: 600;
+	background: rgba(255, 255, 255, 0.1);
+	color: inherit;
+}
+
+.yt-tc-btn:hover {
+	background: rgba(255, 255, 255, 0.18);
+}
+
+.yt-tc-btn:active {
+	transform: translateY(1px);
+}
+
+.yt-tc-toast {
+	position: fixed;
+	left: 50%;
+	bottom: 28px;
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, 0.85);
+	color: #fff;
+	padding: 10px 12px;
+	border-radius: 10px;
+	font-size: 13px;
+	z-index: 999999;
+	max-width: min(560px, 92vw);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
