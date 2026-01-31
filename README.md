@@ -1,4 +1,10 @@
+<p align="center">
+  <img src="icon.png" alt="PromptTube icon" width="128" height="128">
+</p>
+
 # YouTube transcript → Summary prompt (Firefox extension)
+Available on [Firefox Browser Add-ons](https://addons.mozilla.org/en-US/firefox/addon/prompttube/)
+
 
 A lightweight Firefox extension that adds a single button on YouTube watch pages to copy:
 
@@ -12,7 +18,6 @@ into your clipboard in one click.
 
 This is intended as a fast, privacy-friendly workflow: no backend, no API key, no data sent anywhere.
 
----
 
 ## Features
 
@@ -25,8 +30,6 @@ This is intended as a fast, privacy-friendly workflow: no backend, no API key, n
   1. open the YouTube transcript panel automatically when needed
   2. fall back to YouTube caption tracks if the panel is not available
 - Works with YouTube’s single-page navigation (SPA)
-
----
 
 ## What gets copied
 
@@ -48,8 +51,6 @@ Transcript:
 <full transcript>
 ```
 
----
-
 ## Installation (temporary, for development)
 
 1. Open Firefox
@@ -64,8 +65,6 @@ about:debugging#/runtime/this-firefox
 
 Open any YouTube video page and the button will appear near the action buttons
 (like, share, etc.).
-
----
 
 ## How it works (high level)
 
@@ -84,8 +83,6 @@ The content script:
 
 All processing happens locally in the browser.
 
----
-
 ## Limitations
 
 - Some videos genuinely have no transcript or captions
@@ -94,20 +91,26 @@ All processing happens locally in the browser.
 
 When YouTube changes its layout, selectors may need updating.
 
----
-
 ## Supported browser
 
 - Firefox
 
----
+## Building
+```
+npm i -g web-ext
+
+web-ext lint
+web-ext build --overwrite-dest
+```
 
 ## Folder structure
 
 ```
 PromptTube/
 ├─ manifest.json
+├─ icon.png
 ├─ content-script.js
 ├─ styles.css
+├─ LICENCE
 └─ README.md
 ```

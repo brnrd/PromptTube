@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
-	"name": "YouTube Transcript Copy",
-	"version": "0.1.0",
-	"description": "Adds buttons on YouTube watch pages to copy the video transcript (and a summary prompt).",
+	"name": "PromptTube",
+	"version": "1.0.0",
+	"description": "Adds button on YouTube watch pages to copy to clipboard the video transcript and a summary prompt.",
 	"permissions": ["clipboardWrite"],
 	"host_permissions": ["https://www.youtube.com/*"],
 	"content_scripts": [
@@ -14,9 +14,12 @@
 		}
 	],
 	"browser_specific_settings": {
-		"gecko": {
-			"id": "yt-transcript-copy@example.com",
-			"strict_min_version": "109.0"
-		}
+	  "gecko": {
+	    "id": "prompttube@brnrd",
+	    "strict_min_version": "142.0",
+	    "data_collection_permissions": {
+	      "required": ["none"]
+	    }
+	  }
 	}
 }
