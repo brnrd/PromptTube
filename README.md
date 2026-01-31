@@ -1,4 +1,4 @@
-# YouTube Transcript → ChatGPT Prompt (Firefox extension)
+# YouTube transcript → Summary prompt (Firefox extension)
 
 A lightweight Firefox extension that adds a single button on YouTube watch pages to copy:
 
@@ -98,14 +98,14 @@ When YouTube changes its layout, selectors may need updating.
 
 ## Supported browser
 
-- Firefox (Manifest V3)
+- Firefox
 
 ---
 
 ## Folder structure
 
 ```
-yt-transcript-chatgpt-prompt/
+PromptTube/
 ├─ manifest.json
 ├─ content-script.js
 ├─ styles.css
