@@ -2,12 +2,12 @@
 	"manifest_version": 3,
 	"name": "PromptTube",
 	"version": "1.0.0",
-	"description": "Adds button on YouTube watch pages to copy to clipboard the video transcript and a summary prompt.",
+	"description": "Adds a button on YouTube pages to copy the current video's transcript and a summary prompt.",
 	"permissions": ["clipboardWrite"],
 	"host_permissions": ["https://www.youtube.com/*"],
 	"content_scripts": [
 		{
-			"matches": ["https://www.youtube.com/watch*"],
+			"matches": ["https://www.youtube.com/*"],
 			"js": ["content-script.js"],
 			"css": ["styles.css"],
 			"run_at": "document_idle"

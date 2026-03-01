@@ -8,6 +8,7 @@
 	function getVideoIdFromUrl() {
 		try {
 			const url = new URL(window.location.href)
+			if (url.pathname !== '/watch') return null
 			return url.searchParams.get('v')
 		} catch {
 			return null
@@ -282,7 +283,14 @@
 
 	function onUrlMaybeChanged() {
 		const videoId = getVideoIdFromUrl()
-		if (!videoId) return
+		if (!videoId) {
+			STATE.lastVideoId = null
+			STATE.injectedForVideoId = null
+
+			const stale = document.querySelector('.yt-tc-wrap')
+			if (stale) stale.remove()
+			return
+		}
 		if (STATE.lastVideoId === videoId) return
 
 		STATE.lastVideoId = videoId
@@ -556,6 +564,8 @@
 		}
 
 		window.addEventListener('popstate', onUrlMaybeChanged)
+		window.addEventListener('yt-navigate-start', onUrlMaybeChanged)
+		window.addEventListener('yt-navigate-finish', onUrlMaybeChanged)
 	}
 
 	installObservers()
