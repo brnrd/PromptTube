@@ -1,0 +1,186 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Segoe UI", sans-serif;
+	color: #1d2433;
+	background:
+		radial-gradient(circle at top right, rgba(255, 212, 163, 0.6), transparent 36%),
+		linear-gradient(180deg, #f7f3eb 0%, #edf1f6 100%);
+}
+
+button,
+input,
+textarea {
+	font: inherit;
+}
+
+.page {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 48px 20px 64px;
+}
+
+.hero {
+	margin-bottom: 28px;
+}
+
+.eyebrow {
+	margin: 0 0 8px;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: #ab5626;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-top: 0;
+}
+
+h1 {
+	margin-bottom: 8px;
+	font-size: clamp(32px, 5vw, 48px);
+	line-height: 1.05;
+}
+
+.lede,
+.storage-meta,
+.panel-copy,
+.status {
+	color: #536074;
+}
+
+.panel {
+	padding: 24px;
+	border: 1px solid rgba(61, 73, 96, 0.12);
+	border-radius: 24px;
+	background: rgba(255, 255, 255, 0.86);
+	box-shadow: 0 18px 50px rgba(49, 62, 86, 0.08);
+	backdrop-filter: blur(10px);
+}
+
+.panel-bar,
+.prompt-card-bar,
+.actions {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.panel-bar {
+	margin-bottom: 20px;
+}
+
+.prompt-list {
+	display: grid;
+	gap: 16px;
+}
+
+.prompt-card {
+	padding: 18px;
+	border: 1px solid rgba(61, 73, 96, 0.12);
+	border-radius: 18px;
+	background: #fff;
+}
+
+.prompt-card-title {
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+.field {
+	display: grid;
+	gap: 8px;
+	margin-top: 16px;
+}
+
+.field span {
+	font-size: 13px;
+	font-weight: 700;
+	color: #324055;
+}
+
+.field input,
+.field textarea {
+	width: 100%;
+	padding: 12px 14px;
+	border: 1px solid rgba(61, 73, 96, 0.16);
+	border-radius: 14px;
+	background: #f8fafc;
+	color: inherit;
+}
+
+.field textarea {
+	resize: vertical;
+	min-height: 140px;
+}
+
+.ghost-btn,
+.primary-btn,
+.remove-btn {
+	border: 0;
+	border-radius: 999px;
+	padding: 10px 16px;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.ghost-btn,
+.remove-btn {
+	background: rgba(61, 73, 96, 0.08);
+	color: #324055;
+}
+
+.primary-btn {
+	background: #1d6ef0;
+	color: #fff;
+}
+
+.actions {
+	margin-top: 20px;
+}
+
+.storage-meta {
+	min-height: 22px;
+	margin: 16px 0 0;
+	font-size: 13px;
+}
+
+.status {
+	min-height: 24px;
+	margin: 8px 0 0;
+	font-size: 14px;
+}
+
+.status.error {
+	color: #b42318;
+}
+
+.status.success {
+	color: #16794d;
+}
+
+@media (max-width: 720px) {
+	.page {
+		padding: 32px 16px 48px;
+	}
+
+	.panel {
+		padding: 18px;
+		border-radius: 20px;
+	}
+
+	.panel-bar,
+	.prompt-card-bar,
+	.actions {
+		flex-direction: column;
+		align-items: stretch;
+	}
+}

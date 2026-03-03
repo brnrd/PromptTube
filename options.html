@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>PromptTube Settings</title>
+		<link rel="stylesheet" href="options.css" />
+	</head>
+	<body>
+		<main class="page">
+			<header class="hero">
+				<p class="eyebrow">PromptTube</p>
+				<h1>Prompt templates</h1>
+				<p class="lede">
+					Edit the prompts shown in YouTube, add new ones, or reset back to the defaults.
+				</p>
+			</header>
+
+			<section class="panel">
+				<div class="panel-bar">
+					<div>
+						<h2>Your prompts</h2>
+						<p class="panel-copy">Each prompt needs a label and the instruction text to prepend before the transcript.</p>
+					</div>
+					<button id="add-prompt" class="ghost-btn" type="button">Add prompt</button>
+				</div>
+
+				<form id="prompt-form">
+					<div id="prompt-list" class="prompt-list"></div>
+
+					<div class="actions">
+						<button id="reset-defaults" class="ghost-btn" type="button">Reset defaults</button>
+						<button class="primary-btn" type="submit">Save prompts</button>
+					</div>
+				</form>
+
+				<p id="storage-meta" class="storage-meta" aria-live="polite"></p>
+				<p id="status" class="status" role="status" aria-live="polite"></p>
+			</section>
+		</main>
+
+		<template id="prompt-item-template">
+			<section class="prompt-card">
+				<div class="prompt-card-bar">
+					<h3 class="prompt-card-title">Prompt</h3>
+					<button class="remove-btn" type="button">Remove</button>
+				</div>
+
+				<label class="field">
+					<span>Label</span>
+					<input class="prompt-label" type="text" maxlength="60" placeholder="Summary + analysis" />
+				</label>
+
+				<label class="field">
+					<span>Prompt text</span>
+					<textarea
+						class="prompt-body"
+						rows="7"
+						placeholder="Please summarise this transcript..."
+					></textarea>
+				</label>
+			</section>
+		</template>
+
+		<script src="prompt-presets.js"></script>
+		<script src="options.js"></script>
+	</body>
+</html>

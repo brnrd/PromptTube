@@ -3,6 +3,95 @@
 	const STATE = {
 		lastVideoId: null,
 		injectedForVideoId: null,
+		promptPresets: null,
+	}
+
+	const SHARED = globalThis.PromptTubeShared || {}
+	const STORAGE_KEY = SHARED.STORAGE_KEY || 'promptPresets'
+	const DEFAULT_PROMPT_PRESETS =
+		typeof SHARED.cloneDefaultPromptPresets === 'function'
+			? SHARED.cloneDefaultPromptPresets()
+			: []
+
+	function getExtensionApi() {
+		if (typeof browser !== 'undefined') return browser
+		if (typeof chrome !== 'undefined') return chrome
+		return null
+	}
+
+	function getStorageArea() {
+		const api = getExtensionApi()
+		return api?.storage?.sync || api?.storage?.local || null
+	}
+
+	function sanitisePromptPresets(input) {
+		if (!Array.isArray(input)) return DEFAULT_PROMPT_PRESETS
+
+		const presets = input
+			.map((preset, index) => {
+				const label = typeof preset?.label === 'string' ? preset.label.trim() : ''
+				const body =
+					typeof preset?.body === 'string'
+						? preset.body
+						: Array.isArray(preset?.lines)
+							? preset.lines.join('\n')
+							: ''
+
+				const cleanBody = body
+					.replace(/\r/g, '')
+					.split('\n')
+					.map((line) => line.trimEnd())
+					.join('\n')
+					.trim()
+
+				if (!label || !cleanBody) return null
+
+				return {
+					id:
+						typeof preset?.id === 'string' && preset.id.trim()
+							? preset.id.trim()
+							: `custom-${index + 1}`,
+					label,
+					body: cleanBody,
+				}
+			})
+			.filter(Boolean)
+
+		return presets.length > 0 ? presets : DEFAULT_PROMPT_PRESETS
+	}
+
+	function getPromptPresets() {
+		return STATE.promptPresets || DEFAULT_PROMPT_PRESETS
+	}
+
+	async function loadPromptPresets() {
+		const storage = getStorageArea()
+		if (!storage?.get) {
+			STATE.promptPresets = DEFAULT_PROMPT_PRESETS
+			return getPromptPresets()
+		}
+
+		try {
+			const stored = await storage.get(STORAGE_KEY)
+			STATE.promptPresets = sanitisePromptPresets(stored?.[STORAGE_KEY])
+		} catch {
+			STATE.promptPresets = DEFAULT_PROMPT_PRESETS
+		}
+
+		return getPromptPresets()
+	}
+
+	function installStorageListener() {
+		const api = getExtensionApi()
+		if (!api?.storage?.onChanged?.addListener) return
+
+		api.storage.onChanged.addListener((changes) => {
+			if (!changes?.[STORAGE_KEY]) return
+
+			STATE.promptPresets = sanitisePromptPresets(changes[STORAGE_KEY].newValue)
+			STATE.injectedForVideoId = null
+			injectButtons()
+		})
 	}
 
 	function getVideoIdFromUrl() {
@@ -67,18 +156,16 @@
 			.join('\n')
 	}
 
-	function makePromptedText(transcript) {
-		return [
-			'Please summarise this YouTube transcript.',
-			'Give me:',
-			'- a 6-10 bullet summary',
-			'- key takeaways',
-			'- any actionable items',
-			'',
-			'Transcript:',
-			'',
-			transcript,
-		].join('\n')
+	function getPromptPreset(presetId) {
+		const presets = getPromptPresets()
+		return (
+			presets.find((preset) => preset.id === presetId) || presets[0]
+		)
+	}
+
+	function makePromptedText(transcript, presetId) {
+		const preset = getPromptPreset(presetId)
+		return [preset.body, '', 'Transcript:', '', transcript].join('\n')
 	}
 
 	function findInsertionPoint() {
@@ -111,6 +198,17 @@
 		const wrap = document.createElement('div')
 		wrap.className = 'yt-tc-wrap'
 
+		const promptSelect = document.createElement('select')
+		promptSelect.className = 'yt-tc-select'
+		promptSelect.setAttribute('aria-label', 'Select prompt template')
+
+		for (const preset of getPromptPresets()) {
+			const option = document.createElement('option')
+			option.value = preset.id
+			option.textContent = preset.label
+			promptSelect.appendChild(option)
+		}
+
 		const btnCopyPrompt = document.createElement('button')
 		btnCopyPrompt.className = 'yt-tc-btn'
 		btnCopyPrompt.type = 'button'
@@ -126,7 +224,7 @@
 					return
 				}
 
-				const text = makeContextualPromptedText(transcript)
+				const text = makeContextualPromptedText(transcript, promptSelect.value)
 				const ok = await copyToClipboard(text)
 				showToast(ok ? 'Prompt + transcript copied' : 'Copy failed')
 			} finally {
@@ -135,6 +233,7 @@
 			}
 		})
 
+		wrap.appendChild(promptSelect)
 		wrap.appendChild(btnCopyPrompt)
 
 		// Insert at the start of the action area
@@ -523,21 +622,8 @@
 		return buildContextHeader() + transcript
 	}
 
-	function makeContextualPromptedText(transcript) {
-		return (
-			buildContextHeader() +
-			[
-				'Please summarise this YouTube transcript.',
-				'Give me:',
-				'- a 6-10 bullet summary',
-				'- key takeaways',
-				'- any actionable items',
-				'',
-				'Transcript:',
-				'',
-				transcript,
-			].join('\n')
-		)
+	function makeContextualPromptedText(transcript, presetId) {
+		return buildContextHeader() + makePromptedText(transcript, presetId)
 	}
 
 	// Observe SPA navigations by watching URL changes and key DOM mutations.
@@ -568,6 +654,12 @@
 		window.addEventListener('yt-navigate-finish', onUrlMaybeChanged)
 	}
 
-	installObservers()
-	onUrlMaybeChanged()
+	async function init() {
+		await loadPromptPresets()
+		installStorageListener()
+		installObservers()
+		onUrlMaybeChanged()
+	}
+
+	init()
 })()

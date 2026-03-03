@@ -1,14 +1,18 @@
 {
 	"manifest_version": 3,
 	"name": "PromptTube",
-	"version": "1.0.0",
+	"version": "1.2.0",
 	"description": "Adds a button on YouTube pages to copy the current video's transcript and a summary prompt.",
-	"permissions": ["clipboardWrite"],
+	"permissions": ["clipboardWrite", "storage"],
 	"host_permissions": ["https://www.youtube.com/*"],
+	"options_ui": {
+		"page": "options.html",
+		"open_in_tab": true
+	},
 	"content_scripts": [
 		{
 			"matches": ["https://www.youtube.com/*"],
-			"js": ["content-script.js"],
+			"js": ["prompt-presets.js", "content-script.js"],
 			"css": ["styles.css"],
 			"run_at": "document_idle"
 		}
