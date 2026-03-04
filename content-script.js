@@ -4,15 +4,24 @@
 		lastVideoId: null,
 		injectedForVideoId: null,
 		promptPresets: null,
+		selectedPresetId: null,
+		uiCleanup: null,
 	}
 
 	const SHARED = globalThis.PromptTubeShared || {}
 	const STORAGE_KEY = SHARED.STORAGE_KEY || 'promptPresets'
 	const SETTINGS_HINT_KEY = 'promptSettingsHintSeen'
+	const FALLBACK_PROMPT_PRESETS = [
+		{
+			id: 'summary',
+			label: 'Summary',
+			body: 'Please summarise this YouTube transcript.',
+		},
+	]
 	const DEFAULT_PROMPT_PRESETS =
 		typeof SHARED.cloneDefaultPromptPresets === 'function'
 			? SHARED.cloneDefaultPromptPresets()
-			: []
+			: FALLBACK_PROMPT_PRESETS
 
 	function getExtensionApi() {
 		if (typeof browser !== 'undefined') return browser
@@ -25,42 +34,6 @@
 		return api?.storage?.sync || api?.storage?.local || null
 	}
 
-	function callChromeApi(fn, ...args) {
-		return new Promise((resolve, reject) => {
-			try {
-				fn(...args, () => {
-					const api = getExtensionApi()
-					const err = api?.runtime?.lastError
-					if (err) reject(new Error(err.message))
-					else resolve()
-				})
-			} catch (error) {
-				reject(error)
-			}
-		})
-	}
-
-	async function openOptionsPage() {
-		const api = getExtensionApi()
-		if (!api?.runtime?.openOptionsPage) return false
-
-		try {
-			// Firefox returns a Promise. Chrome uses callback style.
-			const maybePromise = api.runtime.openOptionsPage()
-			if (maybePromise && typeof maybePromise.then === 'function') {
-				await maybePromise
-			}
-			return true
-		} catch {
-			try {
-				await callChromeApi(api.runtime.openOptionsPage.bind(api.runtime))
-				return true
-			} catch {
-				return false
-			}
-		}
-	}
-
 	async function maybeShowSettingsHint() {
 		const storage = getStorageArea()
 		if (!storage?.get || !storage?.set) return
@@ -69,7 +42,7 @@
 			const existing = await storage.get(SETTINGS_HINT_KEY)
 			if (existing?.[SETTINGS_HINT_KEY]) return
 
-			showToast('Tip: Use Prompt Settings to add your own prompts')
+			showToast('Tip: Use the PromptTube icon to manage prompts')
 			await storage.set({ [SETTINGS_HINT_KEY]: true })
 		} catch {
 			// Non-blocking hint.
@@ -114,6 +87,13 @@
 
 	function getPromptPresets() {
 		return STATE.promptPresets || DEFAULT_PROMPT_PRESETS
+	}
+
+	function cleanupUi() {
+		if (typeof STATE.uiCleanup === 'function') {
+			STATE.uiCleanup()
+			STATE.uiCleanup = null
+		}
 	}
 
 	async function loadPromptPresets() {
@@ -241,44 +221,144 @@
 		if (STATE.injectedForVideoId === videoId && alreadyInjected()) return
 
 		const insertionPoint = findInsertionPoint()
-		if (!insertionPoint) return
+		if (!insertionPoint) {
+			if (!alreadyInjected()) cleanupUi()
+			return
+		}
 
 		// Clean any stale instance
+		cleanupUi()
 		const stale = document.querySelector('.yt-tc-wrap')
 		if (stale) stale.remove()
 
 		const wrap = document.createElement('div')
 		wrap.className = 'yt-tc-wrap'
 
-		const promptSelect = document.createElement('select')
-		promptSelect.className = 'yt-tc-select'
-		promptSelect.setAttribute('aria-label', 'Select prompt template')
-
-		for (const preset of getPromptPresets()) {
-			const option = document.createElement('option')
-			option.value = preset.id
-			option.textContent = preset.label
-			promptSelect.appendChild(option)
-		}
+		const presets = getPromptPresets()
+		const split = document.createElement('div')
+		split.className = 'yt-tc-split'
 
 		const btnCopyPrompt = document.createElement('button')
-		btnCopyPrompt.className = 'yt-tc-btn'
+		btnCopyPrompt.className = 'yt-tc-main-btn'
 		btnCopyPrompt.type = 'button'
-		btnCopyPrompt.textContent = 'Copy prompt + transcript'
+		btnCopyPrompt.title = 'Copy prompt + transcript'
 
-		const btnSettings = document.createElement('button')
-		btnSettings.className = 'yt-tc-btn yt-tc-btn--subtle'
-		btnSettings.type = 'button'
-		btnSettings.textContent = 'Prompt settings'
-		btnSettings.title = 'Manage prompt templates'
+		const btnMenu = document.createElement('button')
+		btnMenu.className = 'yt-tc-caret-btn'
+		btnMenu.type = 'button'
+		btnMenu.setAttribute('aria-label', 'Choose prompt template')
+		btnMenu.setAttribute('aria-expanded', 'false')
+		btnMenu.textContent = '▾'
 
-		btnSettings.addEventListener('click', async () => {
-			const ok = await openOptionsPage()
-			if (!ok) showToast('Could not open settings')
+		const menu = document.createElement('div')
+		menu.className = 'yt-tc-menu'
+		menu.hidden = true
+
+		let selectedPresetId = STATE.selectedPresetId || presets[0]?.id || null
+
+		function closeMenu() {
+			menu.hidden = true
+			btnMenu.setAttribute('aria-expanded', 'false')
+		}
+
+		function positionMenu() {
+			const anchorRect = split.getBoundingClientRect()
+			const menuRect = menu.getBoundingClientRect()
+			const menuWidth = menuRect.width || 240
+			const menuHeight = menuRect.height || 200
+			const viewportPadding = 8
+
+			const clampedLeft = Math.min(
+				Math.max(viewportPadding, anchorRect.left),
+				window.innerWidth - menuWidth - viewportPadding
+			)
+
+			const belowTop = anchorRect.bottom + 8
+			const aboveTop = anchorRect.top - menuHeight - 8
+			const top =
+				belowTop + menuHeight <= window.innerHeight - viewportPadding
+					? belowTop
+					: Math.max(viewportPadding, aboveTop)
+
+			menu.style.left = `${Math.round(clampedLeft)}px`
+			menu.style.top = `${Math.round(top)}px`
+		}
+
+		function openMenu() {
+			if (!menu.isConnected) document.body.appendChild(menu)
+			menu.hidden = false
+			menu.style.visibility = 'hidden'
+			positionMenu()
+			menu.style.visibility = ''
+			btnMenu.setAttribute('aria-expanded', 'true')
+		}
+
+		function updateMainLabel() {
+			const preset = getPromptPreset(selectedPresetId)
+			selectedPresetId = preset?.id || presets[0]?.id || null
+			STATE.selectedPresetId = selectedPresetId
+			btnCopyPrompt.textContent = preset?.label
+				? `Copy prompt: ${preset.label}`
+				: 'Copy prompt'
+		}
+
+		function rebuildMenu() {
+			menu.textContent = ''
+
+			for (const preset of presets) {
+				const item = document.createElement('button')
+				item.type = 'button'
+				item.className = 'yt-tc-menu-item'
+				item.textContent =
+					preset.id === selectedPresetId ? `✓ ${preset.label}` : preset.label
+				item.addEventListener('click', () => {
+					selectedPresetId = preset.id
+					updateMainLabel()
+					rebuildMenu()
+					closeMenu()
+					showToast(`Prompt: ${preset.label}`)
+				})
+				menu.appendChild(item)
+			}
+
+		}
+
+		btnMenu.addEventListener('click', (event) => {
+			event.stopPropagation()
+			if (menu.hidden) openMenu()
+			else closeMenu()
 		})
+
+		const onDocumentClick = (event) => {
+			if (!wrap.contains(event.target) && !menu.contains(event.target)) {
+				closeMenu()
+			}
+		}
+
+		const onDocumentKeydown = (event) => {
+			if (event.key === 'Escape') closeMenu()
+		}
+
+		const onViewportChange = () => {
+			if (!menu.hidden) positionMenu()
+		}
+
+		document.addEventListener('click', onDocumentClick, true)
+		document.addEventListener('keydown', onDocumentKeydown)
+		window.addEventListener('resize', onViewportChange)
+		window.addEventListener('scroll', onViewportChange, true)
+		STATE.uiCleanup = () => {
+			document.removeEventListener('click', onDocumentClick, true)
+			document.removeEventListener('keydown', onDocumentKeydown)
+			window.removeEventListener('resize', onViewportChange)
+			window.removeEventListener('scroll', onViewportChange, true)
+			if (menu.isConnected) menu.remove()
+		}
 
 		btnCopyPrompt.addEventListener('click', async () => {
 			btnCopyPrompt.disabled = true
+			btnMenu.disabled = true
+			const previousLabel = btnCopyPrompt.textContent
 			btnCopyPrompt.textContent = 'Working…'
 			try {
 				const transcript = await getTranscriptBestEffort()
@@ -287,18 +367,22 @@
 					return
 				}
 
-				const text = makeContextualPromptedText(transcript, promptSelect.value)
+				const text = makeContextualPromptedText(transcript, selectedPresetId)
 				const ok = await copyToClipboard(text)
 				showToast(ok ? 'Prompt + transcript copied' : 'Copy failed')
 			} finally {
 				btnCopyPrompt.disabled = false
-				btnCopyPrompt.textContent = 'Copy prompt + transcript'
+				btnMenu.disabled = false
+				btnCopyPrompt.textContent = previousLabel
 			}
 		})
 
-		wrap.appendChild(promptSelect)
-		wrap.appendChild(btnSettings)
-		wrap.appendChild(btnCopyPrompt)
+		updateMainLabel()
+		rebuildMenu()
+
+		split.appendChild(btnCopyPrompt)
+		split.appendChild(btnMenu)
+		wrap.appendChild(split)
 
 		// Insert at the start of the action area
 		insertionPoint.prepend(wrap)
@@ -450,6 +534,7 @@
 		if (!videoId) {
 			STATE.lastVideoId = null
 			STATE.injectedForVideoId = null
+			cleanupUi()
 
 			const stale = document.querySelector('.yt-tc-wrap')
 			if (stale) stale.remove()

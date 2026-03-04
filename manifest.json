@@ -1,10 +1,24 @@
 {
 	"manifest_version": 3,
 	"name": "PromptTube",
-	"version": "1.2.0",
+	"version": "1.2.2",
 	"description": "Adds a button on YouTube pages to copy the current video's transcript and a summary prompt.",
 	"permissions": ["clipboardWrite", "storage"],
 	"host_permissions": ["https://www.youtube.com/*"],
+	"icons": {
+		"16": "icon-16.png",
+		"32": "icon-32.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
+	"action": {
+		"default_title": "PromptTube",
+		"default_icon": {
+			"16": "icon-16.png",
+			"32": "icon-32.png"
+		},
+		"default_popup": "popup.html"
+	},
 	"options_ui": {
 		"page": "options.html",
 		"open_in_tab": true
@@ -19,7 +33,7 @@
 	],
 	"browser_specific_settings": {
 	  "gecko": {
-	    "id": "prompttube@vegetalope",
+	    "id": "prompttube@brnrd",
 	    "strict_min_version": "142.0",
 	    "data_collection_permissions": {
 	      "required": ["none"]

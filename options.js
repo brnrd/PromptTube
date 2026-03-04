@@ -1,10 +1,17 @@
 ;(() => {
 	const SHARED = globalThis.PromptTubeShared || {}
 	const STORAGE_KEY = SHARED.STORAGE_KEY || 'promptPresets'
+	const FALLBACK_PROMPT_PRESETS = [
+		{
+			id: 'summary',
+			label: 'Summary',
+			body: 'Please summarise this YouTube transcript.',
+		},
+	]
 	const DEFAULT_PROMPT_PRESETS =
 		typeof SHARED.cloneDefaultPromptPresets === 'function'
 			? SHARED.cloneDefaultPromptPresets()
-			: []
+			: FALLBACK_PROMPT_PRESETS
 
 	const elements = {
 		form: document.getElementById('prompt-form'),

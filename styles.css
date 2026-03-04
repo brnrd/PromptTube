@@ -1,45 +1,94 @@
 .yt-tc-wrap {
 	display: inline-flex;
-	flex-wrap: wrap;
-	gap: 8px;
 	align-items: center;
 	margin-right: 8px;
+	position: relative;
 }
 
-.yt-tc-select,
-.yt-tc-btn {
+.yt-tc-split {
+	position: relative;
+	display: inline-flex;
+	align-items: stretch;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.yt-tc-main-btn,
+.yt-tc-caret-btn {
 	font: inherit;
 	border: 0;
-	border-radius: 18px;
-	padding: 8px 12px;
+	background: transparent;
+	color: inherit;
 	line-height: 1;
 	font-weight: 600;
-	background: rgba(255, 255, 255, 0.1);
-	color: inherit;
-}
-
-.yt-tc-select {
 	cursor: pointer;
-	max-width: 220px;
-	appearance: none;
+	height: 40px;
 }
 
-.yt-tc-btn {
-	cursor: pointer;
+.yt-tc-main-btn {
+	padding: 0 14px;
+	min-width: 160px;
+	max-width: 260px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: left;
 }
 
-.yt-tc-btn--subtle {
-	font-weight: 500;
-	padding-inline: 10px;
+.yt-tc-caret-btn {
+	width: 36px;
+	border-left: 1px solid rgba(255, 255, 255, 0.14);
+	font-size: 12px;
 }
 
-.yt-tc-select:hover,
-.yt-tc-btn:hover {
+.yt-tc-main-btn:hover,
+.yt-tc-caret-btn:hover {
 	background: rgba(255, 255, 255, 0.18);
 }
 
-.yt-tc-btn:active {
+.yt-tc-main-btn:active,
+.yt-tc-caret-btn:active {
 	transform: translateY(1px);
+}
+
+.yt-tc-main-btn:disabled,
+.yt-tc-caret-btn:disabled {
+	opacity: 0.7;
+	cursor: default;
+}
+
+.yt-tc-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 220px;
+	max-width: min(300px, 85vw);
+	padding: 8px;
+	border-radius: 12px;
+	background: rgba(18, 18, 18, 0.95);
+	color: #fff;
+	z-index: 2147483646;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.yt-tc-menu-item {
+	display: block;
+	width: 100%;
+	border: 0;
+	border-radius: 8px;
+	background: transparent;
+	color: inherit;
+	text-align: left;
+	font: inherit;
+	line-height: 1.2;
+	padding: 9px 10px;
+	cursor: pointer;
+}
+
+.yt-tc-menu-item:hover {
+	background: rgba(255, 255, 255, 0.12);
 }
 
 .yt-tc-toast {

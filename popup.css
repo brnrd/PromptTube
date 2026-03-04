@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-width: 280px;
+	font-family: "Segoe UI", sans-serif;
+	background: #10131a;
+	color: #f7f9ff;
+}
+
+.popup {
+	padding: 16px;
+	display: grid;
+	gap: 10px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 18px;
+}
+
+p {
+	margin: 0;
+	color: #b9c4dc;
+	font-size: 13px;
+	line-height: 1.35;
+}
+
+button {
+	border: 0;
+	border-radius: 999px;
+	padding: 10px 14px;
+	font: inherit;
+	font-weight: 600;
+	background: #2f7dff;
+	color: #fff;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #4a91ff;
+}
+
+button:active {
+	transform: translateY(1px);
+}
