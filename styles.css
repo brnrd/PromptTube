@@ -28,6 +28,11 @@
 	cursor: pointer;
 }
 
+.yt-tc-btn--subtle {
+	font-weight: 500;
+	padding-inline: 10px;
+}
+
 .yt-tc-select:hover,
 .yt-tc-btn:hover {
 	background: rgba(255, 255, 255, 0.18);

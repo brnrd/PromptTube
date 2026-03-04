@@ -8,6 +8,7 @@
 
 	const SHARED = globalThis.PromptTubeShared || {}
 	const STORAGE_KEY = SHARED.STORAGE_KEY || 'promptPresets'
+	const SETTINGS_HINT_KEY = 'promptSettingsHintSeen'
 	const DEFAULT_PROMPT_PRESETS =
 		typeof SHARED.cloneDefaultPromptPresets === 'function'
 			? SHARED.cloneDefaultPromptPresets()
@@ -22,6 +23,57 @@
 	function getStorageArea() {
 		const api = getExtensionApi()
 		return api?.storage?.sync || api?.storage?.local || null
+	}
+
+	function callChromeApi(fn, ...args) {
+		return new Promise((resolve, reject) => {
+			try {
+				fn(...args, () => {
+					const api = getExtensionApi()
+					const err = api?.runtime?.lastError
+					if (err) reject(new Error(err.message))
+					else resolve()
+				})
+			} catch (error) {
+				reject(error)
+			}
+		})
+	}
+
+	async function openOptionsPage() {
+		const api = getExtensionApi()
+		if (!api?.runtime?.openOptionsPage) return false
+
+		try {
+			// Firefox returns a Promise. Chrome uses callback style.
+			const maybePromise = api.runtime.openOptionsPage()
+			if (maybePromise && typeof maybePromise.then === 'function') {
+				await maybePromise
+			}
+			return true
+		} catch {
+			try {
+				await callChromeApi(api.runtime.openOptionsPage.bind(api.runtime))
+				return true
+			} catch {
+				return false
+			}
+		}
+	}
+
+	async function maybeShowSettingsHint() {
+		const storage = getStorageArea()
+		if (!storage?.get || !storage?.set) return
+
+		try {
+			const existing = await storage.get(SETTINGS_HINT_KEY)
+			if (existing?.[SETTINGS_HINT_KEY]) return
+
+			showToast('Tip: Use Prompt Settings to add your own prompts')
+			await storage.set({ [SETTINGS_HINT_KEY]: true })
+		} catch {
+			// Non-blocking hint.
+		}
 	}
 
 	function sanitisePromptPresets(input) {
@@ -214,6 +266,17 @@
 		btnCopyPrompt.type = 'button'
 		btnCopyPrompt.textContent = 'Copy prompt + transcript'
 
+		const btnSettings = document.createElement('button')
+		btnSettings.className = 'yt-tc-btn yt-tc-btn--subtle'
+		btnSettings.type = 'button'
+		btnSettings.textContent = 'Prompt settings'
+		btnSettings.title = 'Manage prompt templates'
+
+		btnSettings.addEventListener('click', async () => {
+			const ok = await openOptionsPage()
+			if (!ok) showToast('Could not open settings')
+		})
+
 		btnCopyPrompt.addEventListener('click', async () => {
 			btnCopyPrompt.disabled = true
 			btnCopyPrompt.textContent = 'Working…'
@@ -234,11 +297,13 @@
 		})
 
 		wrap.appendChild(promptSelect)
+		wrap.appendChild(btnSettings)
 		wrap.appendChild(btnCopyPrompt)
 
 		// Insert at the start of the action area
 		insertionPoint.prepend(wrap)
 		STATE.injectedForVideoId = videoId
+		maybeShowSettingsHint()
 	}
 
 	async function getTranscriptBestEffort() {

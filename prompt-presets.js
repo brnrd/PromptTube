@@ -39,7 +39,10 @@
 				'- a concise summary',
 				'- the main claims made',
 				'- any statements that seem uncertain, exaggerated, or likely to need verification',
-				'- a short fact-check checklist of what to verify first',
+				'- a short fact-check checklist of what to verify first',,
+				'Then do the fact-checking and give me:',
+				'- a summary of what you found',
+				'- any claims that were confirmed, debunked, or remain uncertain after checking',
 			]),
 		},
 		{
