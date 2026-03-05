@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "PromptTube",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"description": "Adds a button on YouTube pages to copy the current video's transcript and a summary prompt.",
 	"permissions": ["clipboardWrite", "storage"],
 	"host_permissions": ["https://www.youtube.com/*"],
