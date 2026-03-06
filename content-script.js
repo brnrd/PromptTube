@@ -503,11 +503,15 @@
 	}
 
 	function getTranscriptFromOpenPanel() {
-		// When transcript panel is open, captions typically appear as segments:
-		// ytd-transcript-segment-renderer contains text in #segment-text or similar.
+		// Support both legacy and newer YouTube transcript DOM structures.
 		const segmentTexts = Array.from(
 			document.querySelectorAll(
-				'ytd-transcript-segment-renderer #segment-text, ytd-transcript-segment-renderer .segment-text'
+				[
+					'ytd-transcript-segment-renderer #segment-text',
+					'ytd-transcript-segment-renderer .segment-text',
+					'transcript-segment-view-model [role="text"]',
+					'transcript-segment-view-model .yt-core-attributed-string',
+				].join(', ')
 			)
 		)
 			.map((el) => el.textContent || '')
@@ -519,6 +523,19 @@
 		}
 
 		return null
+	}
+
+	function hasTranscriptDom() {
+		return Boolean(
+			document.querySelector(
+				[
+					'ytd-transcript-segment-renderer #segment-text',
+					'ytd-transcript-segment-renderer .segment-text',
+					'transcript-segment-view-model [role="text"]',
+					'transcript-segment-view-model .yt-core-attributed-string',
+				].join(', ')
+			)
+		)
 	}
 
 	function readInitialPlayerResponse() {
@@ -751,7 +768,7 @@
 
 	async function ensureTranscriptPanelOpen() {
 		// If it’s already there, we’re done
-		if (document.querySelector('ytd-transcript-segment-renderer')) return true
+		if (hasTranscriptDom()) return true
 
 		// Give the page a moment to settle (YouTube SPA races are real)
 		await sleep(200)
@@ -759,7 +776,7 @@
 		// Attempt A: Direct "Show transcript" button (some layouts)
 		if (await clickShowTranscriptDirect()) {
 			await waitForTranscriptDom()
-			return Boolean(document.querySelector('ytd-transcript-segment-renderer'))
+			return hasTranscriptDom()
 		}
 
 		// Attempt B: Expand description (some layouts only reveal transcript entry after expand)
@@ -768,13 +785,13 @@
 		// Retry direct after expanding
 		if (await clickShowTranscriptDirect()) {
 			await waitForTranscriptDom()
-			return Boolean(document.querySelector('ytd-transcript-segment-renderer'))
+			return hasTranscriptDom()
 		}
 
 		// Attempt C: Open overflow menu (three dots) and click "Show transcript"
 		if (await clickShowTranscriptFromMenu()) {
 			await waitForTranscriptDom()
-			return Boolean(document.querySelector('ytd-transcript-segment-renderer'))
+			return hasTranscriptDom()
 		}
 
 		return false
@@ -783,7 +800,7 @@
 	async function waitForTranscriptDom() {
 		// Wait up to ~3 seconds for transcript to render
 		for (let i = 0; i < 15; i++) {
-			if (document.querySelector('ytd-transcript-segment-renderer')) return true
+			if (hasTranscriptDom()) return true
 			await sleep(200)
 		}
 		return false
