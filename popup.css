@@ -4,43 +4,88 @@
 
 body {
 	margin: 0;
-	min-width: 280px;
+	width: 360px;
+	min-width: 320px;
 	font-family: "Segoe UI", sans-serif;
-	background: #10131a;
+	background:
+		radial-gradient(circle at top right, rgba(255, 196, 128, 0.2), transparent 42%),
+		linear-gradient(180deg, #10131a 0%, #161b24 100%);
 	color: #f7f9ff;
 }
 
 .popup {
-	padding: 16px;
+	padding: 18px;
 	display: grid;
-	gap: 10px;
+	gap: 12px;
+}
+
+.eyebrow {
+	margin: 0;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: #f0b06a;
 }
 
 h1 {
 	margin: 0;
-	font-size: 18px;
+	font-size: 20px;
+	line-height: 1.1;
 }
 
-p {
+.lede,
+.mode-description {
 	margin: 0;
 	color: #b9c4dc;
 	font-size: 13px;
-	line-height: 1.35;
+	line-height: 1.4;
 }
 
-button {
+.mode-toggle {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+	padding: 6px;
+	border-radius: 16px;
+	background: rgba(255, 255, 255, 0.06);
+}
+
+.mode-btn,
+.settings-btn {
 	border: 0;
 	border-radius: 999px;
 	padding: 10px 14px;
 	font: inherit;
 	font-weight: 600;
-	background: #2f7dff;
-	color: #fff;
 	cursor: pointer;
 }
 
-button:hover {
+.mode-btn {
+	background: transparent;
+	color: #d7e0f2;
+}
+
+.mode-btn.is-active {
+	background: #f7f9ff;
+	color: #11151d;
+}
+
+.settings-btn {
+	background: #2f7dff;
+	color: #fff;
+}
+
+.settings-btn:hover {
 	background: #4a91ff;
+}
+
+.mode-btn:hover {
+	background: rgba(255, 255, 255, 0.08);
+}
+
+.mode-btn.is-active:hover {
+	background: #ffffff;
 }
 
 button:active {

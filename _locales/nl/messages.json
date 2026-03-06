@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "Voegt gelokaliseerde prompttools toe aan YouTube-kijkpagina's: gebruik de modus Standaard of Geavanceerd, kopieer transcript plus de gekozen AI-prompt met één klik en bewerk je eigen prompts in Instellingen."
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "Promptmodus"
+	},
+	"popup_lede": {
+		"message": "Kies hoe PromptTube wordt weergegeven op YouTube-kijkpagina's."
+	},
+	"popup_mode_group_aria": {
+		"message": "Promptmodus"
+	},
+	"popup_mode_standard": {
+		"message": "Standaard"
+	},
+	"popup_mode_advanced": {
+		"message": "Geavanceerd"
+	},
+	"popup_mode_standard_help": {
+		"message": "Toont één eenvoudige samenvattingsknop. Bewerk die prompt in Instellingen."
+	},
+	"popup_mode_advanced_help": {
+		"message": "Toont de volledige promptselector met alle beschikbare promptsjablonen."
+	},
+	"popup_open_settings": {
+		"message": "Promptinstellingen openen"
+	},
+	"options_title": {
+		"message": "PromptTube-instellingen"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "Promptsjablonen"
+	},
+	"options_lede": {
+		"message": "Bewerk de prompts die op YouTube worden getoond, voeg nieuwe toe of herstel de standaardwaarden."
+	},
+	"options_section_title": {
+		"message": "Jouw prompts"
+	},
+	"options_section_copy": {
+		"message": "Elke prompt heeft een label en instructietekst nodig die vóór het transcript wordt geplaatst."
+	},
+	"options_standard_prompt_note": {
+		"message": "De prompt Samenvatting wordt gebruikt in de standaardmodus en kan niet worden verwijderd."
+	},
+	"options_add_prompt": {
+		"message": "Prompt toevoegen"
+	},
+	"options_reset_defaults": {
+		"message": "Standaard herstellen"
+	},
+	"options_save_prompts": {
+		"message": "Prompts opslaan"
+	},
+	"options_label": {
+		"message": "Label"
+	},
+	"options_label_placeholder": {
+		"message": "Samenvatting + analyse"
+	},
+	"options_body": {
+		"message": "Prompttekst"
+	},
+	"options_body_placeholder": {
+		"message": "Vat dit transcript samen..."
+	},
+	"options_remove": {
+		"message": "Verwijderen"
+	},
+	"options_prompt_card_title": {
+		"message": "Prompt $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "De prompt Samenvatting wordt gebruikt in de standaardmodus en kan niet worden verwijderd."
+	},
+	"options_storage_unavailable": {
+		"message": "Opslag is niet beschikbaar in deze browsercontext."
+	},
+	"options_storage_local": {
+		"message": "Alleen lokale opslag wordt gebruikt. Prompts worden niet tussen browsers gesynchroniseerd."
+	},
+	"options_storage_sync_generic": {
+		"message": "Synchronisatie-opslag wordt gebruikt. Promptgegevens zouden moeten synchroniseren tussen aangemelde browsers die extensiesynchronisatie ondersteunen."
+	},
+	"options_storage_sync_usage": {
+		"message": "Synchronisatie-opslag wordt gebruikt. Promptgegevens gebruiken $1 van het synchronisatiequotum (~100 KB totaal in Firefox).",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "Storage-API niet beschikbaar. Standaardwaarden worden getoond."
+	},
+	"options_status_load_saved_error": {
+		"message": "Opgeslagen prompts konden niet worden geladen. Standaardwaarden worden getoond."
+	},
+	"options_status_storage_unavailable": {
+		"message": "Storage-API niet beschikbaar. Prompts zijn niet opgeslagen."
+	},
+	"options_status_add_one": {
+		"message": "Voeg minstens één prompt toe voordat je opslaat."
+	},
+	"options_status_missing_label": {
+		"message": "Prompt $1 mist een label.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "Prompt $1 mist prompttekst.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "Prompts opgeslagen."
+	},
+	"options_status_save_error": {
+		"message": "Kon prompts niet opslaan."
+	},
+	"options_status_storage_only_page": {
+		"message": "Storage-API niet beschikbaar. Standaardwaarden zijn alleen op deze pagina hersteld."
+	},
+	"options_status_restore_success": {
+		"message": "Standaardprompts hersteld."
+	},
+	"options_status_restore_error": {
+		"message": "Kon standaardwaarden niet herstellen."
+	},
+	"tip_manage_prompts": {
+		"message": "Tip: gebruik het PromptTube-pictogram om prompts te beheren"
+	},
+	"copy_prompt_label": {
+		"message": "Prompt kopiëren: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "Prompt kopiëren"
+	},
+	"working": {
+		"message": "Bezig..."
+	},
+	"no_transcript_found": {
+		"message": "Geen transcript gevonden voor deze video"
+	},
+	"prompt_transcript_copied": {
+		"message": "Prompt + transcript gekopieerd"
+	},
+	"copy_failed": {
+		"message": "Kopiëren mislukt"
+	},
+	"prompt_selected": {
+		"message": "Prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "Promptsjabloon kiezen"
+	},
+	"copy_button_title": {
+		"message": "Prompt en transcript kopiëren"
+	},
+	"unknown_title": {
+		"message": "Onbekende titel"
+	},
+	"unknown_channel": {
+		"message": "Onbekend kanaal"
+	},
+	"context_title_label": {
+		"message": "Titel"
+	},
+	"context_channel_label": {
+		"message": "Kanaal"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "Samenvatting"
+	},
+	"preset_summary_body": {
+		"message": "Vat dit YouTube-transcript samen.\nGeef me:\n- een beknopte samenvatting\n- de belangrijkste inzichten\n- de hoofdconclusie in één korte alinea"
+	},
+	"preset_summary_analysis_label": {
+		"message": "Samenvatting + analyse"
+	},
+	"preset_summary_analysis_body": {
+		"message": "Vat dit YouTube-transcript samen en analyseer het.\nGeef me:\n- een samenvatting in 6-10 bullets\n- de belangrijkste thema's of argumenten\n- wat het belangrijkst is en waarom\n- opvallende sterke punten, zwakke punten of aannames"
+	},
+	"preset_summary_actions_label": {
+		"message": "Samenvatting + acties"
+	},
+	"preset_summary_actions_body": {
+		"message": "Vat dit YouTube-transcript samen en haal de volgende stappen eruit.\nGeef me:\n- een beknopte samenvatting\n- belangrijkste inzichten\n- duidelijke actiepunten\n- beslissingen of opvolgingen die het waard zijn om te volgen"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "Samenvatting + factcheck"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "Vat dit YouTube-transcript samen en markeer alles dat geverifieerd moet worden.\nGeef me:\n- een beknopte samenvatting\n- de belangrijkste claims\n- uitspraken die onzeker, overdreven of waarschijnlijk verificatie vereisen\n- een korte factcheck-checklist met wat eerst gecontroleerd moet worden\nDoe daarna de factcheck en geef me:\n- een samenvatting van wat je hebt gevonden\n- welke claims bevestigd, ontkracht of nog onzeker zijn"
+	},
+	"preset_executive_brief_label": {
+		"message": "Executive brief"
+	},
+	"preset_executive_brief_body": {
+		"message": "Zet dit YouTube-transcript om in een executive brief.\nGeef me:\n- een korte high-level samenvatting\n- de belangrijkste inzichten\n- zakelijke of strategische implicaties\n- de grootste risico's of kansen"
+	},
+	"preset_study_notes_label": {
+		"message": "Studienotities"
+	},
+	"preset_study_notes_body": {
+		"message": "Zet dit YouTube-transcript om in studienotities.\nGeef me:\n- een gestructureerde samenvatting per onderwerp\n- belangrijke definities of concepten\n- waarschijnlijke examen- of discussievragen\n- een korte recap om later snel te herhalen"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "Kritiek + kansen"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "Beoordeel dit YouTube-transcript kritisch.\nGeef me:\n- een beknopte samenvatting\n- wat overtuigend of nuttig is\n- wat ontbreekt, zwak of twijfelachtig is\n- ideeën, kansen of verbeteringen die eruit voortkomen"
+	}
+}

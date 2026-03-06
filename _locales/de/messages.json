@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "Fügt lokalisierte Prompt-Tools zu YouTube-Wiedergabeseiten hinzu: Verwende den Standard- oder Erweitert-Modus, kopiere Transkript plus ausgewählten KI-Prompt mit einem Klick und bearbeite eigene Prompts in den Einstellungen."
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "Prompt-Modus"
+	},
+	"popup_lede": {
+		"message": "Wähle, wie PromptTube auf YouTube-Wiedergabeseiten angezeigt wird."
+	},
+	"popup_mode_group_aria": {
+		"message": "Prompt-Modus"
+	},
+	"popup_mode_standard": {
+		"message": "Standard"
+	},
+	"popup_mode_advanced": {
+		"message": "Erweitert"
+	},
+	"popup_mode_standard_help": {
+		"message": "Zeigt eine einfache Schaltfläche für den Zusammenfassungs-Prompt. Diesen Prompt kannst du in den Einstellungen bearbeiten."
+	},
+	"popup_mode_advanced_help": {
+		"message": "Zeigt die vollständige Prompt-Auswahl mit allen verfügbaren Prompt-Vorlagen."
+	},
+	"popup_open_settings": {
+		"message": "Prompt-Einstellungen öffnen"
+	},
+	"options_title": {
+		"message": "PromptTube-Einstellungen"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "Prompt-Vorlagen"
+	},
+	"options_lede": {
+		"message": "Bearbeite die in YouTube angezeigten Prompts, füge neue hinzu oder setze auf die Standardwerte zurück."
+	},
+	"options_section_title": {
+		"message": "Deine Prompts"
+	},
+	"options_section_copy": {
+		"message": "Jeder Prompt benötigt eine Bezeichnung und den Anweisungstext, der vor das Transkript gesetzt wird."
+	},
+	"options_standard_prompt_note": {
+		"message": "Der Zusammenfassungs-Prompt wird im Standardmodus verwendet und kann nicht entfernt werden."
+	},
+	"options_add_prompt": {
+		"message": "Prompt hinzufügen"
+	},
+	"options_reset_defaults": {
+		"message": "Standardwerte wiederherstellen"
+	},
+	"options_save_prompts": {
+		"message": "Prompts speichern"
+	},
+	"options_label": {
+		"message": "Bezeichnung"
+	},
+	"options_label_placeholder": {
+		"message": "Zusammenfassung + Analyse"
+	},
+	"options_body": {
+		"message": "Prompt-Text"
+	},
+	"options_body_placeholder": {
+		"message": "Bitte fasse dieses Transkript zusammen..."
+	},
+	"options_remove": {
+		"message": "Entfernen"
+	},
+	"options_prompt_card_title": {
+		"message": "Prompt $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "Der Zusammenfassungs-Prompt wird im Standardmodus verwendet und kann nicht entfernt werden."
+	},
+	"options_storage_unavailable": {
+		"message": "Speicher ist in diesem Browser-Kontext nicht verfügbar."
+	},
+	"options_storage_local": {
+		"message": "Es wird nur lokaler Speicher verwendet. Prompts werden nicht zwischen Browsern synchronisiert."
+	},
+	"options_storage_sync_generic": {
+		"message": "Es wird synchronisierter Speicher verwendet. Prompt-Daten sollten zwischen angemeldeten Browsern synchronisiert werden, die Erweiterungssynchronisierung unterstützen."
+	},
+	"options_storage_sync_usage": {
+		"message": "Es wird synchronisierter Speicher verwendet. Prompt-Daten belegen $1 des Synchronisierungs-Kontingents (~100 KB insgesamt in Firefox).",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "Storage-API nicht verfügbar. Standardwerte werden angezeigt."
+	},
+	"options_status_load_saved_error": {
+		"message": "Gespeicherte Prompts konnten nicht geladen werden. Standardwerte werden angezeigt."
+	},
+	"options_status_storage_unavailable": {
+		"message": "Storage-API nicht verfügbar. Prompts wurden nicht gespeichert."
+	},
+	"options_status_add_one": {
+		"message": "Füge vor dem Speichern mindestens einen Prompt hinzu."
+	},
+	"options_status_missing_label": {
+		"message": "Prompt $1 hat keine Bezeichnung.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "Prompt $1 hat keinen Prompt-Text.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "Prompts gespeichert."
+	},
+	"options_status_save_error": {
+		"message": "Prompts konnten nicht gespeichert werden."
+	},
+	"options_status_storage_only_page": {
+		"message": "Storage-API nicht verfügbar. Standardwerte wurden nur auf dieser Seite wiederhergestellt."
+	},
+	"options_status_restore_success": {
+		"message": "Standard-Prompts wiederhergestellt."
+	},
+	"options_status_restore_error": {
+		"message": "Standardwerte konnten nicht wiederhergestellt werden."
+	},
+	"tip_manage_prompts": {
+		"message": "Tipp: Verwende das PromptTube-Symbol, um Prompts zu verwalten"
+	},
+	"copy_prompt_label": {
+		"message": "Prompt kopieren: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "Prompt kopieren"
+	},
+	"working": {
+		"message": "Wird verarbeitet..."
+	},
+	"no_transcript_found": {
+		"message": "Für dieses Video wurde kein Transkript gefunden"
+	},
+	"prompt_transcript_copied": {
+		"message": "Prompt + Transkript kopiert"
+	},
+	"copy_failed": {
+		"message": "Kopieren fehlgeschlagen"
+	},
+	"prompt_selected": {
+		"message": "Prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "Prompt-Vorlage auswählen"
+	},
+	"copy_button_title": {
+		"message": "Prompt und Transkript kopieren"
+	},
+	"unknown_title": {
+		"message": "Unbekannter Titel"
+	},
+	"unknown_channel": {
+		"message": "Unbekannter Kanal"
+	},
+	"context_title_label": {
+		"message": "Titel"
+	},
+	"context_channel_label": {
+		"message": "Kanal"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "Zusammenfassung"
+	},
+	"preset_summary_body": {
+		"message": "Bitte fasse dieses YouTube-Transkript zusammen.\nGib mir:\n- eine prägnante Zusammenfassung\n- die wichtigsten Erkenntnisse\n- die Hauptschlussfolgerung in einem kurzen Absatz"
+	},
+	"preset_summary_analysis_label": {
+		"message": "Zusammenfassung + Analyse"
+	},
+	"preset_summary_analysis_body": {
+		"message": "Bitte fasse dieses YouTube-Transkript zusammen und analysiere es.\nGib mir:\n- eine Zusammenfassung in 6-10 Stichpunkten\n- die zentralen Themen oder Argumente\n- was am wichtigsten ist und warum\n- auffällige Stärken, Schwächen oder Annahmen"
+	},
+	"preset_summary_actions_label": {
+		"message": "Zusammenfassung + Maßnahmen"
+	},
+	"preset_summary_actions_body": {
+		"message": "Bitte fasse dieses YouTube-Transkript zusammen und leite die nächsten Schritte ab.\nGib mir:\n- eine prägnante Zusammenfassung\n- die wichtigsten Erkenntnisse\n- klare Handlungspunkte\n- Entscheidungen oder Nachverfolgungen, die relevant sind"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "Zusammenfassung + Faktencheck"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "Bitte fasse dieses YouTube-Transkript zusammen und markiere alles, was auf Fakten geprüft werden sollte.\nGib mir:\n- eine prägnante Zusammenfassung\n- die wichtigsten aufgestellten Behauptungen\n- Aussagen, die unsicher, übertrieben oder wahrscheinlich überprüfungsbedürftig wirken\n- eine kurze Faktencheck-Checkliste mit den wichtigsten Prüfungen zuerst\nFühre dann den Faktencheck durch und gib mir:\n- eine Zusammenfassung deiner Ergebnisse\n- welche Behauptungen bestätigt, widerlegt oder weiterhin unklar sind"
+	},
+	"preset_executive_brief_label": {
+		"message": "Executive Brief"
+	},
+	"preset_executive_brief_body": {
+		"message": "Verwandle dieses YouTube-Transkript in ein Executive Briefing.\nGib mir:\n- einen kurzen Überblick auf hoher Ebene\n- die wichtigsten Erkenntnisse\n- geschäftliche oder strategische Auswirkungen\n- die größten Risiken oder Chancen"
+	},
+	"preset_study_notes_label": {
+		"message": "Lernnotizen"
+	},
+	"preset_study_notes_body": {
+		"message": "Wandle dieses YouTube-Transkript in Lernnotizen um.\nGib mir:\n- eine strukturierte Zusammenfassung nach Themen\n- wichtige Definitionen oder Konzepte\n- wahrscheinliche Prüfungs- oder Diskussionsfragen\n- eine kurze Wiederholung zum schnellen späteren Lernen"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "Kritik + Chancen"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "Bewerte dieses YouTube-Transkript kritisch.\nGib mir:\n- eine prägnante Zusammenfassung\n- was überzeugend oder nützlich ist\n- was fehlt, schwach oder fragwürdig ist\n- Ideen, Chancen oder Verbesserungen, die daraus entstehen"
+	}
+}

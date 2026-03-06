@@ -3,15 +3,50 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>PromptTube</title>
+		<title data-i18n="popup_title">PromptTube</title>
 		<link rel="stylesheet" href="popup.css" />
 	</head>
 	<body>
 		<main class="popup">
-			<h1>PromptTube</h1>
-			<p>Manage custom prompts and defaults from settings.</p>
-			<button id="open-settings" type="button">Open prompt settings</button>
+			<p class="eyebrow" data-i18n="popup_eyebrow">PromptTube</p>
+			<h1 data-i18n="popup_heading">Prompt mode</h1>
+			<p class="lede" data-i18n="popup_lede">
+				Choose how PromptTube appears on YouTube watch pages.
+			</p>
+
+			<div
+				class="mode-toggle"
+				role="group"
+				aria-label="Prompt mode"
+				data-i18n-aria-label="popup_mode_group_aria"
+			>
+				<button
+					id="mode-standard"
+					class="mode-btn"
+					type="button"
+					data-mode="standard"
+					data-i18n="popup_mode_standard"
+				>
+					Standard
+				</button>
+				<button
+					id="mode-advanced"
+					class="mode-btn"
+					type="button"
+					data-mode="advanced"
+					data-i18n="popup_mode_advanced"
+				>
+					Advanced
+				</button>
+			</div>
+
+			<p id="mode-description" class="mode-description"></p>
+
+			<button id="open-settings" class="settings-btn" type="button" data-i18n="popup_open_settings">
+				Open prompt settings
+			</button>
 		</main>
+		<script src="prompt-presets.js"></script>
 		<script src="popup.js"></script>
 	</body>
 </html>

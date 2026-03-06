@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "Añade herramientas de prompts localizadas a las páginas de reproducción de YouTube: usa el modo Estándar o Avanzado, copia la transcripción junto con el prompt de IA seleccionado en un clic y edita tus propios prompts en Configuración."
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "Modo de prompt"
+	},
+	"popup_lede": {
+		"message": "Elige cómo aparece PromptTube en las páginas de reproducción de YouTube."
+	},
+	"popup_mode_group_aria": {
+		"message": "Modo de prompt"
+	},
+	"popup_mode_standard": {
+		"message": "Estándar"
+	},
+	"popup_mode_advanced": {
+		"message": "Avanzado"
+	},
+	"popup_mode_standard_help": {
+		"message": "Muestra un único botón simple de resumen. Puedes editar ese prompt en Configuración."
+	},
+	"popup_mode_advanced_help": {
+		"message": "Muestra el selector completo con todas las plantillas de prompts disponibles."
+	},
+	"popup_open_settings": {
+		"message": "Abrir configuración de prompts"
+	},
+	"options_title": {
+		"message": "Configuración de PromptTube"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "Plantillas de prompts"
+	},
+	"options_lede": {
+		"message": "Edita los prompts mostrados en YouTube, añade nuevos o restablece los valores predeterminados."
+	},
+	"options_section_title": {
+		"message": "Tus prompts"
+	},
+	"options_section_copy": {
+		"message": "Cada prompt necesita una etiqueta y el texto de instrucción que se antepone a la transcripción."
+	},
+	"options_standard_prompt_note": {
+		"message": "El prompt Resumen se usa en el modo Estándar y no se puede eliminar."
+	},
+	"options_add_prompt": {
+		"message": "Añadir prompt"
+	},
+	"options_reset_defaults": {
+		"message": "Restablecer valores predeterminados"
+	},
+	"options_save_prompts": {
+		"message": "Guardar prompts"
+	},
+	"options_label": {
+		"message": "Etiqueta"
+	},
+	"options_label_placeholder": {
+		"message": "Resumen + análisis"
+	},
+	"options_body": {
+		"message": "Texto del prompt"
+	},
+	"options_body_placeholder": {
+		"message": "Resume esta transcripción..."
+	},
+	"options_remove": {
+		"message": "Eliminar"
+	},
+	"options_prompt_card_title": {
+		"message": "Prompt $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "El prompt Resumen se usa en el modo Estándar y no se puede eliminar."
+	},
+	"options_storage_unavailable": {
+		"message": "El almacenamiento no está disponible en este contexto del navegador."
+	},
+	"options_storage_local": {
+		"message": "Se está usando solo almacenamiento local. Los prompts no se sincronizarán entre navegadores."
+	},
+	"options_storage_sync_generic": {
+		"message": "Se está usando almacenamiento sincronizado. Los datos de prompts deberían sincronizarse entre navegadores conectados que admitan sincronización de extensiones."
+	},
+	"options_storage_sync_usage": {
+		"message": "Se está usando almacenamiento sincronizado. Los datos de prompts usan $1 de la cuota de sincronización (~100 KB en total en Firefox).",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "API de almacenamiento no disponible. Se muestran valores predeterminados."
+	},
+	"options_status_load_saved_error": {
+		"message": "No se pudieron cargar los prompts guardados. Se muestran valores predeterminados."
+	},
+	"options_status_storage_unavailable": {
+		"message": "API de almacenamiento no disponible. No se guardaron los prompts."
+	},
+	"options_status_add_one": {
+		"message": "Añade al menos un prompt antes de guardar."
+	},
+	"options_status_missing_label": {
+		"message": "Al prompt $1 le falta una etiqueta.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "Al prompt $1 le falta texto de prompt.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "Prompts guardados."
+	},
+	"options_status_save_error": {
+		"message": "No se pudieron guardar los prompts."
+	},
+	"options_status_storage_only_page": {
+		"message": "API de almacenamiento no disponible. Los valores predeterminados se restauraron solo en esta página."
+	},
+	"options_status_restore_success": {
+		"message": "Prompts predeterminados restaurados."
+	},
+	"options_status_restore_error": {
+		"message": "No se pudieron restaurar los valores predeterminados."
+	},
+	"tip_manage_prompts": {
+		"message": "Consejo: usa el icono de PromptTube para gestionar prompts"
+	},
+	"copy_prompt_label": {
+		"message": "Copiar prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "Copiar prompt"
+	},
+	"working": {
+		"message": "Procesando..."
+	},
+	"no_transcript_found": {
+		"message": "No se encontró transcripción para este vídeo"
+	},
+	"prompt_transcript_copied": {
+		"message": "Prompt + transcripción copiados"
+	},
+	"copy_failed": {
+		"message": "Error al copiar"
+	},
+	"prompt_selected": {
+		"message": "Prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "Elegir plantilla de prompt"
+	},
+	"copy_button_title": {
+		"message": "Copiar prompt y transcripción"
+	},
+	"unknown_title": {
+		"message": "Título desconocido"
+	},
+	"unknown_channel": {
+		"message": "Canal desconocido"
+	},
+	"context_title_label": {
+		"message": "Título"
+	},
+	"context_channel_label": {
+		"message": "Canal"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "Resumen"
+	},
+	"preset_summary_body": {
+		"message": "Resume esta transcripción de YouTube.\nDame:\n- un resumen conciso\n- las conclusiones clave\n- la conclusión principal en un párrafo corto"
+	},
+	"preset_summary_analysis_label": {
+		"message": "Resumen + análisis"
+	},
+	"preset_summary_analysis_body": {
+		"message": "Resume y analiza esta transcripción de YouTube.\nDame:\n- un resumen en 6-10 viñetas\n- los temas o argumentos principales\n- qué es lo más importante y por qué\n- fortalezas, debilidades o supuestos relevantes"
+	},
+	"preset_summary_actions_label": {
+		"message": "Resumen + acciones"
+	},
+	"preset_summary_actions_body": {
+		"message": "Resume esta transcripción de YouTube y extrae los próximos pasos.\nDame:\n- un resumen conciso\n- conclusiones clave\n- acciones claras\n- decisiones o seguimientos que convenga registrar"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "Resumen + verificación"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "Resume esta transcripción de YouTube y señala todo lo que deba verificarse.\nDame:\n- un resumen conciso\n- las afirmaciones principales\n- afirmaciones que parezcan inciertas, exageradas o que necesiten verificación\n- una checklist corta de verificación con lo primero que revisar\nDespués, realiza la verificación y dame:\n- un resumen de lo que encontraste\n- qué afirmaciones fueron confirmadas, refutadas o siguen siendo inciertas"
+	},
+	"preset_executive_brief_label": {
+		"message": "Informe ejecutivo"
+	},
+	"preset_executive_brief_body": {
+		"message": "Convierte esta transcripción de YouTube en un informe ejecutivo.\nDame:\n- una visión general breve de alto nivel\n- las ideas más importantes\n- implicaciones de negocio o estratégicas\n- los principales riesgos u oportunidades"
+	},
+	"preset_study_notes_label": {
+		"message": "Apuntes de estudio"
+	},
+	"preset_study_notes_body": {
+		"message": "Convierte esta transcripción de YouTube en apuntes de estudio.\nDame:\n- un resumen estructurado por temas\n- definiciones o conceptos importantes\n- posibles preguntas de examen o debate\n- un repaso breve para revisar más tarde rápidamente"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "Crítica + oportunidades"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "Revisa críticamente esta transcripción de YouTube.\nDame:\n- un resumen conciso\n- qué es convincente o útil\n- qué falta, es débil o cuestionable\n- ideas, oportunidades o mejoras inspiradas en ella"
+	}
+}

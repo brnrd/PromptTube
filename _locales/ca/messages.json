@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "Afegeix eines de prompts localitzades a les pàgines de visualització de YouTube: fes servir el mode Estàndard o Avançat, copia la transcripció amb el prompt d'IA seleccionat amb un clic i edita els teus prompts a Configuració."
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "Mode de prompt"
+	},
+	"popup_lede": {
+		"message": "Tria com es mostra PromptTube a les pàgines de visualització de YouTube."
+	},
+	"popup_mode_group_aria": {
+		"message": "Mode de prompt"
+	},
+	"popup_mode_standard": {
+		"message": "Estàndard"
+	},
+	"popup_mode_advanced": {
+		"message": "Avançat"
+	},
+	"popup_mode_standard_help": {
+		"message": "Mostra un únic botó simple de resum. Pots editar aquest prompt a Configuració."
+	},
+	"popup_mode_advanced_help": {
+		"message": "Mostra el selector complet amb totes les plantilles de prompts disponibles."
+	},
+	"popup_open_settings": {
+		"message": "Obre la configuració de prompts"
+	},
+	"options_title": {
+		"message": "Configuració de PromptTube"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "Plantilles de prompts"
+	},
+	"options_lede": {
+		"message": "Edita els prompts que es mostren a YouTube, afegeix-ne de nous o restaura els valors per defecte."
+	},
+	"options_section_title": {
+		"message": "Els teus prompts"
+	},
+	"options_section_copy": {
+		"message": "Cada prompt necessita una etiqueta i el text d'instrucció per afegir abans de la transcripció."
+	},
+	"options_standard_prompt_note": {
+		"message": "El prompt Resum s'utilitza en mode Estàndard i no es pot eliminar."
+	},
+	"options_add_prompt": {
+		"message": "Afegeix prompt"
+	},
+	"options_reset_defaults": {
+		"message": "Restaura valors per defecte"
+	},
+	"options_save_prompts": {
+		"message": "Desa prompts"
+	},
+	"options_label": {
+		"message": "Etiqueta"
+	},
+	"options_label_placeholder": {
+		"message": "Resum + anàlisi"
+	},
+	"options_body": {
+		"message": "Text del prompt"
+	},
+	"options_body_placeholder": {
+		"message": "Resumeix aquesta transcripció..."
+	},
+	"options_remove": {
+		"message": "Elimina"
+	},
+	"options_prompt_card_title": {
+		"message": "Prompt $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "El prompt Resum s'utilitza en mode Estàndard i no es pot eliminar."
+	},
+	"options_storage_unavailable": {
+		"message": "L'emmagatzematge no està disponible en aquest context del navegador."
+	},
+	"options_storage_local": {
+		"message": "S'està fent servir només emmagatzematge local. Els prompts no se sincronitzaran entre navegadors."
+	},
+	"options_storage_sync_generic": {
+		"message": "S'està fent servir emmagatzematge sincronitzat. Les dades dels prompts s'haurien de sincronitzar entre navegadors amb sessió iniciada que admetin la sincronització d'extensions."
+	},
+	"options_storage_sync_usage": {
+		"message": "S'està fent servir emmagatzematge sincronitzat. Les dades dels prompts fan servir $1 de la quota de sincronització (~100 KB en total al Firefox).",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "API d'emmagatzematge no disponible. Es mostren els valors per defecte."
+	},
+	"options_status_load_saved_error": {
+		"message": "No s'han pogut carregar els prompts desats. Es mostren els valors per defecte."
+	},
+	"options_status_storage_unavailable": {
+		"message": "API d'emmagatzematge no disponible. Els prompts no s'han desat."
+	},
+	"options_status_add_one": {
+		"message": "Afegeix almenys un prompt abans de desar."
+	},
+	"options_status_missing_label": {
+		"message": "Al prompt $1 li falta etiqueta.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "Al prompt $1 li falta text.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "Prompts desats."
+	},
+	"options_status_save_error": {
+		"message": "No s'han pogut desar els prompts."
+	},
+	"options_status_storage_only_page": {
+		"message": "API d'emmagatzematge no disponible. Els valors per defecte s'han restaurat només en aquesta pàgina."
+	},
+	"options_status_restore_success": {
+		"message": "Prompts per defecte restaurats."
+	},
+	"options_status_restore_error": {
+		"message": "No s'han pogut restaurar els valors per defecte."
+	},
+	"tip_manage_prompts": {
+		"message": "Consell: fes servir la icona de PromptTube per gestionar els prompts"
+	},
+	"copy_prompt_label": {
+		"message": "Copia prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "Copia prompt"
+	},
+	"working": {
+		"message": "Processant..."
+	},
+	"no_transcript_found": {
+		"message": "No s'ha trobat cap transcripció per a aquest vídeo"
+	},
+	"prompt_transcript_copied": {
+		"message": "Prompt + transcripció copiats"
+	},
+	"copy_failed": {
+		"message": "Ha fallat la còpia"
+	},
+	"prompt_selected": {
+		"message": "Prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "Tria plantilla de prompt"
+	},
+	"copy_button_title": {
+		"message": "Copia prompt i transcripció"
+	},
+	"unknown_title": {
+		"message": "Títol desconegut"
+	},
+	"unknown_channel": {
+		"message": "Canal desconegut"
+	},
+	"context_title_label": {
+		"message": "Títol"
+	},
+	"context_channel_label": {
+		"message": "Canal"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "Resum"
+	},
+	"preset_summary_body": {
+		"message": "Resumeix aquesta transcripció de YouTube.\nDona'm:\n- un resum concís\n- les idees clau\n- la conclusió principal en un paràgraf curt"
+	},
+	"preset_summary_analysis_label": {
+		"message": "Resum + anàlisi"
+	},
+	"preset_summary_analysis_body": {
+		"message": "Resumeix i analitza aquesta transcripció de YouTube.\nDona'm:\n- un resum en 6-10 punts\n- els temes o arguments principals\n- què és el més important i per què\n- fortaleses, febleses o supòsits destacables"
+	},
+	"preset_summary_actions_label": {
+		"message": "Resum + accions"
+	},
+	"preset_summary_actions_body": {
+		"message": "Resumeix aquesta transcripció de YouTube i extreu els passos següents.\nDona'm:\n- un resum concís\n- idees clau\n- accions clares\n- decisions o seguiments que valgui la pena registrar"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "Resum + verificació"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "Resumeix aquesta transcripció de YouTube i marca tot allò que calgui verificar.\nDona'm:\n- un resum concís\n- les afirmacions principals\n- afirmacions que semblin incertes, exagerades o que probablement necessitin verificació\n- una checklist curta de verificació amb què revisar primer\nDesprés, fes la verificació i dona'm:\n- un resum del que has trobat\n- quines afirmacions han estat confirmades, refutades o continuen incertes"
+	},
+	"preset_executive_brief_label": {
+		"message": "Informe executiu"
+	},
+	"preset_executive_brief_body": {
+		"message": "Converteix aquesta transcripció de YouTube en un informe executiu.\nDona'm:\n- una visió general breu d'alt nivell\n- els insights més importants\n- implicacions de negoci o estratègiques\n- els riscos o oportunitats principals"
+	},
+	"preset_study_notes_label": {
+		"message": "Apunts d'estudi"
+	},
+	"preset_study_notes_body": {
+		"message": "Converteix aquesta transcripció de YouTube en apunts d'estudi.\nDona'm:\n- un resum estructurat per temes\n- definicions o conceptes importants\n- possibles preguntes d'examen o discussió\n- un recap breu per repassar ràpidament més tard"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "Crítica + oportunitats"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "Revisa críticament aquesta transcripció de YouTube.\nDona'm:\n- un resum concís\n- què és convincent o útil\n- què falta, és feble o qüestionable\n- idees, oportunitats o millores inspirades en el contingut"
+	}
+}

@@ -4,16 +4,24 @@
 		lastVideoId: null,
 		injectedForVideoId: null,
 		promptPresets: null,
+		uiMode: null,
 		selectedPresetId: null,
 		uiCleanup: null,
 	}
 
 	const SHARED = globalThis.PromptTubeShared || {}
-	const STORAGE_KEY = SHARED.STORAGE_KEY || 'promptPresets'
-	const SETTINGS_HINT_KEY = 'promptSettingsHintSeen'
+	const STORAGE_KEY = SHARED.PROMPT_PRESETS_STORAGE_KEY || 'promptPresets'
+	const UI_MODE_STORAGE_KEY = SHARED.UI_MODE_STORAGE_KEY || 'promptUiMode'
+	const SETTINGS_HINT_KEY = SHARED.SETTINGS_HINT_STORAGE_KEY || 'promptSettingsHintSeen'
+	const STANDARD_PROMPT_ID = SHARED.STANDARD_PROMPT_ID || 'summary'
+	const UI_MODES = SHARED.UI_MODES || {
+		STANDARD: 'standard',
+		ADVANCED: 'advanced',
+	}
+	const DEFAULT_UI_MODE = SHARED.DEFAULT_UI_MODE || UI_MODES.STANDARD
 	const FALLBACK_PROMPT_PRESETS = [
 		{
-			id: 'summary',
+			id: STANDARD_PROMPT_ID,
 			label: 'Summary',
 			body: 'Please summarise this YouTube transcript.',
 		},
@@ -23,7 +31,15 @@
 			? SHARED.cloneDefaultPromptPresets()
 			: FALLBACK_PROMPT_PRESETS
 
+	function t(key, substitutions = [], fallback = '') {
+		if (typeof SHARED.getMessage === 'function') {
+			return SHARED.getMessage(key, substitutions, fallback)
+		}
+		return fallback
+	}
+
 	function getExtensionApi() {
+		if (typeof SHARED.getExtensionApi === 'function') return SHARED.getExtensionApi()
 		if (typeof browser !== 'undefined') return browser
 		if (typeof chrome !== 'undefined') return chrome
 		return null
@@ -42,7 +58,13 @@
 			const existing = await storage.get(SETTINGS_HINT_KEY)
 			if (existing?.[SETTINGS_HINT_KEY]) return
 
-			showToast('Tip: Use the PromptTube icon to manage prompts')
+			showToast(
+				t(
+					'tip_manage_prompts',
+					[],
+					'Tip: Use the PromptTube icon to manage prompts'
+				)
+			)
 			await storage.set({ [SETTINGS_HINT_KEY]: true })
 		} catch {
 			// Non-blocking hint.
@@ -50,43 +72,18 @@
 	}
 
 	function sanitisePromptPresets(input) {
-		if (!Array.isArray(input)) return DEFAULT_PROMPT_PRESETS
-
-		const presets = input
-			.map((preset, index) => {
-				const label = typeof preset?.label === 'string' ? preset.label.trim() : ''
-				const body =
-					typeof preset?.body === 'string'
-						? preset.body
-						: Array.isArray(preset?.lines)
-							? preset.lines.join('\n')
-							: ''
-
-				const cleanBody = body
-					.replace(/\r/g, '')
-					.split('\n')
-					.map((line) => line.trimEnd())
-					.join('\n')
-					.trim()
-
-				if (!label || !cleanBody) return null
-
-				return {
-					id:
-						typeof preset?.id === 'string' && preset.id.trim()
-							? preset.id.trim()
-							: `custom-${index + 1}`,
-					label,
-					body: cleanBody,
-				}
-			})
-			.filter(Boolean)
-
-		return presets.length > 0 ? presets : DEFAULT_PROMPT_PRESETS
+		if (typeof SHARED.sanitisePromptPresets === 'function') {
+			return SHARED.sanitisePromptPresets(input)
+		}
+		return DEFAULT_PROMPT_PRESETS
 	}
 
 	function getPromptPresets() {
 		return STATE.promptPresets || DEFAULT_PROMPT_PRESETS
+	}
+
+	function getUiMode() {
+		return STATE.uiMode || DEFAULT_UI_MODE
 	}
 
 	function cleanupUi() {
@@ -113,14 +110,58 @@
 		return getPromptPresets()
 	}
 
+	async function loadUiMode() {
+		const storage = getStorageArea()
+		if (!storage?.get) {
+			STATE.uiMode = DEFAULT_UI_MODE
+			return getUiMode()
+		}
+
+		try {
+			const stored = await storage.get(UI_MODE_STORAGE_KEY)
+			if (typeof SHARED.normaliseUiMode === 'function') {
+				STATE.uiMode = SHARED.normaliseUiMode(stored?.[UI_MODE_STORAGE_KEY])
+			} else {
+				STATE.uiMode =
+					stored?.[UI_MODE_STORAGE_KEY] === UI_MODES.STANDARD ||
+					stored?.[UI_MODE_STORAGE_KEY] === UI_MODES.ADVANCED
+						? stored?.[UI_MODE_STORAGE_KEY]
+						: DEFAULT_UI_MODE
+			}
+		} catch {
+			STATE.uiMode = DEFAULT_UI_MODE
+		}
+
+		return getUiMode()
+	}
+
 	function installStorageListener() {
 		const api = getExtensionApi()
 		if (!api?.storage?.onChanged?.addListener) return
 
 		api.storage.onChanged.addListener((changes) => {
-			if (!changes?.[STORAGE_KEY]) return
+			let shouldReinject = false
 
-			STATE.promptPresets = sanitisePromptPresets(changes[STORAGE_KEY].newValue)
+			if (changes?.[STORAGE_KEY]) {
+				STATE.promptPresets = sanitisePromptPresets(changes[STORAGE_KEY].newValue)
+				shouldReinject = true
+			}
+
+			if (changes?.[UI_MODE_STORAGE_KEY]) {
+				if (typeof SHARED.normaliseUiMode === 'function') {
+					STATE.uiMode = SHARED.normaliseUiMode(changes[UI_MODE_STORAGE_KEY].newValue)
+				} else {
+					STATE.uiMode =
+						changes[UI_MODE_STORAGE_KEY].newValue === UI_MODES.STANDARD ||
+						changes[UI_MODE_STORAGE_KEY].newValue === UI_MODES.ADVANCED
+							? changes[UI_MODE_STORAGE_KEY].newValue
+							: DEFAULT_UI_MODE
+				}
+				shouldReinject = true
+			}
+
+			if (!shouldReinject) return
+
 			STATE.injectedForVideoId = null
 			injectButtons()
 		})
@@ -195,6 +236,10 @@
 		)
 	}
 
+	function getStandardPromptPreset() {
+		return getPromptPreset(STANDARD_PROMPT_ID)
+	}
+
 	function makePromptedText(transcript, presetId) {
 		const preset = getPromptPreset(presetId)
 		return [preset.body, '', 'Transcript:', '', transcript].join('\n')
@@ -235,154 +280,201 @@
 		wrap.className = 'yt-tc-wrap'
 
 		const presets = getPromptPresets()
-		const split = document.createElement('div')
-		split.className = 'yt-tc-split'
+		const copyLabel = (label) =>
+			label
+				? t('copy_prompt_label', [label], `Copy prompt: ${label}`)
+				: t('copy_prompt_fallback', [], 'Copy prompt')
 
-		const btnCopyPrompt = document.createElement('button')
-		btnCopyPrompt.className = 'yt-tc-main-btn'
-		btnCopyPrompt.type = 'button'
-		btnCopyPrompt.title = 'Copy prompt + transcript'
-
-		const btnMenu = document.createElement('button')
-		btnMenu.className = 'yt-tc-caret-btn'
-		btnMenu.type = 'button'
-		btnMenu.setAttribute('aria-label', 'Choose prompt template')
-		btnMenu.setAttribute('aria-expanded', 'false')
-		btnMenu.textContent = '▾'
-
-		const menu = document.createElement('div')
-		menu.className = 'yt-tc-menu'
-		menu.hidden = true
-
-		let selectedPresetId = STATE.selectedPresetId || presets[0]?.id || null
-
-		function closeMenu() {
-			menu.hidden = true
-			btnMenu.setAttribute('aria-expanded', 'false')
-		}
-
-		function positionMenu() {
-			const anchorRect = split.getBoundingClientRect()
-			const menuRect = menu.getBoundingClientRect()
-			const menuWidth = menuRect.width || 240
-			const menuHeight = menuRect.height || 200
-			const viewportPadding = 8
-
-			const clampedLeft = Math.min(
-				Math.max(viewportPadding, anchorRect.left),
-				window.innerWidth - menuWidth - viewportPadding
-			)
-
-			const belowTop = anchorRect.bottom + 8
-			const aboveTop = anchorRect.top - menuHeight - 8
-			const top =
-				belowTop + menuHeight <= window.innerHeight - viewportPadding
-					? belowTop
-					: Math.max(viewportPadding, aboveTop)
-
-			menu.style.left = `${Math.round(clampedLeft)}px`
-			menu.style.top = `${Math.round(top)}px`
-		}
-
-		function openMenu() {
-			if (!menu.isConnected) document.body.appendChild(menu)
-			menu.hidden = false
-			menu.style.visibility = 'hidden'
-			positionMenu()
-			menu.style.visibility = ''
-			btnMenu.setAttribute('aria-expanded', 'true')
-		}
-
-		function updateMainLabel() {
-			const preset = getPromptPreset(selectedPresetId)
-			selectedPresetId = preset?.id || presets[0]?.id || null
-			STATE.selectedPresetId = selectedPresetId
-			btnCopyPrompt.textContent = preset?.label
-				? `Copy prompt: ${preset.label}`
-				: 'Copy prompt'
-		}
-
-		function rebuildMenu() {
-			menu.textContent = ''
-
-			for (const preset of presets) {
-				const item = document.createElement('button')
-				item.type = 'button'
-				item.className = 'yt-tc-menu-item'
-				item.textContent =
-					preset.id === selectedPresetId ? `✓ ${preset.label}` : preset.label
-				item.addEventListener('click', () => {
-					selectedPresetId = preset.id
-					updateMainLabel()
-					rebuildMenu()
-					closeMenu()
-					showToast(`Prompt: ${preset.label}`)
-				})
-				menu.appendChild(item)
-			}
-
-		}
-
-		btnMenu.addEventListener('click', (event) => {
-			event.stopPropagation()
-			if (menu.hidden) openMenu()
-			else closeMenu()
-		})
-
-		const onDocumentClick = (event) => {
-			if (!wrap.contains(event.target) && !menu.contains(event.target)) {
-				closeMenu()
-			}
-		}
-
-		const onDocumentKeydown = (event) => {
-			if (event.key === 'Escape') closeMenu()
-		}
-
-		const onViewportChange = () => {
-			if (!menu.hidden) positionMenu()
-		}
-
-		document.addEventListener('click', onDocumentClick, true)
-		document.addEventListener('keydown', onDocumentKeydown)
-		window.addEventListener('resize', onViewportChange)
-		window.addEventListener('scroll', onViewportChange, true)
-		STATE.uiCleanup = () => {
-			document.removeEventListener('click', onDocumentClick, true)
-			document.removeEventListener('keydown', onDocumentKeydown)
-			window.removeEventListener('resize', onViewportChange)
-			window.removeEventListener('scroll', onViewportChange, true)
-			if (menu.isConnected) menu.remove()
-		}
-
-		btnCopyPrompt.addEventListener('click', async () => {
-			btnCopyPrompt.disabled = true
-			btnMenu.disabled = true
-			const previousLabel = btnCopyPrompt.textContent
-			btnCopyPrompt.textContent = 'Working…'
+		const doCopy = async (button, presetId, secondaryButton = null) => {
+			button.disabled = true
+			if (secondaryButton) secondaryButton.disabled = true
+			const previousLabel = button.textContent
+			button.textContent = t('working', [], 'Working...')
 			try {
 				const transcript = await getTranscriptBestEffort()
 				if (!transcript) {
-					showToast('No transcript found for this video')
+					showToast(
+						t(
+							'no_transcript_found',
+							[],
+							'No transcript found for this video'
+						)
+					)
 					return
 				}
 
-				const text = makeContextualPromptedText(transcript, selectedPresetId)
+				const text = makeContextualPromptedText(transcript, presetId)
 				const ok = await copyToClipboard(text)
-				showToast(ok ? 'Prompt + transcript copied' : 'Copy failed')
+				showToast(
+					ok
+						? t(
+								'prompt_transcript_copied',
+								[],
+								'Prompt + transcript copied'
+						  )
+						: t('copy_failed', [], 'Copy failed')
+				)
 			} finally {
-				btnCopyPrompt.disabled = false
-				btnMenu.disabled = false
-				btnCopyPrompt.textContent = previousLabel
+				button.disabled = false
+				if (secondaryButton) secondaryButton.disabled = false
+				button.textContent = previousLabel
 			}
-		})
+		}
 
-		updateMainLabel()
-		rebuildMenu()
+		if (getUiMode() === UI_MODES.STANDARD) {
+			const standardPreset = getStandardPromptPreset()
+			const btnCopyPrompt = document.createElement('button')
+			btnCopyPrompt.className = 'yt-tc-single-btn'
+			btnCopyPrompt.type = 'button'
+			btnCopyPrompt.title = t(
+				'copy_button_title',
+				[],
+				'Copy prompt and transcript'
+			)
+			btnCopyPrompt.textContent = copyLabel(standardPreset?.label)
+			btnCopyPrompt.addEventListener('click', async () => {
+				await doCopy(btnCopyPrompt, standardPreset?.id || presets[0]?.id || null)
+			})
 
-		split.appendChild(btnCopyPrompt)
-		split.appendChild(btnMenu)
-		wrap.appendChild(split)
+			wrap.appendChild(btnCopyPrompt)
+		} else {
+			const split = document.createElement('div')
+			split.className = 'yt-tc-split'
+
+			const btnCopyPrompt = document.createElement('button')
+			btnCopyPrompt.className = 'yt-tc-main-btn'
+			btnCopyPrompt.type = 'button'
+			btnCopyPrompt.title = t(
+				'copy_button_title',
+				[],
+				'Copy prompt and transcript'
+			)
+
+			const btnMenu = document.createElement('button')
+			btnMenu.className = 'yt-tc-caret-btn'
+			btnMenu.type = 'button'
+			btnMenu.setAttribute(
+				'aria-label',
+				t('prompt_menu_aria', [], 'Choose prompt template')
+			)
+			btnMenu.setAttribute('aria-expanded', 'false')
+			btnMenu.textContent = 'v'
+
+			const menu = document.createElement('div')
+			menu.className = 'yt-tc-menu'
+			menu.hidden = true
+
+			let selectedPresetId = STATE.selectedPresetId || presets[0]?.id || null
+
+			function closeMenu() {
+				menu.hidden = true
+				btnMenu.setAttribute('aria-expanded', 'false')
+			}
+
+			function positionMenu() {
+				const anchorRect = split.getBoundingClientRect()
+				const menuRect = menu.getBoundingClientRect()
+				const menuWidth = menuRect.width || 240
+				const menuHeight = menuRect.height || 200
+				const viewportPadding = 8
+
+				const clampedLeft = Math.min(
+					Math.max(viewportPadding, anchorRect.left),
+					window.innerWidth - menuWidth - viewportPadding
+				)
+
+				const belowTop = anchorRect.bottom + 8
+				const aboveTop = anchorRect.top - menuHeight - 8
+				const top =
+					belowTop + menuHeight <= window.innerHeight - viewportPadding
+						? belowTop
+						: Math.max(viewportPadding, aboveTop)
+
+				menu.style.left = `${Math.round(clampedLeft)}px`
+				menu.style.top = `${Math.round(top)}px`
+			}
+
+			function openMenu() {
+				if (!menu.isConnected) document.body.appendChild(menu)
+				menu.hidden = false
+				menu.style.visibility = 'hidden'
+				positionMenu()
+				menu.style.visibility = ''
+				btnMenu.setAttribute('aria-expanded', 'true')
+			}
+
+			function updateMainLabel() {
+				const preset = getPromptPreset(selectedPresetId)
+				selectedPresetId = preset?.id || presets[0]?.id || null
+				STATE.selectedPresetId = selectedPresetId
+				btnCopyPrompt.textContent = copyLabel(preset?.label)
+			}
+
+			function rebuildMenu() {
+				menu.textContent = ''
+
+				for (const preset of presets) {
+					const item = document.createElement('button')
+					item.type = 'button'
+					item.className = 'yt-tc-menu-item'
+					item.textContent =
+						preset.id === selectedPresetId ? `* ${preset.label}` : preset.label
+					item.addEventListener('click', () => {
+						selectedPresetId = preset.id
+						updateMainLabel()
+						rebuildMenu()
+						closeMenu()
+						showToast(
+							t('prompt_selected', [preset.label], `Prompt: ${preset.label}`)
+						)
+					})
+					menu.appendChild(item)
+				}
+			}
+
+			btnMenu.addEventListener('click', (event) => {
+				event.stopPropagation()
+				if (menu.hidden) openMenu()
+				else closeMenu()
+			})
+
+			const onDocumentClick = (event) => {
+				if (!wrap.contains(event.target) && !menu.contains(event.target)) {
+					closeMenu()
+				}
+			}
+
+			const onDocumentKeydown = (event) => {
+				if (event.key === 'Escape') closeMenu()
+			}
+
+			const onViewportChange = () => {
+				if (!menu.hidden) positionMenu()
+			}
+
+			document.addEventListener('click', onDocumentClick, true)
+			document.addEventListener('keydown', onDocumentKeydown)
+			window.addEventListener('resize', onViewportChange)
+			window.addEventListener('scroll', onViewportChange, true)
+			STATE.uiCleanup = () => {
+				document.removeEventListener('click', onDocumentClick, true)
+				document.removeEventListener('keydown', onDocumentKeydown)
+				window.removeEventListener('resize', onViewportChange)
+				window.removeEventListener('scroll', onViewportChange, true)
+				if (menu.isConnected) menu.remove()
+			}
+
+			btnCopyPrompt.addEventListener('click', async () => {
+				await doCopy(btnCopyPrompt, selectedPresetId, btnMenu)
+			})
+
+			updateMainLabel()
+			rebuildMenu()
+
+			split.appendChild(btnCopyPrompt)
+			split.appendChild(btnMenu)
+			wrap.appendChild(split)
+		}
 
 		// Insert at the start of the action area
 		insertionPoint.prepend(wrap)
@@ -391,23 +483,24 @@
 	}
 
 	async function getTranscriptBestEffort() {
-	// Strategy 1: If panel already open, read it
-	const fromDom = getTranscriptFromOpenPanel()
-	if (fromDom) return fromDom
+		// Strategy 1: If panel already open, read it
+		const fromDom = getTranscriptFromOpenPanel()
+		if (fromDom) return fromDom
 
-	// New: Try to open transcript UI, then read it from DOM
-	const opened = await ensureTranscriptPanelOpen()
-	if (opened) {
+		// Strategy 2: Fetch captions directly from player metadata/timedtext.
+		const fromTimedText = await getTranscriptFromTimedText()
+		if (fromTimedText) return fromTimedText
+
+		// Strategy 3: Try to open transcript UI, then read it from DOM.
+		const opened = await ensureTranscriptPanelOpen()
+		if (!opened) return null
+
 		const afterOpen = getTranscriptFromOpenPanel()
 		if (afterOpen) return afterOpen
+
+		// Final retry after UI interaction in case metadata became available late.
+		return getTranscriptFromTimedText()
 	}
-
-	// Strategy 2: Fetch captions via timedtext
-	const fromTimedText = await getTranscriptFromTimedText()
-	if (fromTimedText) return fromTimedText
-
-	return null
-}
 
 	function getTranscriptFromOpenPanel() {
 		// When transcript panel is open, captions typically appear as segments:
@@ -429,22 +522,103 @@
 	}
 
 	function readInitialPlayerResponse() {
-		// Often available as window.ytInitialPlayerResponse
-		// If not, sometimes embedded in a script tag.
+		// Often available as window.ytInitialPlayerResponse.
 		if (window.ytInitialPlayerResponse) return window.ytInitialPlayerResponse
 
+		// Can be read from the live player API.
+		const moviePlayer = document.getElementById('movie_player')
+		if (moviePlayer?.getPlayerResponse) {
+			try {
+				const response = moviePlayer.getPlayerResponse()
+				if (response) return response
+			} catch {
+				// ignore
+			}
+		}
+
+		// Exposed by YouTube config in some page builds.
+		try {
+			const cfgGet = window.ytcfg?.get
+			const response =
+				(typeof cfgGet === 'function' ? cfgGet('PLAYER_RESPONSE') : null) ||
+				window.ytcfg?.data_?.PLAYER_RESPONSE
+			if (response) return response
+		} catch {
+			// ignore
+		}
+
 		const scripts = Array.from(document.scripts)
+		const markers = [
+			'ytInitialPlayerResponse',
+			'window["ytInitialPlayerResponse"]',
+			"window['ytInitialPlayerResponse']",
+		]
 		for (const script of scripts) {
 			const txt = script.textContent || ''
 			if (!txt.includes('ytInitialPlayerResponse')) continue
 
-			// Try to extract JSON object
-			const m = txt.match(/ytInitialPlayerResponse\s*=\s*(\{.*?\})\s*;/s)
-			if (m && m[1]) {
+			for (const marker of markers) {
+				const objectText = extractAssignedJsonObject(txt, marker)
+				if (!objectText) continue
 				try {
-					return JSON.parse(m[1])
+					return JSON.parse(objectText)
 				} catch {
 					// ignore
+				}
+			}
+		}
+
+		return null
+	}
+
+	function extractAssignedJsonObject(source, marker) {
+		const markerIndex = source.indexOf(marker)
+		if (markerIndex === -1) return null
+
+		const assignIndex = source.indexOf('=', markerIndex + marker.length)
+		if (assignIndex === -1) return null
+
+		const objectStart = source.indexOf('{', assignIndex + 1)
+		if (objectStart === -1) return null
+
+		let depth = 0
+		let inString = false
+		let quoteChar = ''
+		let escaped = false
+
+		for (let i = objectStart; i < source.length; i += 1) {
+			const ch = source[i]
+
+			if (inString) {
+				if (escaped) {
+					escaped = false
+					continue
+				}
+				if (ch === '\\') {
+					escaped = true
+					continue
+				}
+				if (ch === quoteChar) {
+					inString = false
+				}
+				continue
+			}
+
+			if (ch === '"' || ch === "'") {
+				inString = true
+				quoteChar = ch
+				continue
+			}
+
+			if (ch === '{') {
+				depth += 1
+				continue
+			}
+
+			if (ch === '}') {
+				depth -= 1
+				if (depth === 0) {
+					return source.slice(objectStart, i + 1)
 				}
 			}
 		}
@@ -482,42 +656,70 @@
 		const track = pickBestCaptionTrack(tracks)
 		if (!track?.baseUrl) return null
 
-		// Fetch as JSON3 (more stable to parse than XML in JS)
-		const url = new URL(track.baseUrl)
-		url.searchParams.set('fmt', 'json3')
+		const json3Url = new URL(track.baseUrl)
+		json3Url.searchParams.set('fmt', 'json3')
 
 		let resp
 		try {
-			resp = await fetch(url.toString(), {
-				credentials: 'omit',
+			resp = await fetch(json3Url.toString(), {
+				credentials: 'include',
+			})
+		} catch {
+			resp = null
+		}
+
+		if (resp?.ok) {
+			let data
+			try {
+				data = await resp.json()
+			} catch {
+				data = null
+			}
+
+			if (data) {
+				// json3 format has events[].segs[].utf8
+				const events = Array.isArray(data?.events) ? data.events : []
+				const lines = []
+
+				for (const ev of events) {
+					const segs = Array.isArray(ev?.segs) ? ev.segs : []
+					const text = segs.map((s) => s.utf8 || '').join('')
+					const cleaned = text.replace(/\u200b/g, '').trim()
+					if (cleaned) lines.push(cleaned)
+				}
+
+				if (lines.length > 0) {
+					return normaliseWhitespace(lines.join('\n'))
+				}
+			}
+		}
+
+		// Fallback: parse XML captions when json3 is unavailable.
+		let xmlResp
+		try {
+			xmlResp = await fetch(track.baseUrl, {
+				credentials: 'include',
 			})
 		} catch {
 			return null
 		}
+		if (!xmlResp.ok) return null
 
-		if (!resp.ok) return null
-
-		let data
+		let xmlText
 		try {
-			data = await resp.json()
+			xmlText = await xmlResp.text()
 		} catch {
 			return null
 		}
 
-		// json3 format has events[].segs[].utf8
-		const events = Array.isArray(data?.events) ? data.events : []
-		const lines = []
+		const xml = new DOMParser().parseFromString(xmlText, 'application/xml')
+		const xmlLines = Array.from(xml.querySelectorAll('text'))
+			.map((node) => node.textContent || '')
+			.map((line) => line.replace(/\u200b/g, '').trim())
+			.filter(Boolean)
 
-		for (const ev of events) {
-			const segs = Array.isArray(ev?.segs) ? ev.segs : []
-			const text = segs.map((s) => s.utf8 || '').join('')
-			const cleaned = text.replace(/\u200b/g, '').trim()
-			if (cleaned) lines.push(cleaned)
-		}
-
-		if (lines.length === 0) return null
-
-		return normaliseWhitespace(lines.join('\n'))
+		if (xmlLines.length === 0) return null
+		return normaliseWhitespace(xmlLines.join('\n'))
 	}
 
 	async function tryInjectLoop() {
@@ -756,14 +958,15 @@
 	}
 
 	function buildContextHeader() {
-		const title = getVideoTitle() || 'Unknown title'
-		const channel = getChannelName() || 'Unknown channel'
+		const title = getVideoTitle() || t('unknown_title', [], 'Unknown title')
+		const channel =
+			getChannelName() || t('unknown_channel', [], 'Unknown channel')
 		const url = window.location.href
 
 		return [
-			`Title: ${title}`,
-			`Channel: ${channel}`,
-			`URL: ${url}`,
+			`${t('context_title_label', [], 'Title')}: ${title}`,
+			`${t('context_channel_label', [], 'Channel')}: ${channel}`,
+			`${t('context_url_label', [], 'URL')}: ${url}`,
 			'',
 		].join('\n')
 	}
@@ -806,6 +1009,7 @@
 
 	async function init() {
 		await loadPromptPresets()
+		await loadUiMode()
 		installStorageListener()
 		installObservers()
 		onUrlMaybeChanged()

@@ -3,15 +3,15 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>PromptTube Settings</title>
+		<title data-i18n="options_title">PromptTube Settings</title>
 		<link rel="stylesheet" href="options.css" />
 	</head>
 	<body>
 		<main class="page">
 			<header class="hero">
-				<p class="eyebrow">PromptTube</p>
-				<h1>Prompt templates</h1>
-				<p class="lede">
+				<p class="eyebrow" data-i18n="options_eyebrow">PromptTube</p>
+				<h1 data-i18n="options_heading">Prompt templates</h1>
+				<p class="lede" data-i18n="options_lede">
 					Edit the prompts shown in YouTube, add new ones, or reset back to the defaults.
 				</p>
 			</header>
@@ -19,18 +19,21 @@
 			<section class="panel">
 				<div class="panel-bar">
 					<div>
-						<h2>Your prompts</h2>
-						<p class="panel-copy">Each prompt needs a label and the instruction text to prepend before the transcript.</p>
+						<h2 data-i18n="options_section_title">Your prompts</h2>
+						<p class="panel-copy" data-i18n="options_section_copy">Each prompt needs a label and the instruction text to prepend before the transcript.</p>
+						<p class="panel-note" data-i18n="options_standard_prompt_note">
+							The Summary prompt is used in Standard mode and cannot be removed.
+						</p>
 					</div>
-					<button id="add-prompt" class="ghost-btn" type="button">Add prompt</button>
+					<button id="add-prompt" class="ghost-btn" type="button" data-i18n="options_add_prompt">Add prompt</button>
 				</div>
 
 				<form id="prompt-form">
 					<div id="prompt-list" class="prompt-list"></div>
 
 					<div class="actions">
-						<button id="reset-defaults" class="ghost-btn" type="button">Reset defaults</button>
-						<button class="primary-btn" type="submit">Save prompts</button>
+						<button id="reset-defaults" class="ghost-btn" type="button" data-i18n="options_reset_defaults">Reset defaults</button>
+						<button class="primary-btn" type="submit" data-i18n="options_save_prompts">Save prompts</button>
 					</div>
 				</form>
 
@@ -47,16 +50,23 @@
 				</div>
 
 				<label class="field">
-					<span>Label</span>
-					<input class="prompt-label" type="text" maxlength="60" placeholder="Summary + analysis" />
+					<span data-i18n="options_label">Label</span>
+					<input
+						class="prompt-label"
+						type="text"
+						maxlength="60"
+						placeholder="Summary + analysis"
+						data-i18n-placeholder="options_label_placeholder"
+					/>
 				</label>
 
 				<label class="field">
-					<span>Prompt text</span>
+					<span data-i18n="options_body">Prompt text</span>
 					<textarea
 						class="prompt-body"
 						rows="7"
 						placeholder="Please summarise this transcript..."
+						data-i18n-placeholder="options_body_placeholder"
 					></textarea>
 				</label>
 			</section>

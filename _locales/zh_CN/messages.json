@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "为 YouTube 观看页面添加本地化提示词工具：可使用标准或高级模式，一键复制转录和所选 AI 提示词，并在设置中编辑自定义提示词。"
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "提示词模式"
+	},
+	"popup_lede": {
+		"message": "选择 PromptTube 在 YouTube 观看页面上的显示方式。"
+	},
+	"popup_mode_group_aria": {
+		"message": "提示词模式"
+	},
+	"popup_mode_standard": {
+		"message": "标准"
+	},
+	"popup_mode_advanced": {
+		"message": "高级"
+	},
+	"popup_mode_standard_help": {
+		"message": "显示一个简洁的摘要按钮。你可以在设置中编辑该提示词。"
+	},
+	"popup_mode_advanced_help": {
+		"message": "显示完整的提示词选择器，包含所有可用模板。"
+	},
+	"popup_open_settings": {
+		"message": "打开提示词设置"
+	},
+	"options_title": {
+		"message": "PromptTube 设置"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "提示词模板"
+	},
+	"options_lede": {
+		"message": "编辑在 YouTube 中显示的提示词、添加新提示词，或恢复默认值。"
+	},
+	"options_section_title": {
+		"message": "你的提示词"
+	},
+	"options_section_copy": {
+		"message": "每个提示词都需要一个标签和在转录前附加的指令文本。"
+	},
+	"options_standard_prompt_note": {
+		"message": "“摘要”提示词用于标准模式，不能删除。"
+	},
+	"options_add_prompt": {
+		"message": "添加提示词"
+	},
+	"options_reset_defaults": {
+		"message": "恢复默认"
+	},
+	"options_save_prompts": {
+		"message": "保存提示词"
+	},
+	"options_label": {
+		"message": "标签"
+	},
+	"options_label_placeholder": {
+		"message": "摘要 + 分析"
+	},
+	"options_body": {
+		"message": "提示词文本"
+	},
+	"options_body_placeholder": {
+		"message": "请总结这段转录内容..."
+	},
+	"options_remove": {
+		"message": "删除"
+	},
+	"options_prompt_card_title": {
+		"message": "提示词 $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "“摘要”提示词用于标准模式，不能删除。"
+	},
+	"options_storage_unavailable": {
+		"message": "当前浏览器环境中存储不可用。"
+	},
+	"options_storage_local": {
+		"message": "正在使用本地存储。提示词不会在浏览器之间同步。"
+	},
+	"options_storage_sync_generic": {
+		"message": "正在使用同步存储。提示词数据将在已登录且支持扩展同步的浏览器之间同步。"
+	},
+	"options_storage_sync_usage": {
+		"message": "正在使用同步存储。提示词数据已使用同步配额的 $1（Firefox 总计约 100 KB）。",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "存储 API 不可用。正在显示默认值。"
+	},
+	"options_status_load_saved_error": {
+		"message": "无法加载已保存的提示词。正在显示默认值。"
+	},
+	"options_status_storage_unavailable": {
+		"message": "存储 API 不可用。提示词未保存。"
+	},
+	"options_status_add_one": {
+		"message": "保存前请至少添加一个提示词。"
+	},
+	"options_status_missing_label": {
+		"message": "提示词 $1 缺少标签。",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "提示词 $1 缺少提示词文本。",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "提示词已保存。"
+	},
+	"options_status_save_error": {
+		"message": "无法保存提示词。"
+	},
+	"options_status_storage_only_page": {
+		"message": "存储 API 不可用。仅在当前页面恢复了默认值。"
+	},
+	"options_status_restore_success": {
+		"message": "默认提示词已恢复。"
+	},
+	"options_status_restore_error": {
+		"message": "无法恢复默认值。"
+	},
+	"tip_manage_prompts": {
+		"message": "提示：使用 PromptTube 图标管理提示词"
+	},
+	"copy_prompt_label": {
+		"message": "复制提示词：$1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "复制提示词"
+	},
+	"working": {
+		"message": "处理中..."
+	},
+	"no_transcript_found": {
+		"message": "未找到此视频的转录内容"
+	},
+	"prompt_transcript_copied": {
+		"message": "提示词 + 转录已复制"
+	},
+	"copy_failed": {
+		"message": "复制失败"
+	},
+	"prompt_selected": {
+		"message": "提示词：$1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "选择提示词模板"
+	},
+	"copy_button_title": {
+		"message": "复制提示词和转录"
+	},
+	"unknown_title": {
+		"message": "未知标题"
+	},
+	"unknown_channel": {
+		"message": "未知频道"
+	},
+	"context_title_label": {
+		"message": "标题"
+	},
+	"context_channel_label": {
+		"message": "频道"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "摘要"
+	},
+	"preset_summary_body": {
+		"message": "请总结这份 YouTube 转录内容。\n请给我：\n- 简明摘要\n- 关键要点\n- 用一小段话给出主要结论"
+	},
+	"preset_summary_analysis_label": {
+		"message": "摘要 + 分析"
+	},
+	"preset_summary_analysis_body": {
+		"message": "请总结并分析这份 YouTube 转录内容。\n请给我：\n- 6-10 条要点摘要\n- 主要主题或论点\n- 最重要的内容及其原因\n- 明显的优势、弱点或假设"
+	},
+	"preset_summary_actions_label": {
+		"message": "摘要 + 行动项"
+	},
+	"preset_summary_actions_body": {
+		"message": "请总结这份 YouTube 转录内容并提取后续行动。\n请给我：\n- 简明摘要\n- 关键要点\n- 清晰的行动项\n- 值得跟踪的决策或后续事项"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "摘要 + 事实核查"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "请总结这份 YouTube 转录内容，并标出需要进行事实核查的部分。\n请给我：\n- 简明摘要\n- 主要主张\n- 看起来不确定、夸大或可能需要核实的说法\n- 一份简短的事实核查清单，说明优先核查项\n然后请进行事实核查，并给我：\n- 你的发现摘要\n- 哪些主张已证实、已证伪或仍不确定"
+	},
+	"preset_executive_brief_label": {
+		"message": "高管简报"
+	},
+	"preset_executive_brief_body": {
+		"message": "将这份 YouTube 转录内容整理为一份高管简报。\n请给我：\n- 简短的高层概览\n- 最重要的洞见\n- 商业或战略影响\n- 主要风险或机会"
+	},
+	"preset_study_notes_label": {
+		"message": "学习笔记"
+	},
+	"preset_study_notes_body": {
+		"message": "将这份 YouTube 转录内容整理为学习笔记。\n请给我：\n- 按主题结构化的摘要\n- 重要定义或概念\n- 可能的考试或讨论问题\n- 便于后续快速复习的简短回顾"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "批判 + 机会"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "请批判性地审阅这份 YouTube 转录内容。\n请给我：\n- 简明摘要\n- 哪些内容有说服力或有价值\n- 哪些内容缺失、薄弱或值得质疑\n- 由此启发的想法、机会或改进点"
+	}
+}

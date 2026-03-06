@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "Dodaje zlokalizowane narzędzia promptów na stronach oglądania YouTube: używaj trybu Standard lub Zaawansowany, kopiuj transkrypcję wraz z wybranym promptem AI jednym kliknięciem i edytuj własne prompty w Ustawieniach."
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "Tryb promptu"
+	},
+	"popup_lede": {
+		"message": "Wybierz, jak PromptTube ma wyglądać na stronach oglądania YouTube."
+	},
+	"popup_mode_group_aria": {
+		"message": "Tryb promptu"
+	},
+	"popup_mode_standard": {
+		"message": "Standard"
+	},
+	"popup_mode_advanced": {
+		"message": "Zaawansowany"
+	},
+	"popup_mode_standard_help": {
+		"message": "Pokazuje jeden prosty przycisk podsumowania. Ten prompt możesz edytować w Ustawieniach."
+	},
+	"popup_mode_advanced_help": {
+		"message": "Pokazuje pełny selektor promptów ze wszystkimi dostępnymi szablonami."
+	},
+	"popup_open_settings": {
+		"message": "Otwórz ustawienia promptów"
+	},
+	"options_title": {
+		"message": "Ustawienia PromptTube"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "Szablony promptów"
+	},
+	"options_lede": {
+		"message": "Edytuj prompty wyświetlane w YouTube, dodawaj nowe lub przywracaj domyślne."
+	},
+	"options_section_title": {
+		"message": "Twoje prompty"
+	},
+	"options_section_copy": {
+		"message": "Każdy prompt potrzebuje etykiety i treści instrukcji dodawanej przed transkrypcją."
+	},
+	"options_standard_prompt_note": {
+		"message": "Prompt „Podsumowanie” jest używany w trybie Standard i nie może zostać usunięty."
+	},
+	"options_add_prompt": {
+		"message": "Dodaj prompt"
+	},
+	"options_reset_defaults": {
+		"message": "Przywróć domyślne"
+	},
+	"options_save_prompts": {
+		"message": "Zapisz prompty"
+	},
+	"options_label": {
+		"message": "Etykieta"
+	},
+	"options_label_placeholder": {
+		"message": "Podsumowanie + analiza"
+	},
+	"options_body": {
+		"message": "Treść promptu"
+	},
+	"options_body_placeholder": {
+		"message": "Podsumuj tę transkrypcję..."
+	},
+	"options_remove": {
+		"message": "Usuń"
+	},
+	"options_prompt_card_title": {
+		"message": "Prompt $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "Prompt „Podsumowanie” jest używany w trybie Standard i nie może zostać usunięty."
+	},
+	"options_storage_unavailable": {
+		"message": "Pamięć nie jest dostępna w tym kontekście przeglądarki."
+	},
+	"options_storage_local": {
+		"message": "Używana jest tylko pamięć lokalna. Prompty nie będą synchronizowane między przeglądarkami."
+	},
+	"options_storage_sync_generic": {
+		"message": "Używana jest pamięć synchronizowana. Dane promptów powinny synchronizować się między zalogowanymi przeglądarkami obsługującymi synchronizację rozszerzeń."
+	},
+	"options_storage_sync_usage": {
+		"message": "Używana jest pamięć synchronizowana. Dane promptów zajmują $1 limitu synchronizacji (~100 KB łącznie w Firefoxie).",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "API pamięci niedostępne. Wyświetlane są wartości domyślne."
+	},
+	"options_status_load_saved_error": {
+		"message": "Nie udało się wczytać zapisanych promptów. Wyświetlane są wartości domyślne."
+	},
+	"options_status_storage_unavailable": {
+		"message": "API pamięci niedostępne. Prompty nie zostały zapisane."
+	},
+	"options_status_add_one": {
+		"message": "Dodaj co najmniej jeden prompt przed zapisaniem."
+	},
+	"options_status_missing_label": {
+		"message": "Prompt $1 nie ma etykiety.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "Prompt $1 nie ma treści promptu.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "Prompty zapisane."
+	},
+	"options_status_save_error": {
+		"message": "Nie udało się zapisać promptów."
+	},
+	"options_status_storage_only_page": {
+		"message": "API pamięci niedostępne. Domyślne przywrócono tylko na tej stronie."
+	},
+	"options_status_restore_success": {
+		"message": "Przywrócono domyślne prompty."
+	},
+	"options_status_restore_error": {
+		"message": "Nie udało się przywrócić wartości domyślnych."
+	},
+	"tip_manage_prompts": {
+		"message": "Wskazówka: użyj ikony PromptTube, aby zarządzać promptami"
+	},
+	"copy_prompt_label": {
+		"message": "Kopiuj prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "Kopiuj prompt"
+	},
+	"working": {
+		"message": "Przetwarzanie..."
+	},
+	"no_transcript_found": {
+		"message": "Nie znaleziono transkrypcji dla tego filmu"
+	},
+	"prompt_transcript_copied": {
+		"message": "Prompt + transkrypcja skopiowane"
+	},
+	"copy_failed": {
+		"message": "Kopiowanie nie powiodło się"
+	},
+	"prompt_selected": {
+		"message": "Prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "Wybierz szablon promptu"
+	},
+	"copy_button_title": {
+		"message": "Kopiuj prompt i transkrypcję"
+	},
+	"unknown_title": {
+		"message": "Nieznany tytuł"
+	},
+	"unknown_channel": {
+		"message": "Nieznany kanał"
+	},
+	"context_title_label": {
+		"message": "Tytuł"
+	},
+	"context_channel_label": {
+		"message": "Kanał"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "Podsumowanie"
+	},
+	"preset_summary_body": {
+		"message": "Podsumuj tę transkrypcję YouTube.\nDaj mi:\n- zwięzłe podsumowanie\n- kluczowe wnioski\n- główny wniosek w jednym krótkim akapicie"
+	},
+	"preset_summary_analysis_label": {
+		"message": "Podsumowanie + analiza"
+	},
+	"preset_summary_analysis_body": {
+		"message": "Podsumuj i przeanalizuj tę transkrypcję YouTube.\nDaj mi:\n- podsumowanie w 6-10 punktach\n- główne tematy lub argumenty\n- co jest najważniejsze i dlaczego\n- istotne mocne strony, słabe strony lub założenia"
+	},
+	"preset_summary_actions_label": {
+		"message": "Podsumowanie + działania"
+	},
+	"preset_summary_actions_body": {
+		"message": "Podsumuj tę transkrypcję YouTube i wyodrębnij kolejne kroki.\nDaj mi:\n- zwięzłe podsumowanie\n- kluczowe wnioski\n- jasne działania do wykonania\n- decyzje lub działania następcze warte śledzenia"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "Podsumowanie + fact-check"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "Podsumuj tę transkrypcję YouTube i wskaż wszystko, co wymaga weryfikacji faktów.\nDaj mi:\n- zwięzłe podsumowanie\n- główne twierdzenia\n- stwierdzenia, które wydają się niepewne, przesadzone lub wymagają weryfikacji\n- krótką checklistę fact-check: co sprawdzić najpierw\nNastępnie wykonaj fact-check i daj mi:\n- podsumowanie tego, co ustaliłeś\n- które twierdzenia potwierdzono, obalono lub nadal są niepewne"
+	},
+	"preset_executive_brief_label": {
+		"message": "Brief menedżerski"
+	},
+	"preset_executive_brief_body": {
+		"message": "Przekształć tę transkrypcję YouTube w brief menedżerski.\nDaj mi:\n- krótki przegląd na wysokim poziomie\n- najważniejsze wnioski\n- implikacje biznesowe lub strategiczne\n- najważniejsze ryzyka lub szanse"
+	},
+	"preset_study_notes_label": {
+		"message": "Notatki do nauki"
+	},
+	"preset_study_notes_body": {
+		"message": "Zamień tę transkrypcję YouTube w notatki do nauki.\nDaj mi:\n- uporządkowane podsumowanie według tematów\n- ważne definicje lub pojęcia\n- prawdopodobne pytania egzaminacyjne lub do dyskusji\n- krótkie podsumowanie do szybkiej powtórki później"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "Krytyka + możliwości"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "Przeanalizuj krytycznie tę transkrypcję YouTube.\nDaj mi:\n- zwięzłe podsumowanie\n- co jest przekonujące lub użyteczne\n- czego brakuje, co jest słabe lub wątpliwe\n- pomysły, możliwości lub usprawnienia, które z niej wynikają"
+	}
+}

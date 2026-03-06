@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "YouTube の視聴ページにローカライズされたプロンプト機能を追加します。標準モードまたは詳細モードを使い、選択した AI プロンプト付きで文字起こしをワンクリックでコピーし、設定で独自プロンプトを編集できます。"
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "プロンプトモード"
+	},
+	"popup_lede": {
+		"message": "YouTube 視聴ページでの PromptTube の表示方法を選択します。"
+	},
+	"popup_mode_group_aria": {
+		"message": "プロンプトモード"
+	},
+	"popup_mode_standard": {
+		"message": "標準"
+	},
+	"popup_mode_advanced": {
+		"message": "詳細"
+	},
+	"popup_mode_standard_help": {
+		"message": "シンプルな要約ボタンを 1 つ表示します。このプロンプトは設定で編集できます。"
+	},
+	"popup_mode_advanced_help": {
+		"message": "利用可能なすべてのプロンプトテンプレートを含む完全なセレクターを表示します。"
+	},
+	"popup_open_settings": {
+		"message": "プロンプト設定を開く"
+	},
+	"options_title": {
+		"message": "PromptTube 設定"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "プロンプトテンプレート"
+	},
+	"options_lede": {
+		"message": "YouTube に表示するプロンプトを編集し、新規追加したり、既定値に戻したりできます。"
+	},
+	"options_section_title": {
+		"message": "あなたのプロンプト"
+	},
+	"options_section_copy": {
+		"message": "各プロンプトには、ラベルと文字起こしの前に付ける指示文が必要です。"
+	},
+	"options_standard_prompt_note": {
+		"message": "「要約」プロンプトは標準モードで使用され、削除できません。"
+	},
+	"options_add_prompt": {
+		"message": "プロンプトを追加"
+	},
+	"options_reset_defaults": {
+		"message": "既定値にリセット"
+	},
+	"options_save_prompts": {
+		"message": "プロンプトを保存"
+	},
+	"options_label": {
+		"message": "ラベル"
+	},
+	"options_label_placeholder": {
+		"message": "要約 + 分析"
+	},
+	"options_body": {
+		"message": "プロンプト本文"
+	},
+	"options_body_placeholder": {
+		"message": "この文字起こしを要約してください..."
+	},
+	"options_remove": {
+		"message": "削除"
+	},
+	"options_prompt_card_title": {
+		"message": "プロンプト $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "「要約」プロンプトは標準モードで使用され、削除できません。"
+	},
+	"options_storage_unavailable": {
+		"message": "このブラウザー環境ではストレージを利用できません。"
+	},
+	"options_storage_local": {
+		"message": "ローカルストレージのみを使用しています。プロンプトはブラウザー間で同期されません。"
+	},
+	"options_storage_sync_generic": {
+		"message": "同期ストレージを使用しています。プロンプトデータは、拡張機能の同期に対応したログイン済みブラウザー間で同期されます。"
+	},
+	"options_storage_sync_usage": {
+		"message": "同期ストレージを使用しています。プロンプトデータは同期クォータの $1 を使用しています（Firefox では合計約 100 KB）。",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "Storage API を利用できません。既定値を表示します。"
+	},
+	"options_status_load_saved_error": {
+		"message": "保存済みプロンプトを読み込めませんでした。既定値を表示します。"
+	},
+	"options_status_storage_unavailable": {
+		"message": "Storage API を利用できません。プロンプトは保存されませんでした。"
+	},
+	"options_status_add_one": {
+		"message": "保存する前に少なくとも 1 つのプロンプトを追加してください。"
+	},
+	"options_status_missing_label": {
+		"message": "プロンプト $1 にラベルがありません。",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "プロンプト $1 に本文がありません。",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "プロンプトを保存しました。"
+	},
+	"options_status_save_error": {
+		"message": "プロンプトを保存できませんでした。"
+	},
+	"options_status_storage_only_page": {
+		"message": "Storage API を利用できません。このページでのみ既定値を復元しました。"
+	},
+	"options_status_restore_success": {
+		"message": "既定のプロンプトを復元しました。"
+	},
+	"options_status_restore_error": {
+		"message": "既定値を復元できませんでした。"
+	},
+	"tip_manage_prompts": {
+		"message": "ヒント: PromptTube アイコンからプロンプトを管理できます"
+	},
+	"copy_prompt_label": {
+		"message": "プロンプトをコピー: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "プロンプトをコピー"
+	},
+	"working": {
+		"message": "処理中..."
+	},
+	"no_transcript_found": {
+		"message": "この動画の文字起こしが見つかりません"
+	},
+	"prompt_transcript_copied": {
+		"message": "プロンプト + 文字起こしをコピーしました"
+	},
+	"copy_failed": {
+		"message": "コピーに失敗しました"
+	},
+	"prompt_selected": {
+		"message": "プロンプト: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "プロンプトテンプレートを選択"
+	},
+	"copy_button_title": {
+		"message": "プロンプトと文字起こしをコピー"
+	},
+	"unknown_title": {
+		"message": "不明なタイトル"
+	},
+	"unknown_channel": {
+		"message": "不明なチャンネル"
+	},
+	"context_title_label": {
+		"message": "タイトル"
+	},
+	"context_channel_label": {
+		"message": "チャンネル"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "要約"
+	},
+	"preset_summary_body": {
+		"message": "この YouTube 文字起こしを要約してください。\n次をお願いします：\n- 簡潔な要約\n- 重要なポイント\n- 主な結論を短い1段落で"
+	},
+	"preset_summary_analysis_label": {
+		"message": "要約 + 分析"
+	},
+	"preset_summary_analysis_body": {
+		"message": "この YouTube 文字起こしを要約し、分析してください。\n次をお願いします：\n- 6〜10 個の箇条書き要約\n- 主なテーマや主張\n- 何が最も重要か、その理由\n- 目立つ強み・弱み・前提"
+	},
+	"preset_summary_actions_label": {
+		"message": "要約 + アクション"
+	},
+	"preset_summary_actions_body": {
+		"message": "この YouTube 文字起こしを要約し、次のアクションを抽出してください。\n次をお願いします：\n- 簡潔な要約\n- 重要なポイント\n- 明確なアクション項目\n- 追跡すべき意思決定やフォローアップ"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "要約 + ファクトチェック"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "この YouTube 文字起こしを要約し、ファクトチェックが必要な点を示してください。\n次をお願いします：\n- 簡潔な要約\n- 主な主張\n- 不確実・誇張・検証が必要と思われる記述\n- まず確認すべき項目を短いチェックリストで\nその後ファクトチェックを行い、次をお願いします：\n- 調査結果の要約\n- 主張ごとに、確認済み・否定・未確定の別"
+	},
+	"preset_executive_brief_label": {
+		"message": "エグゼクティブブリーフ"
+	},
+	"preset_executive_brief_body": {
+		"message": "この YouTube 文字起こしをエグゼクティブブリーフに変換してください。\n次をお願いします：\n- 短いハイレベル概要\n- 最も重要なインサイト\n- ビジネスまたは戦略上の示唆\n- 主なリスクまたは機会"
+	},
+	"preset_study_notes_label": {
+		"message": "学習ノート"
+	},
+	"preset_study_notes_body": {
+		"message": "この YouTube 文字起こしを学習ノートに変換してください。\n次をお願いします：\n- トピック別の構造化要約\n- 重要な定義や概念\n- 想定される試験・議論の質問\n- 後で素早く見直せる短い復習メモ"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "批評 + 機会"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "この YouTube 文字起こしを批判的にレビューしてください。\n次をお願いします：\n- 簡潔な要約\n- 説得力や有用性がある点\n- 不足・弱い点・疑わしい点\n- そこから得られるアイデア、機会、改善案"
+	}
+}

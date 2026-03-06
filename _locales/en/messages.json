@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "Adds localized prompt tools to YouTube watch pages: use Standard or Advanced mode, copy transcript plus the selected AI prompt in one click, and edit your own prompts in Settings."
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "Prompt mode"
+	},
+	"popup_lede": {
+		"message": "Choose how PromptTube appears on YouTube watch pages."
+	},
+	"popup_mode_group_aria": {
+		"message": "Prompt mode"
+	},
+	"popup_mode_standard": {
+		"message": "Standard"
+	},
+	"popup_mode_advanced": {
+		"message": "Advanced"
+	},
+	"popup_mode_standard_help": {
+		"message": "Shows one simple summary prompt button. Edit that prompt in Settings."
+	},
+	"popup_mode_advanced_help": {
+		"message": "Shows the full prompt selector with all available prompt templates."
+	},
+	"popup_open_settings": {
+		"message": "Open prompt settings"
+	},
+	"options_title": {
+		"message": "PromptTube Settings"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "Prompt templates"
+	},
+	"options_lede": {
+		"message": "Edit the prompts shown in YouTube, add new ones, or reset back to the defaults."
+	},
+	"options_section_title": {
+		"message": "Your prompts"
+	},
+	"options_section_copy": {
+		"message": "Each prompt needs a label and the instruction text to prepend before the transcript."
+	},
+	"options_standard_prompt_note": {
+		"message": "The Summary prompt is used in Standard mode and cannot be removed."
+	},
+	"options_add_prompt": {
+		"message": "Add prompt"
+	},
+	"options_reset_defaults": {
+		"message": "Reset defaults"
+	},
+	"options_save_prompts": {
+		"message": "Save prompts"
+	},
+	"options_label": {
+		"message": "Label"
+	},
+	"options_label_placeholder": {
+		"message": "Summary + analysis"
+	},
+	"options_body": {
+		"message": "Prompt text"
+	},
+	"options_body_placeholder": {
+		"message": "Please summarise this transcript..."
+	},
+	"options_remove": {
+		"message": "Remove"
+	},
+	"options_prompt_card_title": {
+		"message": "Prompt $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "The Summary prompt is used in Standard mode and cannot be removed."
+	},
+	"options_storage_unavailable": {
+		"message": "Storage is unavailable in this browser context."
+	},
+	"options_storage_local": {
+		"message": "Using local-only storage. Prompts will not sync between browsers."
+	},
+	"options_storage_sync_generic": {
+		"message": "Using sync-backed storage. Prompt data should sync between signed-in browsers that support extension sync."
+	},
+	"options_storage_sync_usage": {
+		"message": "Using sync-backed storage. Prompt data uses $1 of the sync quota (~100 KB total on Firefox).",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "Storage API unavailable. Showing defaults."
+	},
+	"options_status_load_saved_error": {
+		"message": "Could not load saved prompts. Showing defaults."
+	},
+	"options_status_storage_unavailable": {
+		"message": "Storage API unavailable. Prompts were not saved."
+	},
+	"options_status_add_one": {
+		"message": "Add at least one prompt before saving."
+	},
+	"options_status_missing_label": {
+		"message": "Prompt $1 is missing a label.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "Prompt $1 is missing prompt text.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "Prompts saved."
+	},
+	"options_status_save_error": {
+		"message": "Could not save prompts."
+	},
+	"options_status_storage_only_page": {
+		"message": "Storage API unavailable. Defaults restored only on this page."
+	},
+	"options_status_restore_success": {
+		"message": "Default prompts restored."
+	},
+	"options_status_restore_error": {
+		"message": "Could not restore defaults."
+	},
+	"tip_manage_prompts": {
+		"message": "Tip: Use the PromptTube icon to manage prompts"
+	},
+	"copy_prompt_label": {
+		"message": "Copy prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "Copy prompt"
+	},
+	"working": {
+		"message": "Working..."
+	},
+	"no_transcript_found": {
+		"message": "No transcript found for this video"
+	},
+	"prompt_transcript_copied": {
+		"message": "Prompt + transcript copied"
+	},
+	"copy_failed": {
+		"message": "Copy failed"
+	},
+	"prompt_selected": {
+		"message": "Prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "Choose prompt template"
+	},
+	"copy_button_title": {
+		"message": "Copy prompt and transcript"
+	},
+	"unknown_title": {
+		"message": "Unknown title"
+	},
+	"unknown_channel": {
+		"message": "Unknown channel"
+	},
+	"context_title_label": {
+		"message": "Title"
+	},
+	"context_channel_label": {
+		"message": "Channel"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "Summary"
+	},
+	"preset_summary_body": {
+		"message": "Please summarise this YouTube transcript.\nGive me:\n- a concise summary\n- the key takeaways\n- the main conclusion in one short paragraph"
+	},
+	"preset_summary_analysis_label": {
+		"message": "Summary + analysis"
+	},
+	"preset_summary_analysis_body": {
+		"message": "Please summarise and analyse this YouTube transcript.\nGive me:\n- a 6-10 bullet summary\n- the main themes or arguments\n- what matters most and why\n- any notable strengths, weaknesses, or assumptions"
+	},
+	"preset_summary_actions_label": {
+		"message": "Summary + actions"
+	},
+	"preset_summary_actions_body": {
+		"message": "Please summarise this YouTube transcript and extract next steps.\nGive me:\n- a concise summary\n- key takeaways\n- clear action items\n- any decisions or follow-ups worth tracking"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "Summary + fact check"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "Please summarise this YouTube transcript and flag anything that should be fact-checked.\nGive me:\n- a concise summary\n- the main claims made\n- any statements that seem uncertain, exaggerated, or likely to need verification\n- a short fact-check checklist of what to verify first\nThen do the fact-checking and give me:\n- a summary of what you found\n- any claims that were confirmed, debunked, or remain uncertain after checking"
+	},
+	"preset_executive_brief_label": {
+		"message": "Executive brief"
+	},
+	"preset_executive_brief_body": {
+		"message": "Turn this YouTube transcript into an executive brief.\nGive me:\n- a short high-level overview\n- the most important insights\n- business or strategic implications\n- the top risks or opportunities"
+	},
+	"preset_study_notes_label": {
+		"message": "Study notes"
+	},
+	"preset_study_notes_body": {
+		"message": "Convert this YouTube transcript into study notes.\nGive me:\n- a structured summary by topic\n- important definitions or concepts\n- likely exam or discussion questions\n- a short recap I can review quickly later"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "Critique + opportunities"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "Review this YouTube transcript critically.\nGive me:\n- a concise summary\n- what is convincing or useful\n- what is missing, weak, or questionable\n- ideas, opportunities, or improvements inspired by it"
+	}
+}

@@ -15,6 +15,7 @@
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
 }
 
+.yt-tc-single-btn,
 .yt-tc-main-btn,
 .yt-tc-caret-btn {
 	font: inherit;
@@ -27,6 +28,26 @@
 	height: 40px;
 }
 
+.yt-tc-single-btn,
+.yt-tc-main-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.yt-tc-single-btn {
+	padding: 0 14px;
+	min-width: 160px;
+	max-width: 260px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
 .yt-tc-main-btn {
 	padding: 0 14px;
 	min-width: 160px;
@@ -34,7 +55,6 @@
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	text-align: left;
 }
 
 .yt-tc-caret-btn {
@@ -43,16 +63,19 @@
 	font-size: 12px;
 }
 
+.yt-tc-single-btn:hover,
 .yt-tc-main-btn:hover,
 .yt-tc-caret-btn:hover {
 	background: rgba(255, 255, 255, 0.18);
 }
 
+.yt-tc-single-btn:active,
 .yt-tc-main-btn:active,
 .yt-tc-caret-btn:active {
 	transform: translateY(1px);
 }
 
+.yt-tc-single-btn:disabled,
 .yt-tc-main-btn:disabled,
 .yt-tc-caret-btn:disabled {
 	opacity: 0.7;

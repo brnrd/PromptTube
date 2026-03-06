@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "Lisää lokalisoidut prompt-työkalut YouTuben katselusivuille: käytä Vakio- tai Edistynyt-tilaa, kopioi transkriptio ja valittu AI-prompt yhdellä klikkauksella ja muokkaa omia prompttejasi Asetuksissa."
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "Prompt-tila"
+	},
+	"popup_lede": {
+		"message": "Valitse, miten PromptTube näkyy YouTuben katselusivuilla."
+	},
+	"popup_mode_group_aria": {
+		"message": "Prompt-tila"
+	},
+	"popup_mode_standard": {
+		"message": "Vakio"
+	},
+	"popup_mode_advanced": {
+		"message": "Edistynyt"
+	},
+	"popup_mode_standard_help": {
+		"message": "Näyttää yhden yksinkertaisen yhteenvetopainikkeen. Muokkaa tätä promptia asetuksissa."
+	},
+	"popup_mode_advanced_help": {
+		"message": "Näyttää täydellisen prompt-valitsimen kaikilla käytettävissä olevilla prompt-malleilla."
+	},
+	"popup_open_settings": {
+		"message": "Avaa prompt-asetukset"
+	},
+	"options_title": {
+		"message": "PromptTube-asetukset"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "Prompt-mallit"
+	},
+	"options_lede": {
+		"message": "Muokkaa YouTubessa näytettäviä promptteja, lisää uusia tai palauta oletusarvot."
+	},
+	"options_section_title": {
+		"message": "Omat promptit"
+	},
+	"options_section_copy": {
+		"message": "Jokainen prompt tarvitsee nimen ja ohjetekstin, joka lisätään ennen transkriptiota."
+	},
+	"options_standard_prompt_note": {
+		"message": "Yhteenveto-promptia käytetään vakiotilassa eikä sitä voi poistaa."
+	},
+	"options_add_prompt": {
+		"message": "Lisää prompt"
+	},
+	"options_reset_defaults": {
+		"message": "Palauta oletukset"
+	},
+	"options_save_prompts": {
+		"message": "Tallenna promptit"
+	},
+	"options_label": {
+		"message": "Nimi"
+	},
+	"options_label_placeholder": {
+		"message": "Yhteenveto + analyysi"
+	},
+	"options_body": {
+		"message": "Prompt-teksti"
+	},
+	"options_body_placeholder": {
+		"message": "Tiivistä tämä transkriptio..."
+	},
+	"options_remove": {
+		"message": "Poista"
+	},
+	"options_prompt_card_title": {
+		"message": "Prompt $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "Yhteenveto-promptia käytetään vakiotilassa eikä sitä voi poistaa."
+	},
+	"options_storage_unavailable": {
+		"message": "Tallennus ei ole käytettävissä tässä selainympäristössä."
+	},
+	"options_storage_local": {
+		"message": "Käytössä on vain paikallinen tallennus. Promptteja ei synkronoida selainten välillä."
+	},
+	"options_storage_sync_generic": {
+		"message": "Käytössä on synkronoitu tallennus. Prompt-tiedot pitäisi synkronoida kirjautuneiden selainten välillä, jotka tukevat laajennusten synkronointia."
+	},
+	"options_storage_sync_usage": {
+		"message": "Käytössä on synkronoitu tallennus. Prompt-tiedot käyttävät $1 synkronointikiintiöstä (~100 KB yhteensä Firefoxissa).",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "Storage API ei ole käytettävissä. Näytetään oletukset."
+	},
+	"options_status_load_saved_error": {
+		"message": "Tallennettuja promptteja ei voitu ladata. Näytetään oletukset."
+	},
+	"options_status_storage_unavailable": {
+		"message": "Storage API ei ole käytettävissä. Promptteja ei tallennettu."
+	},
+	"options_status_add_one": {
+		"message": "Lisää vähintään yksi prompt ennen tallennusta."
+	},
+	"options_status_missing_label": {
+		"message": "Promptilta $1 puuttuu nimi.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "Promptilta $1 puuttuu prompt-teksti.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "Promptit tallennettu."
+	},
+	"options_status_save_error": {
+		"message": "Prompttien tallennus epäonnistui."
+	},
+	"options_status_storage_only_page": {
+		"message": "Storage API ei ole käytettävissä. Oletukset palautettiin vain tällä sivulla."
+	},
+	"options_status_restore_success": {
+		"message": "Oletuspromptit palautettu."
+	},
+	"options_status_restore_error": {
+		"message": "Oletusten palautus epäonnistui."
+	},
+	"tip_manage_prompts": {
+		"message": "Vinkki: hallitse promptteja PromptTube-kuvakkeesta"
+	},
+	"copy_prompt_label": {
+		"message": "Kopioi prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "Kopioi prompt"
+	},
+	"working": {
+		"message": "Työstetään..."
+	},
+	"no_transcript_found": {
+		"message": "Tälle videolle ei löytynyt transkriptiota"
+	},
+	"prompt_transcript_copied": {
+		"message": "Prompt + transkriptio kopioitu"
+	},
+	"copy_failed": {
+		"message": "Kopiointi epäonnistui"
+	},
+	"prompt_selected": {
+		"message": "Prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "Valitse prompt-malli"
+	},
+	"copy_button_title": {
+		"message": "Kopioi prompt ja transkriptio"
+	},
+	"unknown_title": {
+		"message": "Tuntematon otsikko"
+	},
+	"unknown_channel": {
+		"message": "Tuntematon kanava"
+	},
+	"context_title_label": {
+		"message": "Otsikko"
+	},
+	"context_channel_label": {
+		"message": "Kanava"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "Yhteenveto"
+	},
+	"preset_summary_body": {
+		"message": "Tiivistä tämä YouTube-transkriptio.\nAnna minulle:\n- tiivis yhteenveto\n- tärkeimmät opit\n- pääjohtopäätös yhdessä lyhyessä kappaleessa"
+	},
+	"preset_summary_analysis_label": {
+		"message": "Yhteenveto + analyysi"
+	},
+	"preset_summary_analysis_body": {
+		"message": "Tiivistä ja analysoi tämä YouTube-transkriptio.\nAnna minulle:\n- 6-10 kohdan yhteenveto\n- pääteemat tai argumentit\n- mikä on tärkeintä ja miksi\n- merkittävät vahvuudet, heikkoudet tai oletukset"
+	},
+	"preset_summary_actions_label": {
+		"message": "Yhteenveto + toimet"
+	},
+	"preset_summary_actions_body": {
+		"message": "Tiivistä tämä YouTube-transkriptio ja poimi seuraavat askeleet.\nAnna minulle:\n- tiivis yhteenveto\n- tärkeimmät opit\n- selkeät toimenpiteet\n- päätökset tai seurannat, joita kannattaa seurata"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "Yhteenveto + faktantarkistus"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "Tiivistä tämä YouTube-transkriptio ja merkitse kohdat, jotka pitäisi faktantarkistaa.\nAnna minulle:\n- tiivis yhteenveto\n- tärkeimmät väitteet\n- väitteet, jotka vaikuttavat epävarmoilta, liioitelluilta tai vaativat todennusta\n- lyhyt faktantarkistuslista siitä, mitä tarkistaa ensin\nTee sitten faktantarkistus ja anna minulle:\n- yhteenveto löydöksistäsi\n- mitkä väitteet vahvistuivat, kumoutuivat tai jäivät epävarmoiksi"
+	},
+	"preset_executive_brief_label": {
+		"message": "Johtotiivistelmä"
+	},
+	"preset_executive_brief_body": {
+		"message": "Muuta tämä YouTube-transkriptio johtotiivistelmäksi.\nAnna minulle:\n- lyhyt korkean tason yleiskuva\n- tärkeimmät havainnot\n- liiketoiminnalliset tai strategiset vaikutukset\n- suurimmat riskit tai mahdollisuudet"
+	},
+	"preset_study_notes_label": {
+		"message": "Opiskelumuistiinpanot"
+	},
+	"preset_study_notes_body": {
+		"message": "Muunna tämä YouTube-transkriptio opiskelumuistiinpanoiksi.\nAnna minulle:\n- aiheittain jäsennelty yhteenveto\n- tärkeät määritelmät tai käsitteet\n- todennäköiset koe- tai keskustelukysymykset\n- lyhyt kertaus, jonka voin käydä nopeasti läpi myöhemmin"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "Kritiikki + mahdollisuudet"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "Arvioi tämä YouTube-transkriptio kriittisesti.\nAnna minulle:\n- tiivis yhteenveto\n- mikä on vakuuttavaa tai hyödyllistä\n- mikä puuttuu, on heikkoa tai kyseenalaista\n- ideat, mahdollisuudet tai parannukset, joita se inspiroi"
+	}
+}
