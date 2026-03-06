@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest an idea or enhancement for PromptTube.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion.
+        Please describe the problem and the outcome you want.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What is the current limitation or friction?
+      placeholder: Managing many custom prompts becomes hard over time.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe your preferred solution.
+      placeholder: Add folders/tags for prompt templates in settings.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any other approaches you have considered.
+      placeholder: Keep current list but add search and filtering.
+  - type: textarea
+    id: value
+    attributes:
+      label: Why this matters
+      description: Who benefits and how?
+      placeholder: Faster workflow for heavy users with many templates.
