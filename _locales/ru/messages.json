@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "Добавляет локализованные инструменты промптов на страницы просмотра YouTube: используйте стандартный или расширенный режим, копируйте транскрипт вместе с выбранным AI-промптом в один клик и редактируйте свои промпты в настройках."
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "Режим промптов"
+	},
+	"popup_lede": {
+		"message": "Выберите, как PromptTube будет отображаться на страницах просмотра YouTube."
+	},
+	"popup_mode_group_aria": {
+		"message": "Режим промптов"
+	},
+	"popup_mode_standard": {
+		"message": "Стандартный"
+	},
+	"popup_mode_advanced": {
+		"message": "Расширенный"
+	},
+	"popup_mode_standard_help": {
+		"message": "Показывает одну простую кнопку для краткого резюме. Этот промпт можно изменить в настройках."
+	},
+	"popup_mode_advanced_help": {
+		"message": "Показывает полный список выбора промптов со всеми доступными шаблонами."
+	},
+	"popup_open_settings": {
+		"message": "Открыть настройки промптов"
+	},
+	"options_title": {
+		"message": "Настройки PromptTube"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "Шаблоны промптов"
+	},
+	"options_lede": {
+		"message": "Редактируйте промпты, которые отображаются в YouTube, добавляйте новые или возвращайте значения по умолчанию."
+	},
+	"options_section_title": {
+		"message": "Ваши промпты"
+	},
+	"options_section_copy": {
+		"message": "Каждому промпту нужны название и текст инструкции, который добавляется перед транскриптом."
+	},
+	"options_standard_prompt_note": {
+		"message": "Промпт «Сводка» используется в стандартном режиме и не может быть удалён."
+	},
+	"options_add_prompt": {
+		"message": "Добавить промпт"
+	},
+	"options_reset_defaults": {
+		"message": "Сбросить по умолчанию"
+	},
+	"options_save_prompts": {
+		"message": "Сохранить промпты"
+	},
+	"options_label": {
+		"message": "Название"
+	},
+	"options_label_placeholder": {
+		"message": "Сводка + анализ"
+	},
+	"options_body": {
+		"message": "Текст промпта"
+	},
+	"options_body_placeholder": {
+		"message": "Пожалуйста, кратко изложи этот транскрипт..."
+	},
+	"options_remove": {
+		"message": "Удалить"
+	},
+	"options_prompt_card_title": {
+		"message": "Промпт $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "Промпт «Сводка» используется в стандартном режиме и не может быть удалён."
+	},
+	"options_storage_unavailable": {
+		"message": "Хранилище недоступно в этом контексте браузера."
+	},
+	"options_storage_local": {
+		"message": "Используется только локальное хранилище. Промпты не будут синхронизироваться между браузерами."
+	},
+	"options_storage_sync_generic": {
+		"message": "Используется синхронизируемое хранилище. Данные промптов должны синхронизироваться между браузерами с поддержкой синхронизации расширений и выполненным входом."
+	},
+	"options_storage_sync_usage": {
+		"message": "Используется синхронизируемое хранилище. Данные промптов занимают $1 квоты синхронизации (в Firefox всего около 100 КБ).",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "Storage API недоступен. Показаны значения по умолчанию."
+	},
+	"options_status_load_saved_error": {
+		"message": "Не удалось загрузить сохранённые промпты. Показаны значения по умолчанию."
+	},
+	"options_status_storage_unavailable": {
+		"message": "Storage API недоступен. Промпты не были сохранены."
+	},
+	"options_status_add_one": {
+		"message": "Добавьте хотя бы один промпт перед сохранением."
+	},
+	"options_status_missing_label": {
+		"message": "У промпта $1 отсутствует название.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "У промпта $1 отсутствует текст.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "Промпты сохранены."
+	},
+	"options_status_save_error": {
+		"message": "Не удалось сохранить промпты."
+	},
+	"options_status_storage_only_page": {
+		"message": "Storage API недоступен. Значения по умолчанию восстановлены только на этой странице."
+	},
+	"options_status_restore_success": {
+		"message": "Промпты по умолчанию восстановлены."
+	},
+	"options_status_restore_error": {
+		"message": "Не удалось восстановить значения по умолчанию."
+	},
+	"tip_manage_prompts": {
+		"message": "Совет: используйте значок PromptTube для управления промптами"
+	},
+	"copy_prompt_label": {
+		"message": "Копировать промпт: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "Копировать промпт"
+	},
+	"working": {
+		"message": "Обработка..."
+	},
+	"no_transcript_found": {
+		"message": "Для этого видео не найден транскрипт"
+	},
+	"prompt_transcript_copied": {
+		"message": "Промпт и транскрипт скопированы"
+	},
+	"copy_failed": {
+		"message": "Не удалось скопировать"
+	},
+	"prompt_selected": {
+		"message": "Промпт: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "Выберите шаблон промпта"
+	},
+	"copy_button_title": {
+		"message": "Копировать промпт и транскрипт"
+	},
+	"unknown_title": {
+		"message": "Неизвестное название"
+	},
+	"unknown_channel": {
+		"message": "Неизвестный канал"
+	},
+	"context_title_label": {
+		"message": "Название"
+	},
+	"context_channel_label": {
+		"message": "Канал"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "Сводка"
+	},
+	"preset_summary_body": {
+		"message": "Пожалуйста, кратко изложи этот транскрипт YouTube.\nДай мне:\n- краткую сводку\n- ключевые выводы\n- главный итог в одном коротком абзаце"
+	},
+	"preset_summary_analysis_label": {
+		"message": "Сводка + анализ"
+	},
+	"preset_summary_analysis_body": {
+		"message": "Пожалуйста, кратко изложи и проанализируй этот транскрипт YouTube.\nДай мне:\n- сводку из 6-10 пунктов\n- основные темы или аргументы\n- что важнее всего и почему\n- заметные сильные стороны, слабости или допущения"
+	},
+	"preset_summary_actions_label": {
+		"message": "Сводка + действия"
+	},
+	"preset_summary_actions_body": {
+		"message": "Пожалуйста, кратко изложи этот транскрипт YouTube и выдели следующие шаги.\nДай мне:\n- краткую сводку\n- ключевые выводы\n- чёткие действия\n- решения или последующие шаги, которые стоит отслеживать"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "Сводка + проверка фактов"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "Пожалуйста, кратко изложи этот транскрипт YouTube и отметь всё, что следует проверить по фактам.\nДай мне:\n- краткую сводку\n- основные утверждения\n- любые высказывания, которые кажутся сомнительными, преувеличенными или, вероятно, требуют проверки\n- краткий чеклист для проверки фактов: что проверить в первую очередь\nЗатем выполни проверку фактов и дай мне:\n- сводку того, что ты нашёл\n- какие утверждения подтвердились, были опровергнуты или остались неопределёнными после проверки"
+	},
+	"preset_executive_brief_label": {
+		"message": "Краткая записка для руководства"
+	},
+	"preset_executive_brief_body": {
+		"message": "Преобразуй этот транскрипт YouTube в краткую записку для руководства.\nДай мне:\n- короткий обзор на высоком уровне\n- самые важные инсайты\n- бизнес- или стратегические последствия\n- основные риски или возможности"
+	},
+	"preset_study_notes_label": {
+		"message": "Учебные заметки"
+	},
+	"preset_study_notes_body": {
+		"message": "Преобразуй этот транскрипт YouTube в учебные заметки.\nДай мне:\n- структурированную сводку по темам\n- важные определения или концепции\n- вероятные экзаменационные или дискуссионные вопросы\n- короткое резюме для быстрого повторения позже"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "Критика + возможности"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "Критически разберись в этом транскрипте YouTube.\nДай мне:\n- краткую сводку\n- что здесь убедительно или полезно\n- что отсутствует, слабо раскрыто или вызывает вопросы\n- идеи, возможности или улучшения, вдохновлённые этим материалом"
+	}
+}
