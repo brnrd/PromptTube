@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Přidává lokalizované nástroje promptů na stránky sledování YouTube: používejte režim Standard nebo Pokročilý, zkopírujte přepis a vybraný AI prompt jedním kliknutím a upravujte své vlastní prompty v Nastavení."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Režim promptu"
+	},
+	"popup_lede": {
+	  "message": "Zvolte, jak se PromptTube zobrazuje na stránkách sledování YouTube."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Režim promptu"
+	},
+	"popup_mode_standard": {
+	  "message": "Standardní"
+	},
+	"popup_mode_advanced": {
+	  "message": "Pokročilý"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Zobrazí jedno jednoduché tlačítko pro shrnutí. Tento prompt můžete upravit v Nastavení."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Zobrazí úplný výběr promptů se všemi dostupnými šablonami."
+	},
+	"popup_open_settings": {
+	  "message": "Otevřít nastavení promptů"
+	},
+	"options_title": {
+	  "message": "Nastavení PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Šablony promptů"
+	},
+	"options_lede": {
+	  "message": "Upravte prompty zobrazované na YouTube, přidejte nové nebo obnovte výchozí hodnoty."
+	},
+	"options_section_title": {
+	  "message": "Vaše prompty"
+	},
+	"options_section_copy": {
+	  "message": "Každý prompt potřebuje štítek a text instrukce, který se přidá před přepis."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Prompt Shrnutí se používá ve standardním režimu a nelze jej odstranit."
+	},
+	"options_add_prompt": {
+	  "message": "Přidat prompt"
+	},
+	"options_reset_defaults": {
+	  "message": "Obnovit výchozí"
+	},
+	"options_save_prompts": {
+	  "message": "Uložit prompty"
+	},
+	"options_label": {
+	  "message": "Štítek"
+	},
+	"options_label_placeholder": {
+	  "message": "Shrnutí + analýza"
+	},
+	"options_body": {
+	  "message": "Text promptu"
+	},
+	"options_body_placeholder": {
+	  "message": "Shrňte tento přepis..."
+	},
+	"options_remove": {
+	  "message": "Odstranit"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Prompt Shrnutí se používá ve standardním režimu a nelze jej odstranit."
+	},
+	"options_storage_unavailable": {
+	  "message": "Úložiště není v tomto kontextu prohlížeče dostupné."
+	},
+	"options_storage_local": {
+	  "message": "Používá se pouze místní úložiště. Prompty se nebudou synchronizovat mezi prohlížeči."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Používá se synchronizované úložiště. Data promptů by se měla synchronizovat mezi přihlášenými prohlížeči, které podporují synchronizaci rozšíření."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Používá se synchronizované úložiště. Data promptů využívají $1 z kvóty synchronizace (~100 KB celkem ve Firefoxu).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "Storage API není k dispozici. Zobrazují se výchozí hodnoty."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Nepodařilo se načíst uložené prompty. Zobrazují se výchozí hodnoty."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "Storage API není k dispozici. Prompty nebyly uloženy."
+	},
+	"options_status_add_one": {
+	  "message": "Před uložením přidejte alespoň jeden prompt."
+	},
+	"options_status_missing_label": {
+	  "message": "Promptu $1 chybí štítek.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Promptu $1 chybí text promptu.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Prompty byly uloženy."
+	},
+	"options_status_save_error": {
+	  "message": "Prompty se nepodařilo uložit."
+	},
+	"options_status_storage_only_page": {
+	  "message": "Storage API není k dispozici. Výchozí hodnoty byly obnoveny pouze na této stránce."
+	},
+	"options_status_restore_success": {
+	  "message": "Výchozí prompty byly obnoveny."
+	},
+	"options_status_restore_error": {
+	  "message": "Nepodařilo se obnovit výchozí hodnoty."
+	},
+	"tip_manage_prompts": {
+	  "message": "Tip: pomocí ikony PromptTube můžete spravovat prompty"
+	},
+	"copy_prompt_label": {
+	  "message": "Kopírovat prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Kopírovat prompt"
+	},
+	"working": {
+	  "message": "Zpracovává se..."
+	},
+	"no_transcript_found": {
+	  "message": "Pro toto video nebyl nalezen přepis"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompt + přepis zkopírovány"
+	},
+	"copy_failed": {
+	  "message": "Kopírování se nezdařilo"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Vyberte šablonu promptu"
+	},
+	"copy_button_title": {
+	  "message": "Kopírovat prompt a přepis"
+	},
+	"unknown_title": {
+	  "message": "Neznámý název"
+	},
+	"unknown_channel": {
+	  "message": "Neznámý kanál"
+	},
+	"context_title_label": {
+	  "message": "Název"
+	},
+	"context_channel_label": {
+	  "message": "Kanál"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Shrnutí"
+	},
+	"preset_summary_body": {
+	  "message": "Shrňte tento přepis z YouTube.\nDejte mi:\n- stručné shrnutí\n- hlavní poznatky\n- hlavní závěr v jednom krátkém odstavci"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Shrnutí + analýza"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Shrňte a analyzujte tento přepis z YouTube.\nDejte mi:\n- shrnutí v 6–10 bodech\n- hlavní témata nebo argumenty\n- co je nejdůležitější a proč\n- výrazné silné stránky, slabiny nebo předpoklady"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Shrnutí + akce"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Shrňte tento přepis z YouTube a vytáhněte další kroky.\nDejte mi:\n- stručné shrnutí\n- hlavní poznatky\n- jasné akční kroky\n- rozhodnutí nebo následné kroky, které stojí za sledování"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Shrnutí + ověření faktů"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Shrňte tento přepis z YouTube a označte vše, co by mělo být ověřeno.\nDejte mi:\n- stručné shrnutí\n- hlavní tvrzení\n- výroky, které působí nejistě, přehnaně nebo pravděpodobně potřebují ověření\n- krátký checklist ověření faktů s tím, co ověřit nejdříve\nPoté proveďte ověření a dejte mi:\n- shrnutí toho, co jste zjistili\n- která tvrzení byla potvrzena, vyvrácena nebo zůstávají nejistá"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Manažerský brief"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Převeďte tento přepis z YouTube do manažerského briefu.\nDejte mi:\n- krátký přehled na vysoké úrovni\n- nejdůležitější poznatky\n- obchodní nebo strategické dopady\n- hlavní rizika nebo příležitosti"
+	},
+	"preset_study_notes_label": {
+	  "message": "Studijní poznámky"
+	},
+	"preset_study_notes_body": {
+	  "message": "Převeďte tento přepis z YouTube do studijních poznámek.\nDejte mi:\n- strukturované shrnutí podle témat\n- důležité definice nebo pojmy\n- pravděpodobné zkouškové nebo diskusní otázky\n- krátké opakování, které si mohu později rychle projít"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Kritika + příležitosti"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Kriticky zhodnoťte tento přepis z YouTube.\nDejte mi:\n- stručné shrnutí\n- co je přesvědčivé nebo užitečné\n- co chybí, je slabé nebo sporné\n- nápady, příležitosti nebo vylepšení inspirované tímto obsahem"
+	}
+}

@@ -1,7 +1,7 @@
 .yt-tc-wrap {
 	display: inline-flex;
 	align-items: center;
-	margin-right: 8px;
+	margin-inline-end: 8px;
 	position: relative;
 }
 
@@ -59,7 +59,7 @@
 
 .yt-tc-caret-btn {
 	width: 36px;
-	border-left: 1px solid rgba(255, 255, 255, 0.14);
+	border-inline-start: 1px solid rgba(255, 255, 255, 0.14);
 	font-size: 12px;
 }
 
@@ -103,7 +103,7 @@
 	border-radius: 8px;
 	background: transparent;
 	color: inherit;
-	text-align: left;
+	text-align: start;
 	font: inherit;
 	line-height: 1.2;
 	padding: 9px 10px;

@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Adaugă instrumente de prompt localizate pe paginile de vizionare YouTube: folosește modul Standard sau Avansat, copiază transcrierea împreună cu promptul AI selectat dintr-un clic și editează-ți propriile prompturi în Setări."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Mod prompt"
+	},
+	"popup_lede": {
+	  "message": "Alege cum apare PromptTube pe paginile de vizionare YouTube."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Mod prompt"
+	},
+	"popup_mode_standard": {
+	  "message": "Standard"
+	},
+	"popup_mode_advanced": {
+	  "message": "Avansat"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Afișează un singur buton simplu pentru rezumat. Editează acel prompt în Setări."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Afișează selectorul complet de prompturi cu toate șabloanele disponibile."
+	},
+	"popup_open_settings": {
+	  "message": "Deschide setările prompturilor"
+	},
+	"options_title": {
+	  "message": "Setări PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Șabloane de prompt"
+	},
+	"options_lede": {
+	  "message": "Editează prompturile afișate pe YouTube, adaugă altele noi sau revino la valorile implicite."
+	},
+	"options_section_title": {
+	  "message": "Prompturile tale"
+	},
+	"options_section_copy": {
+	  "message": "Fiecare prompt are nevoie de o etichetă și de textul instrucțiunii de adăugat înaintea transcrierii."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Promptul Rezumat este folosit în modul Standard și nu poate fi eliminat."
+	},
+	"options_add_prompt": {
+	  "message": "Adaugă prompt"
+	},
+	"options_reset_defaults": {
+	  "message": "Resetează valorile implicite"
+	},
+	"options_save_prompts": {
+	  "message": "Salvează prompturile"
+	},
+	"options_label": {
+	  "message": "Etichetă"
+	},
+	"options_label_placeholder": {
+	  "message": "Rezumat + analiză"
+	},
+	"options_body": {
+	  "message": "Textul promptului"
+	},
+	"options_body_placeholder": {
+	  "message": "Te rog să rezumi această transcriere..."
+	},
+	"options_remove": {
+	  "message": "Elimină"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Promptul Rezumat este folosit în modul Standard și nu poate fi eliminat."
+	},
+	"options_storage_unavailable": {
+	  "message": "Spațiul de stocare nu este disponibil în acest context al browserului."
+	},
+	"options_storage_local": {
+	  "message": "Se folosește doar stocarea locală. Prompturile nu se vor sincroniza între browsere."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Se folosește stocarea sincronizată. Datele prompturilor ar trebui să se sincronizeze între browserele autentificate care acceptă sincronizarea extensiilor."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Se folosește stocarea sincronizată. Datele prompturilor folosesc $1 din cota de sincronizare (~100 KB total în Firefox).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "API-ul de stocare nu este disponibil. Se afișează valorile implicite."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Nu s-au putut încărca prompturile salvate. Se afișează valorile implicite."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "API-ul de stocare nu este disponibil. Prompturile nu au fost salvate."
+	},
+	"options_status_add_one": {
+	  "message": "Adaugă cel puțin un prompt înainte de salvare."
+	},
+	"options_status_missing_label": {
+	  "message": "Promptului $1 îi lipsește eticheta.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Promptului $1 îi lipsește textul promptului.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Prompturi salvate."
+	},
+	"options_status_save_error": {
+	  "message": "Prompturile nu au putut fi salvate."
+	},
+	"options_status_storage_only_page": {
+	  "message": "API-ul de stocare nu este disponibil. Valorile implicite au fost restaurate doar pe această pagină."
+	},
+	"options_status_restore_success": {
+	  "message": "Prompturile implicite au fost restaurate."
+	},
+	"options_status_restore_error": {
+	  "message": "Valorile implicite nu au putut fi restaurate."
+	},
+	"tip_manage_prompts": {
+	  "message": "Sfat: folosește pictograma PromptTube pentru a gestiona prompturile"
+	},
+	"copy_prompt_label": {
+	  "message": "Copiază promptul: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Copiază promptul"
+	},
+	"working": {
+	  "message": "Se procesează..."
+	},
+	"no_transcript_found": {
+	  "message": "Nu a fost găsită nicio transcriere pentru acest videoclip"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompt + transcriere copiate"
+	},
+	"copy_failed": {
+	  "message": "Copiere eșuată"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Alege șablonul de prompt"
+	},
+	"copy_button_title": {
+	  "message": "Copiază promptul și transcrierea"
+	},
+	"unknown_title": {
+	  "message": "Titlu necunoscut"
+	},
+	"unknown_channel": {
+	  "message": "Canal necunoscut"
+	},
+	"context_title_label": {
+	  "message": "Titlu"
+	},
+	"context_channel_label": {
+	  "message": "Canal"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Rezumat"
+	},
+	"preset_summary_body": {
+	  "message": "Rezumați această transcriere YouTube.\nOferiți-mi:\n- un rezumat concis\n- ideile principale\n- concluzia principală într-un paragraf scurt"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Rezumat + analiză"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Rezumați și analizați această transcriere YouTube.\nOferiți-mi:\n- un rezumat în 6-10 puncte\n- temele sau argumentele principale\n- ce contează cel mai mult și de ce\n- eventuale puncte forte, slăbiciuni sau presupuneri importante"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Rezumat + acțiuni"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Rezumați această transcriere YouTube și extrageți pașii următori.\nOferiți-mi:\n- un rezumat concis\n- ideile principale\n- acțiuni clare\n- decizii sau urmăriri care merită monitorizate"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Rezumat + verificare a faptelor"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Rezumați această transcriere YouTube și semnalați tot ce ar trebui verificat.\nOferiți-mi:\n- un rezumat concis\n- principalele afirmații făcute\n- orice afirmații care par incerte, exagerate sau care probabil au nevoie de verificare\n- o scurtă listă de verificare cu ce trebuie verificat mai întâi\nApoi efectuați verificarea și oferiți-mi:\n- un rezumat al constatărilor\n- ce afirmații au fost confirmate, infirmate sau rămân incerte"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Brief executiv"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Transformați această transcriere YouTube într-un brief executiv.\nOferiți-mi:\n- o scurtă imagine de ansamblu la nivel înalt\n- cele mai importante concluzii\n- implicații de business sau strategice\n- principalele riscuri sau oportunități"
+	},
+	"preset_study_notes_label": {
+	  "message": "Notițe de studiu"
+	},
+	"preset_study_notes_body": {
+	  "message": "Transformați această transcriere YouTube în notițe de studiu.\nOferiți-mi:\n- un rezumat structurat pe subiecte\n- definiții sau concepte importante\n- posibile întrebări de examen sau discuție\n- o scurtă recapitulare pe care să o pot revedea rapid mai târziu"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Critică + oportunități"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Analizați critic această transcriere YouTube.\nOferiți-mi:\n- un rezumat concis\n- ce este convingător sau util\n- ce lipsește, este slab sau discutabil\n- idei, oportunități sau îmbunătățiri inspirate de aceasta"
+	}
+}

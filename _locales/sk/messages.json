@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Pridáva lokalizované nástroje promptov na stránky sledovania YouTube: používajte režim Štandard alebo Pokročilý, skopírujte prepis a vybraný AI prompt jedným kliknutím a upravujte svoje vlastné prompty v Nastaveniach."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Režim promptu"
+	},
+	"popup_lede": {
+	  "message": "Vyberte si, ako sa má PromptTube zobrazovať na stránkach sledovania YouTube."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Režim promptu"
+	},
+	"popup_mode_standard": {
+	  "message": "Štandard"
+	},
+	"popup_mode_advanced": {
+	  "message": "Pokročilý"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Zobrazuje jedno jednoduché tlačidlo súhrnu. Tento prompt môžete upraviť v Nastaveniach."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Zobrazuje úplný výber promptov so všetkými dostupnými šablónami."
+	},
+	"popup_open_settings": {
+	  "message": "Otvoriť nastavenia promptov"
+	},
+	"options_title": {
+	  "message": "Nastavenia PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Šablóny promptov"
+	},
+	"options_lede": {
+	  "message": "Upravte prompty zobrazené na YouTube, pridajte nové alebo obnovte predvolené hodnoty."
+	},
+	"options_section_title": {
+	  "message": "Vaše prompty"
+	},
+	"options_section_copy": {
+	  "message": "Každý prompt potrebuje štítok a text inštrukcie, ktorý sa vloží pred prepis."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Prompt Súhrn sa používa v štandardnom režime a nemožno ho odstrániť."
+	},
+	"options_add_prompt": {
+	  "message": "Pridať prompt"
+	},
+	"options_reset_defaults": {
+	  "message": "Obnoviť predvolené"
+	},
+	"options_save_prompts": {
+	  "message": "Uložiť prompty"
+	},
+	"options_label": {
+	  "message": "Štítok"
+	},
+	"options_label_placeholder": {
+	  "message": "Súhrn + analýza"
+	},
+	"options_body": {
+	  "message": "Text promptu"
+	},
+	"options_body_placeholder": {
+	  "message": "Zhrňte tento prepis..."
+	},
+	"options_remove": {
+	  "message": "Odstrániť"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Prompt Súhrn sa používa v štandardnom režime a nemožno ho odstrániť."
+	},
+	"options_storage_unavailable": {
+	  "message": "Úložisko nie je v tomto kontexte prehliadača dostupné."
+	},
+	"options_storage_local": {
+	  "message": "Používa sa iba lokálne úložisko. Prompty sa nebudú synchronizovať medzi prehliadačmi."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Používa sa synchronizované úložisko. Dáta promptov by sa mali synchronizovať medzi prihlásenými prehliadačmi, ktoré podporujú synchronizáciu rozšírení."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Používa sa synchronizované úložisko. Dáta promptov využívajú $1 z kvóty synchronizácie (~100 KB spolu vo Firefoxe).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "Storage API nie je k dispozícii. Zobrazujú sa predvolené hodnoty."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Nepodarilo sa načítať uložené prompty. Zobrazujú sa predvolené hodnoty."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "Storage API nie je k dispozícii. Prompty neboli uložené."
+	},
+	"options_status_add_one": {
+	  "message": "Pred uložením pridajte aspoň jeden prompt."
+	},
+	"options_status_missing_label": {
+	  "message": "Promptu $1 chýba štítok.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Promptu $1 chýba text promptu.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Prompty uložené."
+	},
+	"options_status_save_error": {
+	  "message": "Prompty sa nepodarilo uložiť."
+	},
+	"options_status_storage_only_page": {
+	  "message": "Storage API nie je k dispozícii. Predvolené hodnoty boli obnovené len na tejto stránke."
+	},
+	"options_status_restore_success": {
+	  "message": "Predvolené prompty boli obnovené."
+	},
+	"options_status_restore_error": {
+	  "message": "Predvolené hodnoty sa nepodarilo obnoviť."
+	},
+	"tip_manage_prompts": {
+	  "message": "Tip: na správu promptov použite ikonu PromptTube"
+	},
+	"copy_prompt_label": {
+	  "message": "Kopírovať prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Kopírovať prompt"
+	},
+	"working": {
+	  "message": "Spracúva sa..."
+	},
+	"no_transcript_found": {
+	  "message": "Pre toto video sa nenašiel prepis"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompt + prepis skopírované"
+	},
+	"copy_failed": {
+	  "message": "Kopírovanie zlyhalo"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Vyberte šablónu promptu"
+	},
+	"copy_button_title": {
+	  "message": "Kopírovať prompt a prepis"
+	},
+	"unknown_title": {
+	  "message": "Neznámy názov"
+	},
+	"unknown_channel": {
+	  "message": "Neznámy kanál"
+	},
+	"context_title_label": {
+	  "message": "Názov"
+	},
+	"context_channel_label": {
+	  "message": "Kanál"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Súhrn"
+	},
+	"preset_summary_body": {
+	  "message": "Zhrňte tento prepis z YouTube.\nDajte mi:\n- stručný súhrn\n- hlavné poznatky\n- hlavný záver v jednom krátkom odseku"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Súhrn + analýza"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Zhrňte a analyzujte tento prepis z YouTube.\nDajte mi:\n- súhrn v 6-10 bodoch\n- hlavné témy alebo argumenty\n- čo je najdôležitejšie a prečo\n- výrazné silné stránky, slabiny alebo predpoklady"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Súhrn + kroky"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Zhrňte tento prepis z YouTube a vytiahnite ďalšie kroky.\nDajte mi:\n- stručný súhrn\n- hlavné poznatky\n- jasné akčné kroky\n- rozhodnutia alebo následné kroky, ktoré sa oplatí sledovať"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Súhrn + overenie faktov"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Zhrňte tento prepis z YouTube a označte všetko, čo by sa malo overiť.\nDajte mi:\n- stručný súhrn\n- hlavné tvrdenia\n- akékoľvek výroky, ktoré pôsobia neisto, prehnane alebo pravdepodobne potrebujú overenie\n- krátky checklist overenia faktov s tým, čo treba overiť ako prvé\nPotom urobte overenie a dajte mi:\n- súhrn toho, čo ste zistili\n- ktoré tvrdenia boli potvrdené, vyvrátené alebo zostávajú neisté"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Manažérsky brief"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Premeňte tento prepis z YouTube na manažérsky brief.\nDajte mi:\n- krátky prehľad na vysokej úrovni\n- najdôležitejšie poznatky\n- obchodné alebo strategické dôsledky\n- hlavné riziká alebo príležitosti"
+	},
+	"preset_study_notes_label": {
+	  "message": "Študijné poznámky"
+	},
+	"preset_study_notes_body": {
+	  "message": "Premeňte tento prepis z YouTube na študijné poznámky.\nDajte mi:\n- štruktúrovaný súhrn podľa tém\n- dôležité definície alebo pojmy\n- pravdepodobné skúškové alebo diskusné otázky\n- krátke zopakovanie, ktoré si môžem neskôr rýchlo prejsť"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Kritika + príležitosti"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Kriticky zhodnoťte tento prepis z YouTube.\nDajte mi:\n- stručný súhrn\n- čo je presvedčivé alebo užitočné\n- čo chýba, je slabé alebo sporné\n- nápady, príležitosti alebo zlepšenia inšpirované týmto obsahom"
+	}
+}

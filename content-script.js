@@ -45,6 +45,24 @@
 		return null
 	}
 
+	function getTextDirection() {
+		if (typeof SHARED.getTextDirection === 'function') {
+			return SHARED.getTextDirection()
+		}
+		return document.documentElement.dir === 'rtl' ? 'rtl' : 'ltr'
+	}
+
+	function applyLocaleAttributes(node) {
+		if (typeof SHARED.applyLocaleAttributes === 'function') {
+			SHARED.applyLocaleAttributes(node)
+			return
+		}
+
+		if (node?.setAttribute) {
+			node.setAttribute('dir', getTextDirection())
+		}
+	}
+
 	function getStorageArea() {
 		const api = getExtensionApi()
 		return api?.storage?.sync || api?.storage?.local || null
@@ -187,6 +205,7 @@
 
 		const el = document.createElement('div')
 		el.className = 'yt-tc-toast'
+		applyLocaleAttributes(el)
 		el.textContent = message
 		document.documentElement.appendChild(el)
 
@@ -278,6 +297,7 @@
 
 		const wrap = document.createElement('div')
 		wrap.className = 'yt-tc-wrap'
+		applyLocaleAttributes(wrap)
 
 		const presets = getPromptPresets()
 		const copyLabel = (label) =>
@@ -363,6 +383,7 @@
 			const menu = document.createElement('div')
 			menu.className = 'yt-tc-menu'
 			menu.hidden = true
+			applyLocaleAttributes(menu)
 
 			let selectedPresetId = STATE.selectedPresetId || presets[0]?.id || null
 
@@ -377,9 +398,11 @@
 				const menuWidth = menuRect.width || 240
 				const menuHeight = menuRect.height || 200
 				const viewportPadding = 8
+				const preferredLeft =
+					getTextDirection() === 'rtl' ? anchorRect.right - menuWidth : anchorRect.left
 
 				const clampedLeft = Math.min(
-					Math.max(viewportPadding, anchorRect.left),
+					Math.max(viewportPadding, preferredLeft),
 					window.innerWidth - menuWidth - viewportPadding
 				)
 
@@ -417,6 +440,7 @@
 					const item = document.createElement('button')
 					item.type = 'button'
 					item.className = 'yt-tc-menu-item'
+					applyLocaleAttributes(item)
 					item.textContent =
 						preset.id === selectedPresetId ? `* ${preset.label}` : preset.label
 					item.addEventListener('click', () => {

@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Yerna ifecka n prompt yettwaseqlen i isebtar n usenqed n YouTube: seqdec askan Standard neɣ Avancée, nɣel asenfar akked uprompt IA yettwafernen s yiwen n usiti, yerna senned prompt-inek deg Yiɣewwaren."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Askan n uprompt"
+	},
+	"popup_lede": {
+	  "message": "Fren amek ara d-iban PromptTube deg isebtar n usenqed n YouTube."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Askan n uprompt"
+	},
+	"popup_mode_standard": {
+	  "message": "Standard"
+	},
+	"popup_mode_advanced": {
+	  "message": "Avancé"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Isekan-d yiwen n tqeffilt tafessast n usileɣ. Snifel aprompt-nni deg Yiɣewwaren."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Isekan-d amsefran ummid n prompts akked merra timudma yellan."
+	},
+	"popup_open_settings": {
+	  "message": "Ldi iɣewwaren n prompt"
+	},
+	"options_title": {
+	  "message": "Iɣewwaren n PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Timudma n prompt"
+	},
+	"options_lede": {
+	  "message": "Snifel prompt yellan deg YouTube, rnu wiyad neɣ err-d azal imezwaruen."
+	},
+	"options_section_title": {
+	  "message": "Prompt-inek"
+	},
+	"options_section_copy": {
+	  "message": "Yal prompt yesra tabzimt d weḍris n uselmed i ara yettwarnun send asenfar."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Aprompt Agzul yettuseqdac deg uskan Standard u ur yezmir ara ad yettwakkes."
+	},
+	"options_add_prompt": {
+	  "message": "Rnu prompt"
+	},
+	"options_reset_defaults": {
+	  "message": "Err-d imezwar"
+	},
+	"options_save_prompts": {
+	  "message": "Sekles prompt"
+	},
+	"options_label": {
+	  "message": "Tabzimt"
+	},
+	"options_label_placeholder": {
+	  "message": "Agzul + tesleḍt"
+	},
+	"options_body": {
+	  "message": "Aḍris n prompt"
+	},
+	"options_body_placeholder": {
+	  "message": "Ttxil-k gzel asenfar-a..."
+	},
+	"options_remove": {
+	  "message": "Kkes"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Aprompt Agzul yettuseqdac deg uskan Standard u ur yezmir ara ad yettwakkes."
+	},
+	"options_storage_unavailable": {
+	  "message": "Asekles ulac-it deg umniḍ n yiminig-a."
+	},
+	"options_storage_local": {
+	  "message": "Asekles adigan kan ara yettuseqdacen. Prompts ur ttusmektayen ara gar iminiggaten."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Asekles imsinek anida iteddu. Isefka n prompt ilaq ad mseklen gar iminiggaten yettusqedcen s yisem n useqdec i yessefraken async n isiɣzaf."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Asekles imsinek anida iteddu. Isefka n prompt seqdacen $1 seg tqeddict n usmektay (~100 KB merra deg Firefox).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "Storage API ulac-it. Imezwaruyen ttuseknen."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Ur izmir ara ad issali prompts yettwaskelsen. Imezwaruyen ttuseknen."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "Storage API ulac-it. Prompts ur ttwaskelsen ara."
+	},
+	"options_status_add_one": {
+	  "message": "Rnu ma drus yiwen prompt send asekles."
+	},
+	"options_status_missing_label": {
+	  "message": "Prompt $1 ixuṣ-itt tabzimt.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Prompt $1 ixuṣ-it weḍris n prompt.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Prompts ttwaskelsen."
+	},
+	"options_status_save_error": {
+	  "message": "Ur izmir ara ad isekles prompts."
+	},
+	"options_status_storage_only_page": {
+	  "message": "Storage API ulac-it. Imezwaruyen ttuɣalen-d kan deg usebter-a."
+	},
+	"options_status_restore_success": {
+	  "message": "Prompts imezwaruyen ttuɣalen-d."
+	},
+	"options_status_restore_error": {
+	  "message": "Ur izmir ara ad d-yerr imezwaruyen."
+	},
+	"tip_manage_prompts": {
+	  "message": "Tamyart: seqdec tignit n PromptTube akken ad tesferkeḍ prompts"
+	},
+	"copy_prompt_label": {
+	  "message": "Nɣel prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Nɣel prompt"
+	},
+	"working": {
+	  "message": "Yettexdem..."
+	},
+	"no_transcript_found": {
+	  "message": "Ulac asenfar i yettwafkan i uvidyu-a"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompt + asenfar ttunɣlen"
+	},
+	"copy_failed": {
+	  "message": "Anɣel yecceḍ"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Fren tamudemt n uprompt"
+	},
+	"copy_button_title": {
+	  "message": "Nɣel prompt akked usenfar"
+	},
+	"unknown_title": {
+	  "message": "Azwel arussin"
+	},
+	"unknown_channel": {
+	  "message": "Abadu arussin"
+	},
+	"context_title_label": {
+	  "message": "Azwel"
+	},
+	"context_channel_label": {
+	  "message": "Abadu"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Agzul"
+	},
+	"preset_summary_body": {
+	  "message": "Gzel asenfar-a n YouTube.\nFk-iyi:\n- agzul awezlan\n- tigejdanin tigejdanin\n- taggrayt tameqqrant deg yiwen ubersiḍ awezlan"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Agzul + tesleḍt"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Gzel u seld asenfar-a n YouTube.\nFk-iyi:\n- agzul deg 6 ar 10 n tneqqiḍin\n- isental neɣ timsal tigejdanin\n- acu i d-yesɛan azal u acuɣer\n- tifrat n lqima, ixuṣṣan neɣ tuggiwin yettwabin"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Agzul + tigawin"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Gzel asenfar-a n YouTube u kkes-d iḍrisen n uḍfer.\nFk-iyi:\n- agzul awezlan\n- tigejdanin\n- tigawin ibanen\n- izraren neɣ iḍfaren i yessefk ad ttuɣalen-d deg ṭṭraǧ"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Agzul + asenqed n tidet"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Gzel asenfar-a n YouTube u creḍ akk ayen i yesra asenqed n tidet.\nFk-iyi:\n- agzul awezlan\n- timsal tigejdanin\n- akk ayen i d-yettbanen d ameḥkuk, d asfeṛfṛi neɣ yesra asenqed\n- tabdart tawezzlant n wayen i ilaq ad yettwaseqqed qbel\nSyin akkin, eg asenqed n tidet u fk-iyi:\n- agzul n wayen i tufiḍ\n- anwa timsal i ttwatent, i ttunefkant neɣ i qqiment ur binen ara"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Awezlal anedbal"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Err asenfar-a n YouTube d awezlal anedbal.\nFk-iyi:\n- tamuɣli tawezzlant n uswir afella\n- insight yettawin azal mliḥ\n- inigi n tnezzut neɣ n testratejiyat\n- imeẓluyen neɣ tillelin tigejdanin"
+	},
+	"preset_study_notes_label": {
+	  "message": "Tizmilin n tɣuri"
+	},
+	"preset_study_notes_body": {
+	  "message": "Err asenfar-a n YouTube d tizmilin n tɣuri.\nFk-iyi:\n- agzul yettwasefraken s usentel\n- tabadutin neɣ tiktiwin tigejdanin\n- isteqsiyen n uɣerbaz neɣ n umeslay yezmer ad d-yili\n- asmekti awezlan ara ɣuriɣ s lemɣawla ticki d-yezrin waqit"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Asewzel + tillelin"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Err ɣur-s asenfar-a n YouTube s tikli n tiktiwin.\nFk-iyi:\n- agzul awezlan\n- acu i d-yesseqnen lqima neɣ tanfult\n- acu ixuṣ, id irmi neɣ yettban d amcic\n- tiktiwin, tillelin neɣ asnerni i d-yettasen seg-s"
+	}
+}

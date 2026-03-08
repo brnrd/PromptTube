@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Přidawa lokalizowane promptowe nastroje stronam YouTube za wobhladowanje: wužiwa standardny abo rozšěrjeny modus, kopěruj transkript a wubrany KI-prompt z jednym kliknjenjom a wobdźěłuj swoje prompty w nastajenjach."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Promptowy modus"
+	},
+	"popup_lede": {
+	  "message": "Wubjer, kak so ma PromptTube na stronach YouTube za wobhladowanje zwobraznić."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Promptowy modus"
+	},
+	"popup_mode_standard": {
+	  "message": "Standardny"
+	},
+	"popup_mode_advanced": {
+	  "message": "Rozšěrjeny"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Pokazuje jedyn jednory zjećiowy tłóčatko. Wobdźěłaj tón prompt w nastajenjach."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Pokazuje dospołny wuběrk promptow ze wšěmi k dispoziciji stejacymi předłohami."
+	},
+	"popup_open_settings": {
+	  "message": "Nastajenja promptow wočinić"
+	},
+	"options_title": {
+	  "message": "Nastajenja PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Promptowe předłohi"
+	},
+	"options_lede": {
+	  "message": "Wobdźěłaj prompty, kotrež so na YouTube pokazuja, přidaj nowe abo wróć standardne hódnoty."
+	},
+	"options_section_title": {
+	  "message": "Twoje prompty"
+	},
+	"options_section_copy": {
+	  "message": "Kóždy prompt trjeba etiketu a tekst instrukcije, kotryž so před transkript staja."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Prompt Zjeće so w standardnym modusu wužiwa a njeda so wotstronić."
+	},
+	"options_add_prompt": {
+	  "message": "Prompt přidać"
+	},
+	"options_reset_defaults": {
+	  "message": "Standard wróć stajić"
+	},
+	"options_save_prompts": {
+	  "message": "Prompty składować"
+	},
+	"options_label": {
+	  "message": "Etiketa"
+	},
+	"options_label_placeholder": {
+	  "message": "Zjeće + analyza"
+	},
+	"options_body": {
+	  "message": "Promptowy tekst"
+	},
+	"options_body_placeholder": {
+	  "message": "Prošu zjeće tutón transkript..."
+	},
+	"options_remove": {
+	  "message": "Wotstronić"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Prompt Zjeće so w standardnym modusu wužiwa a njeda so wotstronić."
+	},
+	"options_storage_unavailable": {
+	  "message": "Składowanje w tutym kontekście wobhladowaka k dispoziciji njeje."
+	},
+	"options_storage_local": {
+	  "message": "Wužiwa so jenož lokalne składowanje. Prompty so mjez wobhladowakami njezsynchronizuja."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Wužiwa so synchronizowane składowanje. Daty promptow měli so mjez přizjewjenymi wobhladowakami synchronizować, kotrež synchronizaciju rozšěrjenjow podpěruja."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Wužiwa so synchronizowane składowanje. Daty promptow wužiwa $1 synchronizaciskeje kwoty (~100 KB dohromady we Firefox).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "Storage API k dispoziciji njeje. Standardne hódnoty so pokazuja."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Składowane prompty njedachu so začitać. Standardne hódnoty so pokazuja."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "Storage API k dispoziciji njeje. Prompty njejsu so składowali."
+	},
+	"options_status_add_one": {
+	  "message": "Přidaj znajmjeńša jedyn prompt, prjedy hač składuješ."
+	},
+	"options_status_missing_label": {
+	  "message": "Promptej $1 etiketa faluje.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Promptej $1 promptowy tekst faluje.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Prompty składowane."
+	},
+	"options_status_save_error": {
+	  "message": "Prompty njedachu so składować."
+	},
+	"options_status_storage_only_page": {
+	  "message": "Storage API k dispoziciji njeje. Standardne hódnoty buchu jenož na tutej stronje wróćo stajene."
+	},
+	"options_status_restore_success": {
+	  "message": "Standardne prompty wróćo stajene."
+	},
+	"options_status_restore_error": {
+	  "message": "Standardne hódnoty njedachu so wróćo stajić."
+	},
+	"tip_manage_prompts": {
+	  "message": "Pokiw: wužiwaj ikonu PromptTube, zo by prompty zrjadował"
+	},
+	"copy_prompt_label": {
+	  "message": "Prompt kopěrować: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Prompt kopěrować"
+	},
+	"working": {
+	  "message": "Předźěłuje so..."
+	},
+	"no_transcript_found": {
+	  "message": "Za tute widejo transkript njenamakany"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompt + transkript kopěrowany"
+	},
+	"copy_failed": {
+	  "message": "Kopěrowanje njeporadźi so"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Předłohu prompta wubrać"
+	},
+	"copy_button_title": {
+	  "message": "Prompt a transkript kopěrować"
+	},
+	"unknown_title": {
+	  "message": "Njeznaty titul"
+	},
+	"unknown_channel": {
+	  "message": "Njeznaty kanal"
+	},
+	"context_title_label": {
+	  "message": "Titul"
+	},
+	"context_channel_label": {
+	  "message": "Kanal"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Zjeće"
+	},
+	"preset_summary_body": {
+	  "message": "Zjim tutón YouTube-transkript.\nDaj mi:\n- krótke zjeće\n- najwažniše spóznaća\n- hłowny zakónk w jednym krótkim wotstawku"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Zjeće + analyza"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Zjim a analyzuj tutón YouTube-transkript.\nDaj mi:\n- zjeće w 6-10 dypkach\n- hłowne temy abo argumenty\n- što je najwažniše a čehodla\n- markantne mócne strony, słabosće abo předpokłady"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Zjeće + akcije"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Zjim tutón YouTube-transkript a dźehń přichodne kroki.\nDaj mi:\n- krótke zjeće\n- najwažniše spóznaća\n- jasne akciske kroki\n- rozsudy abo přichodne kroki, kotrež so wěrte slědować su"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Zjeće + přepruwowanje faktow"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Zjim tutón YouTube-transkript a markěruj wšitko, štož by měło so přepruwować.\nDaj mi:\n- krótke zjeće\n- hłowne twarjenja\n- wšě wusměrjenja, kotrež njejiste, přehnane abo snano pśetrjebne k přepruwowanju su\n- krótku lisćinu toho, štož so ma najprjedy přepruwować\nPotom přewjedź přepruwowanje faktow a daj mi:\n- zjeće toho, štož sy namakał\n- kotre twarjenja buchu wobkrućene, wotpokazane abo wostały njejiste"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Wjedniski brief"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Přetwor tutón YouTube-transkript do wjedniskeho brifa.\nDaj mi:\n- krótki přehlad na wysokim runju\n- najwažniše insighty\n- wobchodne abo strategiske wuskutki\n- hłowne rizika abo šanse"
+	},
+	"preset_study_notes_label": {
+	  "message": "Studijne noticy"
+	},
+	"preset_study_notes_body": {
+	  "message": "Přeměń tutón YouTube-transkript do studijnych noticow.\nDaj mi:\n- strukturěrowane zjeće po temach\n- wažne definicije abo koncepty\n- prawdźepodobne pruwowanske abo diskusijne prašenja\n- krótke zopokazanje, kotrež móžu pozdźišo spěšnje přehladnyć"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Kritika + šanse"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Přehladź tutón YouTube-transkript kritisce.\nDaj mi:\n- krótke zjeće\n- što je přeswědčace abo wužitne\n- što faluje, je słabe abo dwělomne\n- ideje, šanse abo polěpšenja, inspirěrowane přez nje"
+	}
+}

@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Adde instrumentos de prompt localisate a paginas de visualisation de YouTube: usa le modo Standard o Avantiate, copia le transcription e le prompt de IA seligite con un clic, e modifica tu proprie prompts in Parametros."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Modo de prompt"
+	},
+	"popup_lede": {
+	  "message": "Selige como PromptTube appare in paginas de visualisation de YouTube."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Modo de prompt"
+	},
+	"popup_mode_standard": {
+	  "message": "Standard"
+	},
+	"popup_mode_advanced": {
+	  "message": "Avantiate"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Monstra un simple button de summario. Modifica ille prompt in Parametros."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Monstra le selector complete de prompts con tote le patronos disponibile."
+	},
+	"popup_open_settings": {
+	  "message": "Aperir le parametros de prompt"
+	},
+	"options_title": {
+	  "message": "Parametros de PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Patronos de prompt"
+	},
+	"options_lede": {
+	  "message": "Modifica le prompts monstrate in YouTube, adde nove, o restaura le valores predefinite."
+	},
+	"options_section_title": {
+	  "message": "Tu prompts"
+	},
+	"options_section_copy": {
+	  "message": "Cata prompt necessita un etiquetta e le texto de instruction a anteponer al transcription."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Le prompt Summario es usate in modo Standard e non pote esser removite."
+	},
+	"options_add_prompt": {
+	  "message": "Adder prompt"
+	},
+	"options_reset_defaults": {
+	  "message": "Restaurar predefinite"
+	},
+	"options_save_prompts": {
+	  "message": "Salvar prompts"
+	},
+	"options_label": {
+	  "message": "Etiquetta"
+	},
+	"options_label_placeholder": {
+	  "message": "Summario + analyse"
+	},
+	"options_body": {
+	  "message": "Texto del prompt"
+	},
+	"options_body_placeholder": {
+	  "message": "Per favor, resume iste transcription..."
+	},
+	"options_remove": {
+	  "message": "Remover"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Le prompt Summario es usate in modo Standard e non pote esser removite."
+	},
+	"options_storage_unavailable": {
+	  "message": "Le immagazinage non es disponibile in iste contexto del navigator."
+	},
+	"options_storage_local": {
+	  "message": "Usa solmente immagazinage local. Le prompts non essera synchronisate inter navigatores."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Usa immagazinage synchronisate. Le datos del prompt deberea synchronisar se inter navigatores authenticate que supporta synchronisation de extensiones."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Usa immagazinage synchronisate. Le datos del prompt usa $1 del quota de synchronisation (~100 KB total in Firefox).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "Le Storage API non es disponibile. Monstra le valores predefinite."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Non poteva cargar le prompts salveguardate. Monstra le valores predefinite."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "Le Storage API non es disponibile. Le prompts non esseva salveguardate."
+	},
+	"options_status_add_one": {
+	  "message": "Adde al minus un prompt ante salveguardar."
+	},
+	"options_status_missing_label": {
+	  "message": "Le prompt $1 manca un etiquetta.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Le prompt $1 manca le texto del prompt.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Prompts salveguardate."
+	},
+	"options_status_save_error": {
+	  "message": "Non poteva salveguardar le prompts."
+	},
+	"options_status_storage_only_page": {
+	  "message": "Le Storage API non es disponibile. Le valores predefinite esseva restaurate solmente in iste pagina."
+	},
+	"options_status_restore_success": {
+	  "message": "Prompts predefinite restaurate."
+	},
+	"options_status_restore_error": {
+	  "message": "Non poteva restaurar le valores predefinite."
+	},
+	"tip_manage_prompts": {
+	  "message": "Consilio: usa le icone de PromptTube pro gerer le prompts"
+	},
+	"copy_prompt_label": {
+	  "message": "Copiar prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Copiar prompt"
+	},
+	"working": {
+	  "message": "Laborante..."
+	},
+	"no_transcript_found": {
+	  "message": "Nulle transcription trovate pro iste video"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompt + transcription copiate"
+	},
+	"copy_failed": {
+	  "message": "Copia fallite"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Selige patrono de prompt"
+	},
+	"copy_button_title": {
+	  "message": "Copiar prompt e transcription"
+	},
+	"unknown_title": {
+	  "message": "Titulo incognite"
+	},
+	"unknown_channel": {
+	  "message": "Canal incognite"
+	},
+	"context_title_label": {
+	  "message": "Titulo"
+	},
+	"context_channel_label": {
+	  "message": "Canal"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Summario"
+	},
+	"preset_summary_body": {
+	  "message": "Resume iste transcription de YouTube.\nDa me:\n- un summario concise\n- le punctos clave\n- le conclusion principal in un breve paragrapho"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Summario + analyse"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Resume e analysa iste transcription de YouTube.\nDa me:\n- un summario in 6-10 punctos\n- le themas o argumentos principal\n- lo que importa le plus e perque\n- omne fortias, debilitates o suppositiones notabile"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Summario + actiones"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Resume iste transcription de YouTube e extrahe le proxime passos.\nDa me:\n- un summario concise\n- punctos clave\n- actiones clar\n- omne decisiones o sequimentos que vale le pena seguir"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Summario + verification de factos"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Resume iste transcription de YouTube e signala toto lo que deberea esser verificate.\nDa me:\n- un summario concise\n- le assertiones principal\n- assertiones que pare incert, exaggerate o probabilemente necesita verification\n- un breve lista de verification super quid verificar primo\nPostea face le verification de factos e da me:\n- un summario de lo que tu trovava\n- qual assertiones esseva confirmate, disprobat o remane incert"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Brief executive"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Transforma iste transcription de YouTube in un brief executive.\nDa me:\n- un breve vista general de alte nivello\n- le plus importante perspectives\n- implicationes commercial o strategic\n- le principal riscos o opportunitates"
+	},
+	"preset_study_notes_label": {
+	  "message": "Notas de studio"
+	},
+	"preset_study_notes_body": {
+	  "message": "Converte iste transcription de YouTube in notas de studio.\nDa me:\n- un summario structurate per thema\n- definitiones o conceptos importante\n- probabile questiones de examene o discussion\n- un breve recapitulamento que io pote revider rapidemente plus tarde"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Critica + opportunitates"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Revide iste transcription de YouTube criticamente.\nDa me:\n- un summario concise\n- lo que es convincente o utile\n- lo que manca, es debile o dubitabile\n- ideas, opportunitates o meliorationes inspirate per illo"
+	}
+}

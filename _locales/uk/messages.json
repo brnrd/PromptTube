@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Додає локалізовані інструменти промптів на сторінки перегляду YouTube: використовуйте стандартний або розширений режим, копіюйте транскрипт і вибраний AI-промпт одним кліком та редагуйте власні промпти в Налаштуваннях."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Режим промптів"
+	},
+	"popup_lede": {
+	  "message": "Виберіть, як PromptTube відображатиметься на сторінках перегляду YouTube."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Режим промптів"
+	},
+	"popup_mode_standard": {
+	  "message": "Стандартний"
+	},
+	"popup_mode_advanced": {
+	  "message": "Розширений"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Показує одну просту кнопку підсумку. Цей промпт можна змінити в Налаштуваннях."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Показує повний вибір промптів з усіма доступними шаблонами."
+	},
+	"popup_open_settings": {
+	  "message": "Відкрити налаштування промптів"
+	},
+	"options_title": {
+	  "message": "Налаштування PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Шаблони промптів"
+	},
+	"options_lede": {
+	  "message": "Редагуйте промпти, що відображаються на YouTube, додавайте нові або відновлюйте значення за замовчуванням."
+	},
+	"options_section_title": {
+	  "message": "Ваші промпти"
+	},
+	"options_section_copy": {
+	  "message": "Кожному промпту потрібні мітка та текст інструкції, який додається перед транскриптом."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Промпт «Підсумок» використовується у стандартному режимі й не може бути видалений."
+	},
+	"options_add_prompt": {
+	  "message": "Додати промпт"
+	},
+	"options_reset_defaults": {
+	  "message": "Скинути до типових"
+	},
+	"options_save_prompts": {
+	  "message": "Зберегти промпти"
+	},
+	"options_label": {
+	  "message": "Мітка"
+	},
+	"options_label_placeholder": {
+	  "message": "Підсумок + аналіз"
+	},
+	"options_body": {
+	  "message": "Текст промпту"
+	},
+	"options_body_placeholder": {
+	  "message": "Будь ласка, підсумуйте цей транскрипт..."
+	},
+	"options_remove": {
+	  "message": "Видалити"
+	},
+	"options_prompt_card_title": {
+	  "message": "Промпт $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Промпт «Підсумок» використовується у стандартному режимі й не може бути видалений."
+	},
+	"options_storage_unavailable": {
+	  "message": "Сховище недоступне в цьому контексті браузера."
+	},
+	"options_storage_local": {
+	  "message": "Використовується лише локальне сховище. Промпти не синхронізуватимуться між браузерами."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Використовується синхронізоване сховище. Дані промптів мають синхронізуватися між браузерами з входом у систему, які підтримують синхронізацію розширень."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Використовується синхронізоване сховище. Дані промптів займають $1 квоти синхронізації (~100 КБ загалом у Firefox).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "Storage API недоступний. Показуються типові значення."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Не вдалося завантажити збережені промпти. Показуються типові значення."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "Storage API недоступний. Промпти не були збережені."
+	},
+	"options_status_add_one": {
+	  "message": "Додайте принаймні один промпт перед збереженням."
+	},
+	"options_status_missing_label": {
+	  "message": "У промпті $1 відсутня мітка.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "У промпті $1 відсутній текст промпту.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Промпти збережено."
+	},
+	"options_status_save_error": {
+	  "message": "Не вдалося зберегти промпти."
+	},
+	"options_status_storage_only_page": {
+	  "message": "Storage API недоступний. Типові значення відновлено лише на цій сторінці."
+	},
+	"options_status_restore_success": {
+	  "message": "Типові промпти відновлено."
+	},
+	"options_status_restore_error": {
+	  "message": "Не вдалося відновити типові значення."
+	},
+	"tip_manage_prompts": {
+	  "message": "Порада: використовуйте значок PromptTube для керування промптами"
+	},
+	"copy_prompt_label": {
+	  "message": "Копіювати промпт: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Копіювати промпт"
+	},
+	"working": {
+	  "message": "Обробка..."
+	},
+	"no_transcript_found": {
+	  "message": "Для цього відео не знайдено транскрипт"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Промпт + транскрипт скопійовано"
+	},
+	"copy_failed": {
+	  "message": "Не вдалося скопіювати"
+	},
+	"prompt_selected": {
+	  "message": "Промпт: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Виберіть шаблон промпту"
+	},
+	"copy_button_title": {
+	  "message": "Копіювати промпт і транскрипт"
+	},
+	"unknown_title": {
+	  "message": "Невідома назва"
+	},
+	"unknown_channel": {
+	  "message": "Невідомий канал"
+	},
+	"context_title_label": {
+	  "message": "Назва"
+	},
+	"context_channel_label": {
+	  "message": "Канал"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Підсумок"
+	},
+	"preset_summary_body": {
+	  "message": "Підсумуйте цей транскрипт YouTube.\nДайте мені:\n- стислий підсумок\n- ключові висновки\n- головний висновок в одному короткому абзаці"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Підсумок + аналіз"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Підсумуйте й проаналізуйте цей транскрипт YouTube.\nДайте мені:\n- підсумок у 6–10 пунктах\n- основні теми або аргументи\n- що найважливіше і чому\n- помітні сильні сторони, слабкості або припущення"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Підсумок + дії"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Підсумуйте цей транскрипт YouTube й виділіть наступні кроки.\nДайте мені:\n- стислий підсумок\n- ключові висновки\n- чіткі дії\n- рішення або подальші кроки, які варто відстежувати"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Підсумок + перевірка фактів"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Підсумуйте цей транскрипт YouTube і позначте все, що слід перевірити.\nДайте мені:\n- стислий підсумок\n- основні твердження\n- будь-які висловлювання, що здаються непевними, перебільшеними або такими, що потребують перевірки\n- короткий список фактчеку, що перевірити насамперед\nПотім виконайте перевірку фактів і дайте мені:\n- підсумок того, що ви знайшли\n- які твердження підтвердилися, були спростовані або залишилися непевними"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Керівний бриф"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Перетворіть цей транскрипт YouTube на керівний бриф.\nДайте мені:\n- короткий огляд на високому рівні\n- найважливіші інсайти\n- бізнесові або стратегічні наслідки\n- основні ризики або можливості"
+	},
+	"preset_study_notes_label": {
+	  "message": "Навчальні нотатки"
+	},
+	"preset_study_notes_body": {
+	  "message": "Перетворіть цей транскрипт YouTube на навчальні нотатки.\nДайте мені:\n- структурований підсумок за темами\n- важливі визначення або поняття\n- ймовірні екзаменаційні чи дискусійні запитання\n- коротке резюме, яке я зможу швидко переглянути пізніше"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Критика + можливості"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Критично оцініть цей транскрипт YouTube.\nДайте мені:\n- стислий підсумок\n- що є переконливим або корисним\n- чого бракує, що є слабким або сумнівним\n- ідеї, можливості або покращення, натхненні цим матеріалом"
+	}
+}

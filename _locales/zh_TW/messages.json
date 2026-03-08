@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "為 YouTube 觀看頁面添加本地化提示詞工具：可使用標準或進階模式，一鍵複製轉錄和所選 AI 提示詞，並在設定中編輯自定義提示詞。"
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "提示詞模式"
+	},
+	"popup_lede": {
+		"message": "選擇 PromptTube 在 YouTube 觀看頁面上的顯示方式。"
+	},
+	"popup_mode_group_aria": {
+		"message": "提示詞模式"
+	},
+	"popup_mode_standard": {
+		"message": "標準"
+	},
+	"popup_mode_advanced": {
+		"message": "進階"
+	},
+	"popup_mode_standard_help": {
+		"message": "顯示一個簡潔的摘要按鈕。你可以在設定中編輯該提示詞。"
+	},
+	"popup_mode_advanced_help": {
+		"message": "顯示完整的提示詞選擇器，包含所有可用範本。"
+	},
+	"popup_open_settings": {
+		"message": "開啟提示詞設定"
+	},
+	"options_title": {
+		"message": "PromptTube 設定"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "提示詞範本"
+	},
+	"options_lede": {
+		"message": "編輯在 YouTube 中顯示的提示詞、添加新提示詞，或恢復預設值。"
+	},
+	"options_section_title": {
+		"message": "你的提示詞"
+	},
+	"options_section_copy": {
+		"message": "每個提示詞都需要一個標籤和在轉錄前附加的指令文字。"
+	},
+	"options_standard_prompt_note": {
+		"message": "“摘要”提示詞用於標準模式，不能刪除。"
+	},
+	"options_add_prompt": {
+		"message": "添加提示詞"
+	},
+	"options_reset_defaults": {
+		"message": "恢復預設"
+	},
+	"options_save_prompts": {
+		"message": "儲存提示詞"
+	},
+	"options_label": {
+		"message": "標籤"
+	},
+	"options_label_placeholder": {
+		"message": "摘要 + 分析"
+	},
+	"options_body": {
+		"message": "提示詞文字"
+	},
+	"options_body_placeholder": {
+		"message": "請總結這段轉錄內容..."
+	},
+	"options_remove": {
+		"message": "刪除"
+	},
+	"options_prompt_card_title": {
+		"message": "提示詞 $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "“摘要”提示詞用於標準模式，不能刪除。"
+	},
+	"options_storage_unavailable": {
+		"message": "目前瀏覽器環境中儲存不可用。"
+	},
+	"options_storage_local": {
+		"message": "正在使用本機儲存。提示詞不會在瀏覽器之間同步。"
+	},
+	"options_storage_sync_generic": {
+		"message": "正在使用同步儲存。提示詞資料將在已登入且支援擴充功能同步的瀏覽器之間同步。"
+	},
+	"options_storage_sync_usage": {
+		"message": "正在使用同步儲存。提示詞資料已使用同步配額的 $1（Firefox 總計約 100 KB）。",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "儲存 API 不可用。正在顯示預設值。"
+	},
+	"options_status_load_saved_error": {
+		"message": "無法載入已儲存的提示詞。正在顯示預設值。"
+	},
+	"options_status_storage_unavailable": {
+		"message": "儲存 API 不可用。提示詞未儲存。"
+	},
+	"options_status_add_one": {
+		"message": "儲存前請至少添加一個提示詞。"
+	},
+	"options_status_missing_label": {
+		"message": "提示詞 $1 缺少標籤。",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "提示詞 $1 缺少提示詞文字。",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "提示詞已儲存。"
+	},
+	"options_status_save_error": {
+		"message": "無法儲存提示詞。"
+	},
+	"options_status_storage_only_page": {
+		"message": "儲存 API 不可用。僅在目前頁面恢復了預設值。"
+	},
+	"options_status_restore_success": {
+		"message": "預設提示詞已恢復。"
+	},
+	"options_status_restore_error": {
+		"message": "無法恢復預設值。"
+	},
+	"tip_manage_prompts": {
+		"message": "提示：使用 PromptTube 圖示管理提示詞"
+	},
+	"copy_prompt_label": {
+		"message": "複製提示詞：$1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "複製提示詞"
+	},
+	"working": {
+		"message": "處理中..."
+	},
+	"no_transcript_found": {
+		"message": "找不到此影片的轉錄內容"
+	},
+	"prompt_transcript_copied": {
+		"message": "提示詞 + 轉錄已複製"
+	},
+	"copy_failed": {
+		"message": "複製失败"
+	},
+	"prompt_selected": {
+		"message": "提示詞：$1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "選擇提示詞範本"
+	},
+	"copy_button_title": {
+		"message": "複製提示詞和轉錄"
+	},
+	"unknown_title": {
+		"message": "未知標題"
+	},
+	"unknown_channel": {
+		"message": "未知頻道"
+	},
+	"context_title_label": {
+		"message": "標題"
+	},
+	"context_channel_label": {
+		"message": "頻道"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "摘要"
+	},
+	"preset_summary_body": {
+		"message": "請總結這份 YouTube 轉錄內容。\n請給我：\n- 簡明摘要\n- 關鍵要點\n- 用一小段話給出主要結論"
+	},
+	"preset_summary_analysis_label": {
+		"message": "摘要 + 分析"
+	},
+	"preset_summary_analysis_body": {
+		"message": "請總結並分析這份 YouTube 轉錄內容。\n請給我：\n- 6-10 條要點摘要\n- 主要主題或論點\n- 最重要的內容及其原因\n- 明顯的優勢、弱點或假設"
+	},
+	"preset_summary_actions_label": {
+		"message": "摘要 + 行動項"
+	},
+	"preset_summary_actions_body": {
+		"message": "請總結這份 YouTube 轉錄內容並提取後續行動。\n請給我：\n- 簡明摘要\n- 關鍵要點\n- 清晰的行動項\n- 值得追蹤的決策或後續事項"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "摘要 + 事實查核"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "請總結這份 YouTube 轉錄內容，並標出需要進行事實查核的部分。\n請給我：\n- 簡明摘要\n- 主要主張\n- 看起來不確定、誇大或可能需要核實的說法\n- 一份簡短的事實查核清單，說明優先核查項\n然後請進行事實查核，並給我：\n- 你的發現摘要\n- 哪些主張已證實、已證偽或仍不確定"
+	},
+	"preset_executive_brief_label": {
+		"message": "高階簡報"
+	},
+	"preset_executive_brief_body": {
+		"message": "將這份 YouTube 轉錄內容整理為一份高階簡報。\n請給我：\n- 簡短的高層概覽\n- 最重要的洞察\n- 商業或策略影響\n- 主要風險或機會"
+	},
+	"preset_study_notes_label": {
+		"message": "學習筆記"
+	},
+	"preset_study_notes_body": {
+		"message": "將這份 YouTube 轉錄內容整理為學習筆記。\n請給我：\n- 按主題結構化的摘要\n- 重要定義或概念\n- 可能的考試或討論問題\n- 便於後續快速複習的簡短回顧"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "批判 + 機會"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "請批判性地審閱這份 YouTube 轉錄內容。\n請給我：\n- 簡明摘要\n- 哪些內容有說服力或有價值\n- 哪些內容缺失、薄弱或值得質疑\n- 由此啟發的想法、機會或改進點"
+	}
+}

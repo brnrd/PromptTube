@@ -8,6 +8,7 @@
 		ADVANCED: 'advanced',
 	}
 	const DEFAULT_UI_MODE = UI_MODES.STANDARD
+	const RTL_LANGUAGE_CODES = new Set(['ar', 'dv', 'fa', 'he', 'iw', 'ps', 'sd', 'ug', 'ur', 'yi'])
 
 	function getExtensionApi() {
 		if (typeof browser !== 'undefined') return browser
@@ -25,7 +26,51 @@
 		}
 	}
 
+	function normaliseLocaleTag(locale) {
+		if (typeof locale !== 'string' || !locale.trim()) return 'en'
+		return locale.trim().replace(/_/g, '-')
+	}
+
+	function getUiLanguage() {
+		try {
+			const api = getExtensionApi()
+			return normaliseLocaleTag(
+				api?.i18n?.getUILanguage?.() || document.documentElement.lang || 'en'
+			)
+		} catch {
+			return 'en'
+		}
+	}
+
+	function getTextDirection(locale = getUiLanguage()) {
+		const baseLanguage = normaliseLocaleTag(locale).split('-')[0].toLowerCase()
+		return RTL_LANGUAGE_CODES.has(baseLanguage) ? 'rtl' : 'ltr'
+	}
+
+	function applyLocaleAttributes(root = document) {
+		const locale = getUiLanguage()
+		const direction = getTextDirection(locale)
+		const targetDocument =
+			root?.nodeType === Node.DOCUMENT_NODE ? root : root?.ownerDocument || document
+		const targetElement =
+			root?.nodeType === Node.DOCUMENT_NODE ? targetDocument.documentElement : root
+
+		if (targetDocument?.documentElement) {
+			targetDocument.documentElement.lang = locale
+			targetDocument.documentElement.dir = direction
+		}
+
+		if (targetElement?.setAttribute && targetElement !== targetDocument.documentElement) {
+			targetElement.setAttribute('lang', locale)
+			targetElement.setAttribute('dir', direction)
+		}
+
+		return { locale, direction }
+	}
+
 	function localizeDocument(root = document) {
+		applyLocaleAttributes(root)
+
 		const nodes = root.querySelectorAll('[data-i18n]')
 		for (const node of nodes) {
 			const key = node.getAttribute('data-i18n')
@@ -261,6 +306,9 @@
 	globalThis.PromptTubeShared = {
 		getExtensionApi,
 		getMessage,
+		getUiLanguage,
+		getTextDirection,
+		applyLocaleAttributes,
 		localizeDocument,
 		PROMPT_PRESETS_STORAGE_KEY,
 		UI_MODE_STORAGE_KEY,

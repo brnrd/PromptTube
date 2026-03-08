@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "YouTube izleme sayfalarına yerelleştirilmiş istem araçları ekler: Standart veya Gelişmiş modu kullanın, dökümü ve seçilen AI istemini tek tıkla kopyalayın ve kendi istemlerinizi Ayarlar’da düzenleyin."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "İstem modu"
+	},
+	"popup_lede": {
+	  "message": "PromptTube’un YouTube izleme sayfalarında nasıl görüneceğini seçin."
+	},
+	"popup_mode_group_aria": {
+	  "message": "İstem modu"
+	},
+	"popup_mode_standard": {
+	  "message": "Standart"
+	},
+	"popup_mode_advanced": {
+	  "message": "Gelişmiş"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Tek bir basit özet istemi düğmesi gösterir. Bu istemi Ayarlar’da düzenleyin."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Tüm kullanılabilir istem şablonlarıyla tam istem seçiciyi gösterir."
+	},
+	"popup_open_settings": {
+	  "message": "İstem ayarlarını aç"
+	},
+	"options_title": {
+	  "message": "PromptTube Ayarları"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "İstem şablonları"
+	},
+	"options_lede": {
+	  "message": "YouTube’da gösterilen istemleri düzenleyin, yenilerini ekleyin veya varsayılanlara dönün."
+	},
+	"options_section_title": {
+	  "message": "İstemleriniz"
+	},
+	"options_section_copy": {
+	  "message": "Her istem için bir etiket ve dökümün önüne eklenecek yönerge metni gerekir."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Özet istemi Standart modda kullanılır ve kaldırılamaz."
+	},
+	"options_add_prompt": {
+	  "message": "İstem ekle"
+	},
+	"options_reset_defaults": {
+	  "message": "Varsayılanları sıfırla"
+	},
+	"options_save_prompts": {
+	  "message": "İstemleri kaydet"
+	},
+	"options_label": {
+	  "message": "Etiket"
+	},
+	"options_label_placeholder": {
+	  "message": "Özet + analiz"
+	},
+	"options_body": {
+	  "message": "İstem metni"
+	},
+	"options_body_placeholder": {
+	  "message": "Lütfen bu dökümü özetleyin..."
+	},
+	"options_remove": {
+	  "message": "Kaldır"
+	},
+	"options_prompt_card_title": {
+	  "message": "İstem $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Özet istemi Standart modda kullanılır ve kaldırılamaz."
+	},
+	"options_storage_unavailable": {
+	  "message": "Depolama bu tarayıcı bağlamında kullanılamıyor."
+	},
+	"options_storage_local": {
+	  "message": "Yalnızca yerel depolama kullanılıyor. İstemler tarayıcılar arasında eşitlenmeyecek."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Eşitlemeli depolama kullanılıyor. İstem verileri, eklenti eşitlemeyi destekleyen oturum açmış tarayıcılar arasında eşitlenmelidir."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Eşitlemeli depolama kullanılıyor. İstem verileri eşitleme kotasının $1 kadarını kullanıyor (Firefox’ta toplam ~100 KB).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "Storage API kullanılamıyor. Varsayılanlar gösteriliyor."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Kaydedilmiş istemler yüklenemedi. Varsayılanlar gösteriliyor."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "Storage API kullanılamıyor. İstemler kaydedilmedi."
+	},
+	"options_status_add_one": {
+	  "message": "Kaydetmeden önce en az bir istem ekleyin."
+	},
+	"options_status_missing_label": {
+	  "message": "$1 numaralı istemin etiketi eksik.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "$1 numaralı istemin istem metni eksik.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "İstemler kaydedildi."
+	},
+	"options_status_save_error": {
+	  "message": "İstemler kaydedilemedi."
+	},
+	"options_status_storage_only_page": {
+	  "message": "Storage API kullanılamıyor. Varsayılanlar yalnızca bu sayfada geri yüklendi."
+	},
+	"options_status_restore_success": {
+	  "message": "Varsayılan istemler geri yüklendi."
+	},
+	"options_status_restore_error": {
+	  "message": "Varsayılanlar geri yüklenemedi."
+	},
+	"tip_manage_prompts": {
+	  "message": "İpucu: istemleri yönetmek için PromptTube simgesini kullanın"
+	},
+	"copy_prompt_label": {
+	  "message": "İstemi kopyala: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "İstemi kopyala"
+	},
+	"working": {
+	  "message": "Çalışıyor..."
+	},
+	"no_transcript_found": {
+	  "message": "Bu video için döküm bulunamadı"
+	},
+	"prompt_transcript_copied": {
+	  "message": "İstem + döküm kopyalandı"
+	},
+	"copy_failed": {
+	  "message": "Kopyalama başarısız oldu"
+	},
+	"prompt_selected": {
+	  "message": "İstem: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "İstem şablonu seçin"
+	},
+	"copy_button_title": {
+	  "message": "İstemi ve dökümü kopyala"
+	},
+	"unknown_title": {
+	  "message": "Bilinmeyen başlık"
+	},
+	"unknown_channel": {
+	  "message": "Bilinmeyen kanal"
+	},
+	"context_title_label": {
+	  "message": "Başlık"
+	},
+	"context_channel_label": {
+	  "message": "Kanal"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Özet"
+	},
+	"preset_summary_body": {
+	  "message": "Bu YouTube dökümünü özetleyin.\nBana şunları verin:\n- kısa bir özet\n- ana çıkarımlar\n- ana sonucu tek kısa paragrafta"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Özet + analiz"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Bu YouTube dökümünü özetleyin ve analiz edin.\nBana şunları verin:\n- 6-10 maddelik bir özet\n- ana temalar veya argümanlar\n- en önemli olan şey ve nedeni\n- dikkat çekici güçlü yönler, zayıflıklar veya varsayımlar"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Özet + eylemler"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Bu YouTube dökümünü özetleyin ve sonraki adımları çıkarın.\nBana şunları verin:\n- kısa bir özet\n- ana çıkarımlar\n- net eylem maddeleri\n- takip etmeye değer kararlar veya devam işleri"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Özet + doğrulama"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Bu YouTube dökümünü özetleyin ve doğrulanması gereken her şeyi işaretleyin.\nBana şunları verin:\n- kısa bir özet\n- öne sürülen ana iddialar\n- belirsiz, abartılı veya doğrulamaya ihtiyaç duyan ifadeler\n- önce neyin doğrulanması gerektiğine dair kısa bir doğrulama kontrol listesi\nArdından doğrulamayı yapın ve bana şunları verin:\n- bulduklarınızın özeti\n- hangi iddiaların doğrulandığı, çürütüldüğü veya hâlâ belirsiz kaldığı"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Yönetici özeti"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Bu YouTube dökümünü bir yönetici özetine dönüştürün.\nBana şunları verin:\n- kısa, üst düzey bir genel bakış\n- en önemli içgörüler\n- iş veya stratejiyle ilgili etkiler\n- başlıca riskler veya fırsatlar"
+	},
+	"preset_study_notes_label": {
+	  "message": "Çalışma notları"
+	},
+	"preset_study_notes_body": {
+	  "message": "Bu YouTube dökümünü çalışma notlarına dönüştürün.\nBana şunları verin:\n- konuya göre yapılandırılmış bir özet\n- önemli tanımlar veya kavramlar\n- olası sınav veya tartışma soruları\n- daha sonra hızlıca gözden geçirebileceğim kısa bir tekrar"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Eleştiri + fırsatlar"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Bu YouTube dökümünü eleştirel biçimde inceleyin.\nBana şunları verin:\n- kısa bir özet\n- ikna edici veya faydalı olan şeyler\n- eksik, zayıf veya şüpheli olan şeyler\n- bundan ilham alan fikirler, fırsatlar veya iyileştirmeler"
+	}
+}

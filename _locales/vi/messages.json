@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Thêm công cụ prompt được bản địa hóa vào trang xem YouTube: dùng chế độ Tiêu chuẩn hoặc Nâng cao, sao chép bản chép lời và prompt AI đã chọn chỉ với một cú nhấp, rồi chỉnh sửa prompt của riêng bạn trong phần Cài đặt."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Chế độ prompt"
+	},
+	"popup_lede": {
+	  "message": "Chọn cách PromptTube xuất hiện trên trang xem YouTube."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Chế độ prompt"
+	},
+	"popup_mode_standard": {
+	  "message": "Tiêu chuẩn"
+	},
+	"popup_mode_advanced": {
+	  "message": "Nâng cao"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Hiển thị một nút tóm tắt đơn giản. Hãy chỉnh sửa prompt đó trong phần Cài đặt."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Hiển thị bộ chọn prompt đầy đủ với tất cả các mẫu prompt khả dụng."
+	},
+	"popup_open_settings": {
+	  "message": "Mở cài đặt prompt"
+	},
+	"options_title": {
+	  "message": "Cài đặt PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Mẫu prompt"
+	},
+	"options_lede": {
+	  "message": "Chỉnh sửa các prompt hiển thị trên YouTube, thêm prompt mới hoặc khôi phục mặc định."
+	},
+	"options_section_title": {
+	  "message": "Prompt của bạn"
+	},
+	"options_section_copy": {
+	  "message": "Mỗi prompt cần có nhãn và văn bản hướng dẫn được thêm trước bản chép lời."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Prompt Tóm tắt được dùng trong chế độ Tiêu chuẩn và không thể bị xóa."
+	},
+	"options_add_prompt": {
+	  "message": "Thêm prompt"
+	},
+	"options_reset_defaults": {
+	  "message": "Khôi phục mặc định"
+	},
+	"options_save_prompts": {
+	  "message": "Lưu prompt"
+	},
+	"options_label": {
+	  "message": "Nhãn"
+	},
+	"options_label_placeholder": {
+	  "message": "Tóm tắt + phân tích"
+	},
+	"options_body": {
+	  "message": "Văn bản prompt"
+	},
+	"options_body_placeholder": {
+	  "message": "Vui lòng tóm tắt bản chép lời này..."
+	},
+	"options_remove": {
+	  "message": "Xóa"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Prompt Tóm tắt được dùng trong chế độ Tiêu chuẩn và không thể bị xóa."
+	},
+	"options_storage_unavailable": {
+	  "message": "Bộ nhớ không khả dụng trong ngữ cảnh trình duyệt này."
+	},
+	"options_storage_local": {
+	  "message": "Đang dùng chỉ bộ nhớ cục bộ. Prompt sẽ không đồng bộ giữa các trình duyệt."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Đang dùng bộ nhớ đồng bộ. Dữ liệu prompt sẽ được đồng bộ giữa các trình duyệt đã đăng nhập hỗ trợ đồng bộ tiện ích."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Đang dùng bộ nhớ đồng bộ. Dữ liệu prompt dùng $1 dung lượng đồng bộ (~100 KB tổng cộng trên Firefox).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "API lưu trữ không khả dụng. Đang hiển thị mặc định."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Không thể tải các prompt đã lưu. Đang hiển thị mặc định."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "API lưu trữ không khả dụng. Prompt chưa được lưu."
+	},
+	"options_status_add_one": {
+	  "message": "Hãy thêm ít nhất một prompt trước khi lưu."
+	},
+	"options_status_missing_label": {
+	  "message": "Prompt $1 thiếu nhãn.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Prompt $1 thiếu văn bản prompt.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Đã lưu prompt."
+	},
+	"options_status_save_error": {
+	  "message": "Không thể lưu prompt."
+	},
+	"options_status_storage_only_page": {
+	  "message": "API lưu trữ không khả dụng. Chỉ khôi phục mặc định trên trang này."
+	},
+	"options_status_restore_success": {
+	  "message": "Đã khôi phục prompt mặc định."
+	},
+	"options_status_restore_error": {
+	  "message": "Không thể khôi phục mặc định."
+	},
+	"tip_manage_prompts": {
+	  "message": "Mẹo: dùng biểu tượng PromptTube để quản lý prompt"
+	},
+	"copy_prompt_label": {
+	  "message": "Sao chép prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Sao chép prompt"
+	},
+	"working": {
+	  "message": "Đang xử lý..."
+	},
+	"no_transcript_found": {
+	  "message": "Không tìm thấy bản chép lời cho video này"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Đã sao chép prompt + bản chép lời"
+	},
+	"copy_failed": {
+	  "message": "Sao chép thất bại"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Chọn mẫu prompt"
+	},
+	"copy_button_title": {
+	  "message": "Sao chép prompt và bản chép lời"
+	},
+	"unknown_title": {
+	  "message": "Tiêu đề không xác định"
+	},
+	"unknown_channel": {
+	  "message": "Kênh không xác định"
+	},
+	"context_title_label": {
+	  "message": "Tiêu đề"
+	},
+	"context_channel_label": {
+	  "message": "Kênh"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Tóm tắt"
+	},
+	"preset_summary_body": {
+	  "message": "Hãy tóm tắt bản chép lời YouTube này.\nCho tôi:\n- một bản tóm tắt ngắn gọn\n- các ý chính\n- kết luận chính trong một đoạn ngắn"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Tóm tắt + phân tích"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Hãy tóm tắt và phân tích bản chép lời YouTube này.\nCho tôi:\n- bản tóm tắt dạng 6-10 gạch đầu dòng\n- các chủ đề hoặc lập luận chính\n- điều gì quan trọng nhất và vì sao\n- những điểm mạnh, điểm yếu hoặc giả định đáng chú ý"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Tóm tắt + hành động"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Hãy tóm tắt bản chép lời YouTube này và rút ra các bước tiếp theo.\nCho tôi:\n- một bản tóm tắt ngắn gọn\n- các ý chính\n- các mục hành động rõ ràng\n- các quyết định hoặc việc theo dõi đáng lưu ý"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Tóm tắt + kiểm chứng"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Hãy tóm tắt bản chép lời YouTube này và đánh dấu mọi điều cần kiểm chứng.\nCho tôi:\n- một bản tóm tắt ngắn gọn\n- các tuyên bố chính\n- mọi phát biểu có vẻ không chắc chắn, phóng đại hoặc cần xác minh\n- danh sách kiểm chứng ngắn về những gì cần kiểm tra trước\nSau đó hãy thực hiện kiểm chứng và cho tôi:\n- bản tóm tắt những gì bạn tìm thấy\n- tuyên bố nào đã được xác nhận, bác bỏ hoặc vẫn chưa chắc chắn"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Tóm lược điều hành"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Hãy biến bản chép lời YouTube này thành một tóm lược điều hành.\nCho tôi:\n- một cái nhìn tổng quan ngắn gọn ở mức cao\n- những insight quan trọng nhất\n- các tác động kinh doanh hoặc chiến lược\n- các rủi ro hoặc cơ hội hàng đầu"
+	},
+	"preset_study_notes_label": {
+	  "message": "Ghi chú học tập"
+	},
+	"preset_study_notes_body": {
+	  "message": "Hãy chuyển bản chép lời YouTube này thành ghi chú học tập.\nCho tôi:\n- bản tóm tắt có cấu trúc theo chủ đề\n- các định nghĩa hoặc khái niệm quan trọng\n- các câu hỏi thi hoặc thảo luận có khả năng xuất hiện\n- một bản ôn tập ngắn để tôi xem lại nhanh sau này"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Phê bình + cơ hội"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Hãy đánh giá bản chép lời YouTube này một cách phản biện.\nCho tôi:\n- một bản tóm tắt ngắn gọn\n- điều gì thuyết phục hoặc hữu ích\n- điều gì còn thiếu, yếu hoặc đáng nghi ngờ\n- các ý tưởng, cơ hội hoặc cải tiến được gợi ra từ nội dung này"
+	}
+}

@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Al zonte struments di prompt localizâts aes pagjinis di vision di YouTube: dopre il mode Standard o Avanzât, copie la trascrizion e il prompt IA selezionât cuntun clic e modifiche i tiei prompts tes Impostazions."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Mode prompt"
+	},
+	"popup_lede": {
+	  "message": "Sielç cemût che PromptTube al ven mostrât aes pagjinis di vision di YouTube."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Mode prompt"
+	},
+	"popup_mode_standard": {
+	  "message": "Standard"
+	},
+	"popup_mode_advanced": {
+	  "message": "Avanzât"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Al mostre un boton sempliç di riassunt. Modifiche chel prompt tes Impostazions."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Al mostre il seletôr complet dai prompts cun ducj i modei disponibii."
+	},
+	"popup_open_settings": {
+	  "message": "Vierç lis impostazions dai prompts"
+	},
+	"options_title": {
+	  "message": "Impostazions di PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Modei di prompt"
+	},
+	"options_lede": {
+	  "message": "Modifiche i prompts mostrâts su YouTube, zonte gnûfs o ripristine i predefinîts."
+	},
+	"options_section_title": {
+	  "message": "I tiei prompts"
+	},
+	"options_section_copy": {
+	  "message": "Ogni prompt al à bisugne di une etichete e dal test de istruzion di meti prime de trascrizion."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Il prompt Riassunt al ven doprât intal mode Standard e nol pues jessi gjavât."
+	},
+	"options_add_prompt": {
+	  "message": "Zonte prompt"
+	},
+	"options_reset_defaults": {
+	  "message": "Ripristine predefinîts"
+	},
+	"options_save_prompts": {
+	  "message": "Salve prompts"
+	},
+	"options_label": {
+	  "message": "Etichete"
+	},
+	"options_label_placeholder": {
+	  "message": "Riassunt + analis"
+	},
+	"options_body": {
+	  "message": "Test dal prompt"
+	},
+	"options_body_placeholder": {
+	  "message": "Par plasê, fâs un riassunt di cheste trascrizion..."
+	},
+	"options_remove": {
+	  "message": "Gjave"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Il prompt Riassunt al ven doprât intal mode Standard e nol pues jessi gjavât."
+	},
+	"options_storage_unavailable": {
+	  "message": "Il archivi nol è disponibil in chest contest dal navigadôr."
+	},
+	"options_storage_local": {
+	  "message": "Si dopre dome archivi locâl. I prompts no si sincronizaran fra i navigadôrs."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Si dopre archivi sincronizât. I dâts dai prompts a varessin di sincronizâsi fra i navigadôrs jentrâts che a supuartin la sincronizazion des estensions."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Si dopre archivi sincronizât. I dâts dai prompts a doprin $1 de quote di sincronizazion (~100 KB in dut su Firefox).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "Storage API no disponibile. A vegnin mostrâts i predefinîts."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Impussibil cjamâ i prompts salvâts. A vegnin mostrâts i predefinîts."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "Storage API no disponibile. I prompts no son stâts salvâts."
+	},
+	"options_status_add_one": {
+	  "message": "Zonte almancul un prompt prime di salvâ."
+	},
+	"options_status_missing_label": {
+	  "message": "Al prompt $1 i mancje la etichete.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Al prompt $1 i mancje il test dal prompt.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Prompts salvâts."
+	},
+	"options_status_save_error": {
+	  "message": "Impussibil salvâ i prompts."
+	},
+	"options_status_storage_only_page": {
+	  "message": "Storage API no disponibile. I predefinîts a son stâts ripristinâts dome su cheste pagjine."
+	},
+	"options_status_restore_success": {
+	  "message": "Prompts predefinîts ripristinâts."
+	},
+	"options_status_restore_error": {
+	  "message": "Impussibil ripristinâ i predefinîts."
+	},
+	"tip_manage_prompts": {
+	  "message": "Consei: dopre la icone di PromptTube par gjestî i prompts"
+	},
+	"copy_prompt_label": {
+	  "message": "Copie prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Copie prompt"
+	},
+	"working": {
+	  "message": "Daûr a elaborâ..."
+	},
+	"no_transcript_found": {
+	  "message": "Nissune trascrizion cjatade par chest video"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompt + trascrizion copiâts"
+	},
+	"copy_failed": {
+	  "message": "Copia falide"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Sielç model di prompt"
+	},
+	"copy_button_title": {
+	  "message": "Copie prompt e trascrizion"
+	},
+	"unknown_title": {
+	  "message": "Titul no cognossût"
+	},
+	"unknown_channel": {
+	  "message": "Canâl no cognossût"
+	},
+	"context_title_label": {
+	  "message": "Titul"
+	},
+	"context_channel_label": {
+	  "message": "Canâl"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Riassunt"
+	},
+	"preset_summary_body": {
+	  "message": "Fâs un riassunt di cheste trascrizion di YouTube.\nDammi:\n- un riassunt concis\n- i ponts principâi\n- la conclusion principâl intun curt paragraf"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Riassunt + analis"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Fâs un riassunt e analise cheste trascrizion di YouTube.\nDammi:\n- un riassunt in 6-10 ponts\n- i temis o argoments principâi\n- ce che al conte di plui e parcè\n- ponts di fuarce, debolecis o supozizions notabilis"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Riassunt + azions"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Fâs un riassunt di cheste trascrizion di YouTube e tire fûr i prossims pas.\nDammi:\n- un riassunt concis\n- i ponts principâi\n- azions claris\n- decisions o seguitis che al vâl la pene tignî di voli"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Riassunt + control dai fats"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Fâs un riassunt di cheste trascrizion di YouTube e segnale dut ce che al varessi di jessi verificât.\nDammi:\n- un riassunt concis\n- lis afermazions principâls\n- cualsisei declarazion che e semee no sigure, esagerade o di verificâ\n- une curte liste di control su ce che verificâ prime\nDaspò fâs il control dai fats e dammi:\n- un riassunt di ce che tu âs cjatât\n- cualis afermazions a son stadis confermadis, smentidis o a restin no siguris"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Brief pe direzion"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Trasforme cheste trascrizion di YouTube intun brief pe direzion.\nDammi:\n- une curte vision gjenerâl di alt nivel\n- i insights plui impuartants\n- implicazions di business o strategjichis\n- i prins riscs o oportunitâts"
+	},
+	"preset_study_notes_label": {
+	  "message": "Notis di studi"
+	},
+	"preset_study_notes_body": {
+	  "message": "Convierte cheste trascrizion di YouTube in notis di studi.\nDammi:\n- un riassunt strutturât par argoment\n- definizions o concets impuartants\n- pussibilis domandis di esam o discussion\n- une curte ricapitulazion di viodi svelt plui tart"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Critiche + oportunitâts"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Valute cheste trascrizion di YouTube in maniere critiche.\nDammi:\n- un riassunt concis\n- ce che al è convincent o util\n- ce che al mancje, al è flac o discutibil\n- ideis, oportunitâts o mioraments ispirâts di cheste trascrizion"
+	}
+}

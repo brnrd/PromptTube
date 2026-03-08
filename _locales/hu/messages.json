@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Lokalizált prompteszközöket ad a YouTube videóoldalaihoz: használd a Standard vagy Haladó módot, másold ki a leiratot a kiválasztott AI-prompttal egy kattintással, és szerkeszd saját promptjaidat a Beállításokban."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Prompt mód"
+	},
+	"popup_lede": {
+	  "message": "Válaszd ki, hogyan jelenjen meg a PromptTube a YouTube videóoldalain."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Prompt mód"
+	},
+	"popup_mode_standard": {
+	  "message": "Standard"
+	},
+	"popup_mode_advanced": {
+	  "message": "Haladó"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Egy egyszerű összefoglaló gombot jelenít meg. Ezt a promptot a Beállításokban szerkesztheted."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Megjeleníti a teljes promptválasztót az összes elérhető sablonnal."
+	},
+	"popup_open_settings": {
+	  "message": "Promptbeállítások megnyitása"
+	},
+	"options_title": {
+	  "message": "PromptTube beállítások"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Promptsablonok"
+	},
+	"options_lede": {
+	  "message": "Szerkeszd a YouTube-on megjelenő promptokat, adj hozzá újakat, vagy állítsd vissza az alapértelmezetteket."
+	},
+	"options_section_title": {
+	  "message": "Saját promptjaid"
+	},
+	"options_section_copy": {
+	  "message": "Minden promptnak szüksége van egy címkére és a leirat elé kerülő utasításszövegre."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Az Összefoglaló prompt Standard módban használatos, és nem távolítható el."
+	},
+	"options_add_prompt": {
+	  "message": "Prompt hozzáadása"
+	},
+	"options_reset_defaults": {
+	  "message": "Alapértelmezések visszaállítása"
+	},
+	"options_save_prompts": {
+	  "message": "Promptok mentése"
+	},
+	"options_label": {
+	  "message": "Címke"
+	},
+	"options_label_placeholder": {
+	  "message": "Összefoglaló + elemzés"
+	},
+	"options_body": {
+	  "message": "Prompt szöveg"
+	},
+	"options_body_placeholder": {
+	  "message": "Kérlek, foglald össze ezt a leiratot..."
+	},
+	"options_remove": {
+	  "message": "Eltávolítás"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Az Összefoglaló prompt Standard módban használatos, és nem távolítható el."
+	},
+	"options_storage_unavailable": {
+	  "message": "A tárhely ebben a böngészői környezetben nem érhető el."
+	},
+	"options_storage_local": {
+	  "message": "Csak helyi tárhely használata. A promptok nem szinkronizálódnak a böngészők között."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Szinkronizált tárhely használata. A promptadatoknak szinkronizálódniuk kell a bejelentkezett, bővítményszinkronizálást támogató böngészők között."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Szinkronizált tárhely használata. A promptadatok a szinkronkvóta $1 részét használják (~100 KB összesen Firefoxban).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "A Storage API nem érhető el. Az alapértelmezések láthatók."
+	},
+	"options_status_load_saved_error": {
+	  "message": "A mentett promptokat nem sikerült betölteni. Az alapértelmezések láthatók."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "A Storage API nem érhető el. A promptok nem lettek mentve."
+	},
+	"options_status_add_one": {
+	  "message": "Mentés előtt adj hozzá legalább egy promptot."
+	},
+	"options_status_missing_label": {
+	  "message": "A(z) $1. promptnak hiányzik a címkéje.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "A(z) $1. promptból hiányzik a prompt szövege.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Promptok mentve."
+	},
+	"options_status_save_error": {
+	  "message": "A promptokat nem sikerült menteni."
+	},
+	"options_status_storage_only_page": {
+	  "message": "A Storage API nem érhető el. Az alapértelmezések csak ezen az oldalon lettek visszaállítva."
+	},
+	"options_status_restore_success": {
+	  "message": "Az alapértelmezett promptok visszaállítva."
+	},
+	"options_status_restore_error": {
+	  "message": "Az alapértelmezések visszaállítása nem sikerült."
+	},
+	"tip_manage_prompts": {
+	  "message": "Tipp: a promptok kezeléséhez használd a PromptTube ikonját"
+	},
+	"copy_prompt_label": {
+	  "message": "Prompt másolása: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Prompt másolása"
+	},
+	"working": {
+	  "message": "Feldolgozás..."
+	},
+	"no_transcript_found": {
+	  "message": "Ehhez a videóhoz nem található leirat"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompt + leirat másolva"
+	},
+	"copy_failed": {
+	  "message": "A másolás sikertelen"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Promptsablon kiválasztása"
+	},
+	"copy_button_title": {
+	  "message": "Prompt és leirat másolása"
+	},
+	"unknown_title": {
+	  "message": "Ismeretlen cím"
+	},
+	"unknown_channel": {
+	  "message": "Ismeretlen csatorna"
+	},
+	"context_title_label": {
+	  "message": "Cím"
+	},
+	"context_channel_label": {
+	  "message": "Csatorna"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Összefoglaló"
+	},
+	"preset_summary_body": {
+	  "message": "Foglalja össze ezt a YouTube-leiratot.\nAdja meg:\n- egy tömör összefoglalót\n- a legfontosabb megállapításokat\n- a fő következtetést egy rövid bekezdésben"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Összefoglaló + elemzés"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Foglalja össze és elemezze ezt a YouTube-leiratot.\nAdja meg:\n- egy 6–10 pontos összefoglalót\n- a fő témákat vagy érveket\n- mi a legfontosabb és miért\n- minden jelentős erősséget, gyengeséget vagy feltételezést"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Összefoglaló + teendők"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Foglalja össze ezt a YouTube-leiratot, és emelje ki a következő lépéseket.\nAdja meg:\n- egy tömör összefoglalót\n- a legfontosabb megállapításokat\n- egyértelmű teendőket\n- minden követendő döntést vagy utánkövetést"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Összefoglaló + tényellenőrzés"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Foglalja össze ezt a YouTube-leiratot, és jelölje meg mindazt, amit tényellenőrizni kellene.\nAdja meg:\n- egy tömör összefoglalót\n- a fő állításokat\n- minden olyan kijelentést, amely bizonytalannak, túlzónak vagy ellenőrzést igénylőnek tűnik\n- egy rövid tényellenőrzési listát arról, mit kell először ellenőrizni\nEzután végezze el a tényellenőrzést, és adja meg:\n- az eredmények összefoglalását\n- mely állítások bizonyultak igaznak, hamisnak vagy maradtak bizonytalanok"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Vezetői brief"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Alakítsa ezt a YouTube-leiratot vezetői brief-fé.\nAdja meg:\n- egy rövid magas szintű áttekintést\n- a legfontosabb felismeréseket\n- üzleti vagy stratégiai következményeket\n- a legnagyobb kockázatokat vagy lehetőségeket"
+	},
+	"preset_study_notes_label": {
+	  "message": "Tanulási jegyzetek"
+	},
+	"preset_study_notes_body": {
+	  "message": "Alakítsa ezt a YouTube-leiratot tanulási jegyzetekké.\nAdja meg:\n- témák szerinti strukturált összefoglalót\n- fontos definíciókat vagy fogalmakat\n- várható vizsga- vagy vitaindító kérdéseket\n- egy rövid áttekintést, amit később gyorsan átnézhetek"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Kritika + lehetőségek"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Értékelje kritikusan ezt a YouTube-leiratot.\nAdja meg:\n- egy tömör összefoglalót\n- mi meggyőző vagy hasznos benne\n- mi hiányzik, gyenge vagy kérdéses\n- a tartalom által inspirált ötleteket, lehetőségeket vagy fejlesztéseket"
+	}
+}

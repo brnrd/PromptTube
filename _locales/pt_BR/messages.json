@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "Adiciona ferramentas de prompts localizadas às páginas de visualização do YouTube: use o modo Padrão ou Avançado, copie a transcrição com o prompt de IA selecionado num clique e edite os seus próprios prompts nas Configurações."
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "Modo de prompt"
+	},
+	"popup_lede": {
+		"message": "Escolha como o PromptTube aparece nas páginas de visualização do YouTube."
+	},
+	"popup_mode_group_aria": {
+		"message": "Modo de prompt"
+	},
+	"popup_mode_standard": {
+		"message": "Padrão"
+	},
+	"popup_mode_advanced": {
+		"message": "Avançado"
+	},
+	"popup_mode_standard_help": {
+		"message": "Mostra um único botão simples de resumo. Pode editar esse prompt nas Configurações."
+	},
+	"popup_mode_advanced_help": {
+		"message": "Mostra o seletor completo com todos os modelos de prompts disponíveis."
+	},
+	"popup_open_settings": {
+		"message": "Abrir configurações de prompts"
+	},
+	"options_title": {
+		"message": "Configurações do PromptTube"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "Modelos de prompts"
+	},
+	"options_lede": {
+		"message": "Edite os prompts mostrados no YouTube, adicione novos ou reponha os valores padrão."
+	},
+	"options_section_title": {
+		"message": "Os seus prompts"
+	},
+	"options_section_copy": {
+		"message": "Cada prompt precisa de um rótulo e do texto de instrução a colocar antes da transcrição."
+	},
+	"options_standard_prompt_note": {
+		"message": "O prompt Resumo é usado no modo Padrão e não pode ser removido."
+	},
+	"options_add_prompt": {
+		"message": "Adicionar prompt"
+	},
+	"options_reset_defaults": {
+		"message": "Repor preconfigurações"
+	},
+	"options_save_prompts": {
+		"message": "Salvar prompts"
+	},
+	"options_label": {
+		"message": "Rótulo"
+	},
+	"options_label_placeholder": {
+		"message": "Resumo + análise"
+	},
+	"options_body": {
+		"message": "Texto do prompt"
+	},
+	"options_body_placeholder": {
+		"message": "Resuma esta transcrição..."
+	},
+	"options_remove": {
+		"message": "Remover"
+	},
+	"options_prompt_card_title": {
+		"message": "Prompt $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "O prompt Resumo é usado no modo Padrão e não pode ser removido."
+	},
+	"options_storage_unavailable": {
+		"message": "O armazenamento não está disponível neste contexto do navegador."
+	},
+	"options_storage_local": {
+		"message": "A usar apenas armazenamento local. Os prompts não serão sincronizados entre navegadores."
+	},
+	"options_storage_sync_generic": {
+		"message": "A usar armazenamento sincronizado. Os dados dos prompts devem sincronizar entre navegadores com sessão iniciada que suportem sincronização de extensões."
+	},
+	"options_storage_sync_usage": {
+		"message": "A usar armazenamento sincronizado. Os dados dos prompts usam $1 da quota de sincronização (~100 KB no total no Firefox).",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "API de armazenamento indisponível. A mostrar preconfigurações."
+	},
+	"options_status_load_saved_error": {
+		"message": "Não foi possível carregar os prompts salvos. A mostrar preconfigurações."
+	},
+	"options_status_storage_unavailable": {
+		"message": "API de armazenamento indisponível. Os prompts não foram salvos."
+	},
+	"options_status_add_one": {
+		"message": "Adicione pelo menos um prompt antes de guardar."
+	},
+	"options_status_missing_label": {
+		"message": "O prompt $1 não tem rótulo.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "O prompt $1 não tem texto de prompt.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "Prompts salvos."
+	},
+	"options_status_save_error": {
+		"message": "Não foi possível guardar os prompts."
+	},
+	"options_status_storage_only_page": {
+		"message": "API de armazenamento indisponível. As preconfigurações foram repostas apenas nesta página."
+	},
+	"options_status_restore_success": {
+		"message": "Prompts padrão repostos."
+	},
+	"options_status_restore_error": {
+		"message": "Não foi possível repor as preconfigurações."
+	},
+	"tip_manage_prompts": {
+		"message": "Dica: use o ícone do PromptTube para gerenciar prompts"
+	},
+	"copy_prompt_label": {
+		"message": "Copiar prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "Copiar prompt"
+	},
+	"working": {
+		"message": "Processando..."
+	},
+	"no_transcript_found": {
+		"message": "Nenhuma transcrição foi encontrada para este vídeo"
+	},
+	"prompt_transcript_copied": {
+		"message": "Prompt + transcrição copiados"
+	},
+	"copy_failed": {
+		"message": "Falha ao copiar"
+	},
+	"prompt_selected": {
+		"message": "Prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "Escolher modelo de prompt"
+	},
+	"copy_button_title": {
+		"message": "Copiar prompt e transcrição"
+	},
+	"unknown_title": {
+		"message": "Título desconhecido"
+	},
+	"unknown_channel": {
+		"message": "Canal desconhecido"
+	},
+	"context_title_label": {
+		"message": "Título"
+	},
+	"context_channel_label": {
+		"message": "Canal"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "Resumo"
+	},
+	"preset_summary_body": {
+		"message": "Resuma esta transcrição do YouTube.\nMe dê:\n- um resumo conciso\n- os pontos principais\n- a conclusão principal num parágrafo curto"
+	},
+	"preset_summary_analysis_label": {
+		"message": "Resumo + análise"
+	},
+	"preset_summary_analysis_body": {
+		"message": "Resuma e analise esta transcrição do YouTube.\nMe dê:\n- um resumo em 6-10 pontos\n- os temas ou argumentos principais\n- o que é mais importante e porquê\n- pontos fortes, fracos ou pressupostos relevantes"
+	},
+	"preset_summary_actions_label": {
+		"message": "Resumo + ações"
+	},
+	"preset_summary_actions_body": {
+		"message": "Resuma esta transcrição do YouTube e extraia próximos passos.\nMe dê:\n- um resumo conciso\n- pontos principais\n- ações claras\n- decisões ou acompanhamentos que valha a pena acompanhar"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "Resumo + verificação de fatos"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "Resuma esta transcrição do YouTube e sinalize tudo o que deva ser verificado.\nMe dê:\n- um resumo conciso\n- as principais afirmações feitas\n- afirmações que pareçam incertas, exageradas ou que precisem de verificação\n- uma checklist curta do que verificar primeiro\nDepois, faz a verificação e dá-me:\n- um resumo do que você encontrou\n- que afirmações foram confirmadas, desmentidas ou permanecem incertas"
+	},
+	"preset_executive_brief_label": {
+		"message": "Resumo executivo"
+	},
+	"preset_executive_brief_body": {
+		"message": "Transforma esta transcrição do YouTube num resumo executivo.\nMe dê:\n- uma visão geral curta de alto nível\n- os insights mais importantes\n- implicações de negócio ou estratégicas\n- os principais riscos ou oportunidades"
+	},
+	"preset_study_notes_label": {
+		"message": "Notas de estudo"
+	},
+	"preset_study_notes_body": {
+		"message": "Converta esta transcrição do YouTube em notas de estudo.\nMe dê:\n- um resumo estruturado por tema\n- configurações ou conceitos importantes\n- possíveis perguntas de exame ou discussão\n- uma recapitulação curta para rever rapidamente mais tarde"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "Crítica + oportunidades"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "Revise criticamente esta transcrição do YouTube.\nMe dê:\n- um resumo conciso\n- o que é convincente ou útil\n- o que está em falta, é fraco ou questionável\n- ideias, oportunidades ou melhorias inspiradas nela"
+	}
+}

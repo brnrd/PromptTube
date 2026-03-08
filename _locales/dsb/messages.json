@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Pśidawa lokalizěrowane promptowe rědy na woglědowe boki YouTube: wužywajśo standardny abo rozšyrjony modus, kopěrujśo transkript a wubrany KI-prompt z jadnym kliknjenim a wobźěłujśo swójske prompty w nastajenjach."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Promptowy modus"
+	},
+	"popup_lede": {
+	  "message": "Wubjeŕśo, kak se PromptTube na woglědowych bokach YouTube pokazujo."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Promptowy modus"
+	},
+	"popup_mode_standard": {
+	  "message": "Standardny"
+	},
+	"popup_mode_advanced": {
+	  "message": "Rozšyrjony"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Pokazujo jaden jadnory zespominajucy tłocašk. Wobźěłajśo ten prompt w nastajenjach."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Pokazujo dopołny wuběrk promptow ze wšymi k dispoziciji stojecymi pśedłogami."
+	},
+	"popup_open_settings": {
+	  "message": "Nastajenja promptow wócyniś"
+	},
+	"options_title": {
+	  "message": "Nastajenja PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Promptowe pśedłogi"
+	},
+	"options_lede": {
+	  "message": "Wobźěłajśo prompty, kótarež se na YouTube pokazuju, pśidajśo nowe abo slědk stajśo standardne gódnoty."
+	},
+	"options_section_title": {
+	  "message": "Waše prompty"
+	},
+	"options_section_copy": {
+	  "message": "Kuždy prompt trjeba etiketu a tekst instrukcije, kótaryž se pśed transkript staja."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Prompt Zespominanje se wužywa w standardnem modusu a njedajo se wótwónoźeś."
+	},
+	"options_add_prompt": {
+	  "message": "Prompt pśidaś"
+	},
+	"options_reset_defaults": {
+	  "message": "Standard slědk stajiś"
+	},
+	"options_save_prompts": {
+	  "message": "Prompty składowaś"
+	},
+	"options_label": {
+	  "message": "Etiketa"
+	},
+	"options_label_placeholder": {
+	  "message": "Zespominanje + analyza"
+	},
+	"options_body": {
+	  "message": "Promptowy tekst"
+	},
+	"options_body_placeholder": {
+	  "message": "Pšosym zespominajśo toś ten transkript..."
+	},
+	"options_remove": {
+	  "message": "Wótwónoźeś"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Prompt Zespominanje se wužywa w standardnem modusu a njedajo se wótwónoźeś."
+	},
+	"options_storage_unavailable": {
+	  "message": "Składowanje w toś tom kontekśe wobglědowaka njestoj k dispoziciji."
+	},
+	"options_storage_local": {
+	  "message": "Wužywa se jano lokalne składowanje. Prompty se mjazy wobglědowakami njezsynchronizěruju."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Wužywa se synchronizěrowane składowanje. Promptowe daty měli se mjazy pśizjawionymi wobglědowakami, kótarež synchronizaciju rozšyrjenjow pódpěraju, synchronizěrowaś."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Wužywa se synchronizěrowane składowanje. Promptowe daty wužywaju $1 synchronizěrowańskeje kwoty (~100 KB dogromady we Firefox).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "Storage API njestoj k dispoziciji. Standardne gódnoty se pokazuju."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Skłaźone prompty njedachu se zacytaś. Standardne gódnoty se pokazuju."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "Storage API njestoj k dispoziciji. Prompty njejsu se skłaźili."
+	},
+	"options_status_add_one": {
+	  "message": "Pśidajśo nanejmjenjej jaden prompt, nježli až składujośo."
+	},
+	"options_status_missing_label": {
+	  "message": "Promptoju $1 felujo etiketa.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Promptoju $1 felujo promptowy tekst.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Prompty su se skłaźili."
+	},
+	"options_status_save_error": {
+	  "message": "Prompty njedachu se składowaś."
+	},
+	"options_status_storage_only_page": {
+	  "message": "Storage API njestoj k dispoziciji. Standardne gódnoty su se jano na toś tom boku slědk stajili."
+	},
+	"options_status_restore_success": {
+	  "message": "Standardne prompty slědk stajone."
+	},
+	"options_status_restore_error": {
+	  "message": "Standardne gódnoty njedachu se slědk stajiś."
+	},
+	"tip_manage_prompts": {
+	  "message": "Pokazka: wužywajśo ikonu PromptTube, aby prompty zrědował"
+	},
+	"copy_prompt_label": {
+	  "message": "Prompt kopěrowaś: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Prompt kopěrowaś"
+	},
+	"working": {
+	  "message": "Pśeźěłujo se..."
+	},
+	"no_transcript_found": {
+	  "message": "Za toś ten wideo njejo se transkript namakał"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompt + transkript kopěrowany"
+	},
+	"copy_failed": {
+	  "message": "Kopěrowanje njejo se raźiło"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Pśedłogu prompta wubraś"
+	},
+	"copy_button_title": {
+	  "message": "Prompt a transkript kopěrowaś"
+	},
+	"unknown_title": {
+	  "message": "Njeznaty titel"
+	},
+	"unknown_channel": {
+	  "message": "Njeznaty kanal"
+	},
+	"context_title_label": {
+	  "message": "Titel"
+	},
+	"context_channel_label": {
+	  "message": "Kanal"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Zespominanje"
+	},
+	"preset_summary_body": {
+	  "message": "Zespominajśo toś ten YouTube-transkript.\nDajśo mě:\n- krotke zespominanje\n- nejwažnjejše informacije\n- głowne zaklucenje w jadnom krotkem wótstawku"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Zespominanje + analyza"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Zespominajśo a analyzěrujśo toś ten YouTube-transkript.\nDajśo mě:\n- zespominanje w 6-10 dypkach\n- głowne temy abo argumenty\n- což jo nejwažnjejše a cogoždla\n- spóznane mócne boki, słabosće abo pśipokazanja"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Zespominanje + akcije"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Zespominajśo toś ten YouTube-transkript a wótwjeźćo pśiduce kšace.\nDajśo mě:\n- krotke zespominanje\n- nejwažnjejše informacje\n- jasne akciske dypki\n- rozsudy abo pśiduce kšace, kótarež se płaśe slědowaś"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Zespominanje + pśeglědanje faktow"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Zespominajśo toś ten YouTube-transkript a markěrujśo wšykno, což by měło se pśeglědowaś.\nDajśo mě:\n- krotke zespominanje\n- głowne twarjenja\n- wšykne wuslědki, kótarež se zdaju njejwěste, pśewjeleśone abo pódobnje trjebaju wobkšuśenje\n- krotku lisćinu pśeglědanja, což se ma nejprjedy pśeglědaś\nPótom pśewjeźćo pśeglědanje faktow a dajśo mě:\n- zespominanje wašych namakanjow\n- kótare twarjenja su se wobkšuśili, wótpokazali abo su wóstali njejwěste"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Wjednikowski brief"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Pśetwóŕśo toś ten YouTube-transkript do wjednikowskego brifa.\nDajśo mě:\n- krotki pśeglěd na wusokem rownje\n- nejwažnjejše insighty\n- wobchodne abo strategiske wuskutki\n- nejwažnjejše riska abo šanse"
+	},
+	"preset_study_notes_label": {
+	  "message": "Studijne noticy"
+	},
+	"preset_study_notes_body": {
+	  "message": "Pśetwóŕśo toś ten YouTube-transkript do studijnych noticow.\nDajśo mě:\n- strukturěrowane zespominanje pó temach\n- wažne definicije abo koncepty\n- móžne pšašanja za eksamen abo diskusiju\n- krotke spominanje, na kótare mógu pózdźej malsnje pśeglědnuś"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Kritika + šanse"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Pśeglědńśo toś ten YouTube-transkript kritiski.\nDajśo mě:\n- krotke zespominanje\n- což jo pśeswědcujuce abo wužytne\n- což felujo, jo słabe abo dwójbne\n- ideje, šanse abo pólěpšenja, inspirěrowane pśez to"
+	}
+}

@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "YouTube-ის ყურების გვერდებზე ამატებს ლოკალიზებულ პრომპტის ხელსაწყოებს: გამოიყენეთ სტანდარტული ან გაფართოებული რეჟიმი, ერთი დაჭერით დააკოპირეთ ტრანსკრიპტი და არჩეული AI პრომპტი, და პარამეტრებში დაარედაქტირეთ თქვენი საკუთარი პრომპტები."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "პრომპტის რეჟიმი"
+	},
+	"popup_lede": {
+	  "message": "აირჩიეთ, როგორ გამოჩნდება PromptTube YouTube-ის ყურების გვერდებზე."
+	},
+	"popup_mode_group_aria": {
+	  "message": "პრომპტის რეჟიმი"
+	},
+	"popup_mode_standard": {
+	  "message": "სტანდარტული"
+	},
+	"popup_mode_advanced": {
+	  "message": "გაფართოებული"
+	},
+	"popup_mode_standard_help": {
+	  "message": "აჩვენებს ერთ მარტივ ღილაკს შეჯამებისთვის. ეს პრომპტი შეგიძლიათ პარამეტრებში შეცვალოთ."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "აჩვენებს პრომპტების სრულ არჩევანს ყველა ხელმისაწვდომი შაბლონით."
+	},
+	"popup_open_settings": {
+	  "message": "პრომპტების პარამეტრების გახსნა"
+	},
+	"options_title": {
+	  "message": "PromptTube-ის პარამეტრები"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "პრომპტების შაბლონები"
+	},
+	"options_lede": {
+	  "message": "დაარედაქტირეთ YouTube-ზე ნაჩვენები პრომპტები, დაამატეთ ახალი ან დააბრუნეთ საწყისი მნიშვნელობები."
+	},
+	"options_section_title": {
+	  "message": "თქვენი პრომპტები"
+	},
+	"options_section_copy": {
+	  "message": "თითოეულ პრომპტს სჭირდება ჭდე და ინსტრუქციის ტექსტი, რომელიც ტრანსკრიპტამდე დაემატება."
+	},
+	"options_standard_prompt_note": {
+	  "message": "პრომპტი „შეჯამება“ გამოიყენება სტანდარტულ რეჟიმში და მისი წაშლა შეუძლებელია."
+	},
+	"options_add_prompt": {
+	  "message": "პრომპტის დამატება"
+	},
+	"options_reset_defaults": {
+	  "message": "ნაგულისხმევის აღდგენა"
+	},
+	"options_save_prompts": {
+	  "message": "პრომპტების შენახვა"
+	},
+	"options_label": {
+	  "message": "ჭდე"
+	},
+	"options_label_placeholder": {
+	  "message": "შეჯამება + ანალიზი"
+	},
+	"options_body": {
+	  "message": "პრომპტის ტექსტი"
+	},
+	"options_body_placeholder": {
+	  "message": "გთხოვთ, შეაჯამოთ ეს ტრანსკრიპტი..."
+	},
+	"options_remove": {
+	  "message": "წაშლა"
+	},
+	"options_prompt_card_title": {
+	  "message": "პრომპტი $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "პრომპტი „შეჯამება“ გამოიყენება სტანდარტულ რეჟიმში და მისი წაშლა შეუძლებელია."
+	},
+	"options_storage_unavailable": {
+	  "message": "საცავი ამ ბრაუზერის კონტექსტში მიუწვდომელია."
+	},
+	"options_storage_local": {
+	  "message": "გამოიყენება მხოლოდ ლოკალური საცავი. პრომპტები ბრაუზერებს შორის არ სინქრონიზდება."
+	},
+	"options_storage_sync_generic": {
+	  "message": "გამოიყენება სინქრონიზებული საცავი. პრომპტების მონაცემები უნდა სინქრონიზდებოდეს შესულ ბრაუზერებს შორის, რომლებიც გაფართოებების სინქრონიზაციას მხარს უჭერენ."
+	},
+	"options_storage_sync_usage": {
+	  "message": "გამოიყენება სინქრონიზებული საცავი. პრომპტების მონაცემები იყენებს სინქრონიზაციის კვოტის $1-ს (~100 KB ჯამში Firefox-ში).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "Storage API მიუწვდომელია. ნაჩვენებია საწყისი მნიშვნელობები."
+	},
+	"options_status_load_saved_error": {
+	  "message": "შენახული პრომპტების ჩატვირთვა ვერ მოხერხდა. ნაჩვენებია საწყისი მნიშვნელობები."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "Storage API მიუწვდომელია. პრომპტები არ შენახულა."
+	},
+	"options_status_add_one": {
+	  "message": "შენახვამდე დაამატეთ მინიმუმ ერთი პრომპტი."
+	},
+	"options_status_missing_label": {
+	  "message": "პრომპტ $1-ს ჭდე აკლია.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "პრომპტ $1-ს პრომპტის ტექსტი აკლია.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "პრომპტები შენახულია."
+	},
+	"options_status_save_error": {
+	  "message": "პრომპტების შენახვა ვერ მოხერხდა."
+	},
+	"options_status_storage_only_page": {
+	  "message": "Storage API მიუწვდომელია. საწყისი მნიშვნელობები მხოლოდ ამ გვერდზე აღდგა."
+	},
+	"options_status_restore_success": {
+	  "message": "საწყისი პრომპტები აღდგენილია."
+	},
+	"options_status_restore_error": {
+	  "message": "საწყისი მნიშვნელობების აღდგენა ვერ მოხერხდა."
+	},
+	"tip_manage_prompts": {
+	  "message": "რჩევა: პრომპტების სამართავად გამოიყენეთ PromptTube-ის ხატულა"
+	},
+	"copy_prompt_label": {
+	  "message": "პრომპტის კოპირება: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "პრომპტის კოპირება"
+	},
+	"working": {
+	  "message": "მუშავდება..."
+	},
+	"no_transcript_found": {
+	  "message": "ამ ვიდეოსთვის ტრანსკრიპტი ვერ მოიძებნა"
+	},
+	"prompt_transcript_copied": {
+	  "message": "პრომპტი + ტრანსკრიპტი დაკოპირდა"
+	},
+	"copy_failed": {
+	  "message": "კოპირება ვერ მოხერხდა"
+	},
+	"prompt_selected": {
+	  "message": "პრომპტი: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "აირჩიეთ პრომპტის შაბლონი"
+	},
+	"copy_button_title": {
+	  "message": "პრომპტისა და ტრანსკრიპტის კოპირება"
+	},
+	"unknown_title": {
+	  "message": "უცნობი სათაური"
+	},
+	"unknown_channel": {
+	  "message": "უცნობი არხი"
+	},
+	"context_title_label": {
+	  "message": "სათაური"
+	},
+	"context_channel_label": {
+	  "message": "არხი"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "შეჯამება"
+	},
+	"preset_summary_body": {
+	  "message": "შეაჯამეთ ეს YouTube-ის ტრანსკრიპტი.\nმომეცით:\n- მოკლე შეჯამება\n- ძირითადი მიგნებები\n- მთავარი დასკვნა ერთ მოკლე აბზაცში"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "შეჯამება + ანალიზი"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "შეაჯამეთ და გააანალიზეთ ეს YouTube-ის ტრანსკრიპტი.\nმომეცით:\n- 6-10 პუნქტიანი შეჯამება\n- მთავარი თემები ან არგუმენტები\n- რა არის ყველაზე მნიშვნელოვანი და რატომ\n- შესამჩნევი ძლიერი მხარეები, სისუსტეები ან დაშვებები"
+	},
+	"preset_summary_actions_label": {
+	  "message": "შეჯამება + ქმედებები"
+	},
+	"preset_summary_actions_body": {
+	  "message": "შეაჯამეთ ეს YouTube-ის ტრანსკრიპტი და გამოყავით შემდეგი ნაბიჯები.\nმომეცით:\n- მოკლე შეჯამება\n- ძირითადი მიგნებები\n- მკაფიო ქმედებები\n- გადაწყვეტილებები ან შემდგომი ნაბიჯები, რომელთა თვალყურის დევნაც ღირს"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "შეჯამება + ფაქტების გადამოწმება"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "შეაჯამეთ ეს YouTube-ის ტრანსკრიპტი და მონიშნეთ ყველაფერი, რაც ფაქტობრივ გადამოწმებას საჭიროებს.\nმომეცით:\n- მოკლე შეჯამება\n- მთავარი მტკიცებები\n- ნებისმიერი განცხადება, რომელიც გაურკვეველი, გადაჭარბებული ან სავარაუდოდ გადასამოწმებელი ჩანს\n- მოკლე ჩეკლისტი, რა უნდა შემოწმდეს პირველ რიგში\nშემდეგ გააკეთეთ ფაქტების გადამოწმება და მომეცით:\n- თქვენი მიგნებების შეჯამება\n- რომელი მტკიცებები დადასტურდა, უარყოფილ იქნა ან კვლავ გაურკვეველია"
+	},
+	"preset_executive_brief_label": {
+	  "message": "მენეჯერული ბრიფი"
+	},
+	"preset_executive_brief_body": {
+	  "message": "გადააქციეთ ეს YouTube-ის ტრანსკრიპტი მენეჯერულ ბრიფად.\nმომეცით:\n- მოკლე მაღალი დონის მიმოხილვა\n- ყველაზე მნიშვნელოვანი ხედვები\n- ბიზნესური ან სტრატეგიული გავლენები\n- მთავარი რისკები ან შესაძლებლობები"
+	},
+	"preset_study_notes_label": {
+	  "message": "სასწავლო ჩანაწერები"
+	},
+	"preset_study_notes_body": {
+	  "message": "გადააქციეთ ეს YouTube-ის ტრანსკრიპტი სასწავლო ჩანაწერებად.\nმომეცით:\n- თემების მიხედვით სტრუქტურირებული შეჯამება\n- მნიშვნელოვანი განმარტებები ან კონცეფციები\n- სავარაუდო საგამოცდო ან სადისკუსიო კითხვები\n- მოკლე მიმოხილვა, რომელსაც მოგვიანებით სწრაფად გადავხედავ"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "კრიტიკა + შესაძლებლობები"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "კრიტიკულად გადახედეთ ამ YouTube-ის ტრანსკრიპტს.\nმომეცით:\n- მოკლე შეჯამება\n- რა არის დამაჯერებელი ან სასარგებლო\n- რა აკლია, რა არის სუსტი ან საეჭვო\n- იდეები, შესაძლებლობები ან გაუმჯობესებები, რომლებიც ამ მასალამ შთააგონა"
+	}
+}

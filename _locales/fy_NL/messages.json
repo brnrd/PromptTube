@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Foeget lokaliseare promptark ta oan YouTube-sjoggersiden: brûk de standert- of avansearre modus, kopiearje it transkript en de keazen AI-prompt mei ien klik, en bewurkje dyn eigen prompts yn Ynstellingen."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Promptmodus"
+	},
+	"popup_lede": {
+	  "message": "Kies hoe’t PromptTube op YouTube-sjoggersiden ferskynt."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Promptmodus"
+	},
+	"popup_mode_standard": {
+	  "message": "Standert"
+	},
+	"popup_mode_advanced": {
+	  "message": "Avansearre"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Toant ien ienfâldige gearfettingsknop. Bewurkje dy prompt yn Ynstellingen."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Toant de folsleine promptkiezer mei alle beskikbere promptsjabloanen."
+	},
+	"popup_open_settings": {
+	  "message": "Promptynstellingen iepenje"
+	},
+	"options_title": {
+	  "message": "PromptTube-ynstellingen"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Promptsjabloanen"
+	},
+	"options_lede": {
+	  "message": "Bewurkje de prompts dy’t op YouTube toand wurde, foegje nije ta, of set werom nei de standertwearden."
+	},
+	"options_section_title": {
+	  "message": "Dyn prompts"
+	},
+	"options_section_copy": {
+	  "message": "Eltse prompt hat in label en in ynstruksjetekst nedich dy’t foar it transkript set wurdt."
+	},
+	"options_standard_prompt_note": {
+	  "message": "De prompt Gearfetting wurdt brûkt yn de standertmodus en kin net fuorthelle wurde."
+	},
+	"options_add_prompt": {
+	  "message": "Prompt tafoegje"
+	},
+	"options_reset_defaults": {
+	  "message": "Standert weromsette"
+	},
+	"options_save_prompts": {
+	  "message": "Prompts bewarje"
+	},
+	"options_label": {
+	  "message": "Label"
+	},
+	"options_label_placeholder": {
+	  "message": "Gearfetting + analyze"
+	},
+	"options_body": {
+	  "message": "Prompttekst"
+	},
+	"options_body_placeholder": {
+	  "message": "Fetsje dit transkript gear..."
+	},
+	"options_remove": {
+	  "message": "Fuortsmite"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "De prompt Gearfetting wurdt brûkt yn de standertmodus en kin net fuorthelle wurde."
+	},
+	"options_storage_unavailable": {
+	  "message": "Opslach is net beskikber yn dizze browserkontekst."
+	},
+	"options_storage_local": {
+	  "message": "Der wurdt allinnich lokale opslach brûkt. Prompts sille net syngronisearje tusken browsers."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Der wurdt syngronisearre opslach brûkt. Promptgegevens soene syngronisearje moatte tusken oanmelde browsers dy’t útwreidingssyngronisaasje stypje."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Der wurdt syngronisearre opslach brûkt. Promptgegevens brûke $1 fan it syngronisaasjekwota (~100 KB totaal yn Firefox).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "Storage API net beskikber. Standertwearden wurde toand."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Koe bewarre prompts net lade. Standertwearden wurde toand."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "Storage API net beskikber. Prompts binne net bewarre."
+	},
+	"options_status_add_one": {
+	  "message": "Foegje op syn minst ien prompt ta foar’tst bewarrest."
+	},
+	"options_status_missing_label": {
+	  "message": "Prompt $1 mist in label.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Prompt $1 mist prompttekst.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Prompts bewarre."
+	},
+	"options_status_save_error": {
+	  "message": "Koe prompts net bewarje."
+	},
+	"options_status_storage_only_page": {
+	  "message": "Storage API net beskikber. Standertwearden binne allinnich op dizze side weromset."
+	},
+	"options_status_restore_success": {
+	  "message": "Standertprompts weromset."
+	},
+	"options_status_restore_error": {
+	  "message": "Koe standertwearden net weromsette."
+	},
+	"tip_manage_prompts": {
+	  "message": "Tip: brûk it PromptTube-ikoan om prompts te behearen"
+	},
+	"copy_prompt_label": {
+	  "message": "Prompt kopiearje: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Prompt kopiearje"
+	},
+	"working": {
+	  "message": "Drokte..."
+	},
+	"no_transcript_found": {
+	  "message": "Gjin transkript fûn foar dizze fideo"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompt + transkript kopiearre"
+	},
+	"copy_failed": {
+	  "message": "Kopiearjen mislearre"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Kies promptsjabloan"
+	},
+	"copy_button_title": {
+	  "message": "Prompt en transkript kopiearje"
+	},
+	"unknown_title": {
+	  "message": "Unbekende titel"
+	},
+	"unknown_channel": {
+	  "message": "Unbekend kanaal"
+	},
+	"context_title_label": {
+	  "message": "Titel"
+	},
+	"context_channel_label": {
+	  "message": "Kanaal"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Gearfetting"
+	},
+	"preset_summary_body": {
+	  "message": "Fetsje dit YouTube-transkript gear.\nJou my:\n- in koarte gearfetting\n- de wichtichste punten\n- de haadkonklúzje yn ien koart alinea"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Gearfetting + analyze"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Fetsje dit YouTube-transkript gear en analysearje it.\nJou my:\n- in gearfetting yn 6-10 punten\n- de wichtichste tema’s of arguminten\n- wat it meast fan belang is en wêrom\n- opfallende sterke kanten, swakke kanten of oannames"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Gearfetting + aksjes"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Fetsje dit YouTube-transkript gear en helje de folgjende stappen derút.\nJou my:\n- in koarte gearfetting\n- wichtichste ynsjoggen\n- dúdlike aksjepunten\n- besluten of ferfolchstappen dy’t it wurdich binne om te folgjen"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Gearfetting + feitkontrôle"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Fetsje dit YouTube-transkript gear en markearje alles dat feitkontrolearre wurde moat.\nJou my:\n- in koarte gearfetting\n- de wichtichste claims\n- alle útspraken dy’t ûnwis, oerdreaun of wierskynlik te ferifiearjen lykje\n- in koarte feitkontrôle-checklist fan wat earst ferifiearre wurde moat\nDoch dêrnei de feitkontrôle en jou my:\n- in gearfetting fan watsto fûn hast\n- hokker claims befêstige, ûntkrêfte of noch ûnwis bleaune"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Bestjoersbrief"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Meitsje fan dit YouTube-transkript in bestjoersbrief.\nJou my:\n- in koart oersjoch op heech nivo\n- de wichtichste ynsjoggen\n- saaklike of strategyske gefolgen\n- de grutste risiko’s of kânsen"
+	},
+	"preset_study_notes_label": {
+	  "message": "Stúdzjenotysjes"
+	},
+	"preset_study_notes_body": {
+	  "message": "Set dit YouTube-transkript om yn stúdzjenotysjes.\nJou my:\n- in strukturearre gearfetting per ûnderwerp\n- wichtige definysjes of begrippen\n- wierskynlike eksamen- of diskusjefragen\n- in koarte werhelling dy’t ik letter fluch trochgean kin"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Krityk + kânsen"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Besjoch dit YouTube-transkript kritysk.\nJou my:\n- in koarte gearfetting\n- wat oertsjûgjend of nuttich is\n- wat mist, swak of twifelich is\n- ideeën, kânsen of ferbetteringen dy’t derút ynspirearre binne"
+	}
+}

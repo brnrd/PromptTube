@@ -1,0 +1,254 @@
+{
+	"extName": {
+		"message": "PromptTube"
+	},
+	"extensionDescription": {
+		"message": "Legger til lokaliserte promptverktøy på YouTube-visingssider: bruk standard- eller avansert modus, kopier transkripsjon og valgt AI-prompt med ett klikk, og rediger eigne promptar i Innstillinger."
+	},
+	"actionTitle": {
+		"message": "PromptTube"
+	},
+	"popup_title": {
+		"message": "PromptTube"
+	},
+	"popup_eyebrow": {
+		"message": "PromptTube"
+	},
+	"popup_heading": {
+		"message": "Promptmodus"
+	},
+	"popup_lede": {
+		"message": "Velg hvordan PromptTube vises på YouTube-visingssider."
+	},
+	"popup_mode_group_aria": {
+		"message": "Promptmodus"
+	},
+	"popup_mode_standard": {
+		"message": "Standard"
+	},
+	"popup_mode_advanced": {
+		"message": "Avansert"
+	},
+	"popup_mode_standard_help": {
+		"message": "Viser ein enkel oppsummeringsknapp. Rediger den prompten i Innstillingar."
+	},
+	"popup_mode_advanced_help": {
+		"message": "Viser heile promptveljaren med alle tilgjengelege promptmalar."
+	},
+	"popup_open_settings": {
+		"message": "Opne promptinnstillingar"
+	},
+	"options_title": {
+		"message": "PromptTube-innstillingar"
+	},
+	"options_eyebrow": {
+		"message": "PromptTube"
+	},
+	"options_heading": {
+		"message": "Promptmalar"
+	},
+	"options_lede": {
+		"message": "Rediger promptane som blir viste på YouTube, legg til nye, eller tilbakestill til standard."
+	},
+	"options_section_title": {
+		"message": "Dine promptar"
+	},
+	"options_section_copy": {
+		"message": "Kvar prompt treng ein etikett og ein instruksjonstekst som blir lagd før transkripsjonen."
+	},
+	"options_standard_prompt_note": {
+		"message": "Prompten Oppsummering blir brukt i standardmodus og kan ikkje fjernast."
+	},
+	"options_add_prompt": {
+		"message": "Legg til prompt"
+	},
+	"options_reset_defaults": {
+		"message": "Tilbakestill standard"
+	},
+	"options_save_prompts": {
+		"message": "Lagre promptar"
+	},
+	"options_label": {
+		"message": "Etikett"
+	},
+	"options_label_placeholder": {
+		"message": "Oppsummering + analyse"
+	},
+	"options_body": {
+		"message": "Prompttekst"
+	},
+	"options_body_placeholder": {
+		"message": "Oppsummer denne transkripsjonen..."
+	},
+	"options_remove": {
+		"message": "Fjern"
+	},
+	"options_prompt_card_title": {
+		"message": "Prompt $1",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_standard_prompt_locked": {
+		"message": "Prompten Oppsummering blir brukt i standardmodus og kan ikkje fjernast."
+	},
+	"options_storage_unavailable": {
+		"message": "Lagring er ikke tilgjengelig i denne nettleserkonteksten."
+	},
+	"options_storage_local": {
+		"message": "Bruker kun lokal lagring. Prompter synkroniseres ikke mellom nettlesere."
+	},
+	"options_storage_sync_generic": {
+		"message": "Bruker synkronisert lagring. Promptdata skal synkroniserast mellom innloggede nettlesere som støtter utvidelsessynkronisering."
+	},
+	"options_storage_sync_usage": {
+		"message": "Bruker synkronisert lagring. Promptdata bruker $1 av synkroniseringskvoten (~100 KB totalt i Firefox).",
+		"placeholders": {
+			"size": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_storage_defaults_error": {
+		"message": "Storage API utilgjengeleg. Viser standardverdiar."
+	},
+	"options_status_load_saved_error": {
+		"message": "Kunne ikkje laste lagra promptar. Viser standardverdiar."
+	},
+	"options_status_storage_unavailable": {
+		"message": "Storage API utilgjengelig. Promptar blei ikkje lagra."
+	},
+	"options_status_add_one": {
+		"message": "Legg til minst éin prompt før lagring."
+	},
+	"options_status_missing_label": {
+		"message": "Prompt $1 manglar etikett.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_missing_body": {
+		"message": "Prompt $1 manglar prompttekst.",
+		"placeholders": {
+			"index": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_status_save_success": {
+		"message": "Promptar lagra."
+	},
+	"options_status_save_error": {
+		"message": "Kunne ikkje lagre promptar."
+	},
+	"options_status_storage_only_page": {
+		"message": "Storage API utilgjengelig. Standardverdiar blei berre gjenoppretta på denne sida."
+	},
+	"options_status_restore_success": {
+		"message": "Standardpromptar gjenoppretta."
+	},
+	"options_status_restore_error": {
+		"message": "Kunne ikkje gjenopprette standardverdiar."
+	},
+	"tip_manage_prompts": {
+		"message": "Tips: bruk PromptTube-ikonet for å administrere promptar"
+	},
+	"copy_prompt_label": {
+		"message": "Kopier prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"copy_prompt_fallback": {
+		"message": "Kopier prompt"
+	},
+	"working": {
+		"message": "Arbeider..."
+	},
+	"no_transcript_found": {
+		"message": "Fann ingen transkripsjon for denne videoen"
+	},
+	"prompt_transcript_copied": {
+		"message": "Prompt + transkripsjon kopiert"
+	},
+	"copy_failed": {
+		"message": "Kopiering mislukkast"
+	},
+	"prompt_selected": {
+		"message": "Prompt: $1",
+		"placeholders": {
+			"label": {
+				"content": "$1"
+			}
+		}
+	},
+	"prompt_menu_aria": {
+		"message": "Vel promptmal"
+	},
+	"copy_button_title": {
+		"message": "Kopier prompt og transkripsjon"
+	},
+	"unknown_title": {
+		"message": "Ukjend tittel"
+	},
+	"unknown_channel": {
+		"message": "Ukjend kanal"
+	},
+	"context_title_label": {
+		"message": "Tittel"
+	},
+	"context_channel_label": {
+		"message": "Kanal"
+	},
+	"context_url_label": {
+		"message": "URL"
+	},
+	"preset_summary_label": {
+		"message": "Oppsummering"
+	},
+	"preset_summary_body": {
+		"message": "Oppsummer denne YouTube-transkripsjonen.\nGje meg:\n- en kort oppsummering\n- de viktigste punktene\n- hovedkonklusjonen i ett kort avsnitt"
+	},
+	"preset_summary_analysis_label": {
+		"message": "Oppsummering + analyse"
+	},
+	"preset_summary_analysis_body": {
+		"message": "Oppsummer og analyser denne YouTube-transkripsjonen.\nGje meg:\n- en oppsummering i 6-10 punkter\n- hovedtemaene eller argumentene\n- hva som betyr mest og hvorfor\n- tydelige styrker, svakheter eller antakelser"
+	},
+	"preset_summary_actions_label": {
+		"message": "Oppsummering + tiltak"
+	},
+	"preset_summary_actions_body": {
+		"message": "Oppsummer denne YouTube-transkripsjonen og trekk ut neste steg.\nGje meg:\n- en kort oppsummering\n- viktige innsikter\n- tydelige handlingspunkter\n- beslutninger eller oppfølginger som bør spores"
+	},
+	"preset_summary_fact_check_label": {
+		"message": "Oppsummering + faktasjekk"
+	},
+	"preset_summary_fact_check_body": {
+		"message": "Oppsummer denne YouTube-transkripsjonen og marker alt som bør faktasjekkes.\nGje meg:\n- en kort oppsummering\n- de viktigste påstandene\n- utsagn som virker usikre, overdrevne eller trolig trenger verifisering\n- en kort faktasjekk-liste over hva som bør verifiseres først\nGjør deretter faktasjekken og gi meg:\n- en oppsummering av det du fant\n- hvilke påstander som ble bekreftet, avkreftet eller fortsatt er usikre"
+	},
+	"preset_executive_brief_label": {
+		"message": "Lederbrief"
+	},
+	"preset_executive_brief_body": {
+		"message": "Gjør denne YouTube-transkripsjonen om til en lederbrief.\nGje meg:\n- en kort oversikt på høyt nivå\n- de viktigste innsiktene\n- forretningsmessige eller strategiske implikasjoner\n- de største risikoene eller mulighetene"
+	},
+	"preset_study_notes_label": {
+		"message": "Studienotater"
+	},
+	"preset_study_notes_body": {
+		"message": "Konverter denne YouTube-transkripsjonen til studienotat.\nGje meg:\n- en strukturert oppsummering etter tema\n- viktige definisjoner eller begreper\n- sannsynlige eksamens- eller diskusjonsspørsmål\n- en kort oppsummering jeg raskt kan gå gjennom senere"
+	},
+	"preset_critique_opportunities_label": {
+		"message": "Kritikk + moglegheiter"
+	},
+	"preset_critique_opportunities_body": {
+		"message": "Vurder denne YouTube-transkripsjonen kritisk.\nGje meg:\n- en kort oppsummering\n- hva som er overbevisende eller nyttig\n- hva som mangler, er svakt eller tvilsomt\n- ideer, moglegheiter eller forbedringer inspirert av den"
+	}
+}

@@ -121,6 +121,7 @@ h1 {
 	border-radius: 14px;
 	background: #f8fafc;
 	color: inherit;
+	text-align: start;
 }
 
 .field textarea {

@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Doda lokalizirana orodja za promte na strani za ogled YouTuba: uporabljaj način Standardni ali Napredni, kopiraj prepis skupaj z izbranim AI-promptom z enim klikom in urejaj svoje promte v Nastavitvah."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Način prompta"
+	},
+	"popup_lede": {
+	  "message": "Izberi, kako naj se PromptTube prikazuje na strani za ogled YouTuba."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Način prompta"
+	},
+	"popup_mode_standard": {
+	  "message": "Standardni"
+	},
+	"popup_mode_advanced": {
+	  "message": "Napredni"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Prikaže en preprost gumb za povzetek. Ta prompt lahko urejaš v Nastavitvah."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Prikaže celoten izbirnik promptov z vsemi razpoložljivimi predlogami."
+	},
+	"popup_open_settings": {
+	  "message": "Odpri nastavitve promptov"
+	},
+	"options_title": {
+	  "message": "Nastavitve PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Predloge promptov"
+	},
+	"options_lede": {
+	  "message": "Uredi promte, prikazane na YouTubu, dodaj nove ali obnovi privzete vrednosti."
+	},
+	"options_section_title": {
+	  "message": "Tvoji prompti"
+	},
+	"options_section_copy": {
+	  "message": "Vsak prompt potrebuje oznako in besedilo navodila, ki se doda pred prepis."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Prompt Povzetek se uporablja v standardnem načinu in ga ni mogoče odstraniti."
+	},
+	"options_add_prompt": {
+	  "message": "Dodaj prompt"
+	},
+	"options_reset_defaults": {
+	  "message": "Obnovi privzeto"
+	},
+	"options_save_prompts": {
+	  "message": "Shrani promte"
+	},
+	"options_label": {
+	  "message": "Oznaka"
+	},
+	"options_label_placeholder": {
+	  "message": "Povzetek + analiza"
+	},
+	"options_body": {
+	  "message": "Besedilo prompta"
+	},
+	"options_body_placeholder": {
+	  "message": "Povzemi ta prepis..."
+	},
+	"options_remove": {
+	  "message": "Odstrani"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Prompt Povzetek se uporablja v standardnem načinu in ga ni mogoče odstraniti."
+	},
+	"options_storage_unavailable": {
+	  "message": "Shramba v tem kontekstu brskalnika ni na voljo."
+	},
+	"options_storage_local": {
+	  "message": "Uporablja se samo lokalna shramba. Prompti se ne bodo sinhronizirali med brskalniki."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Uporablja se sinhronizirana shramba. Podatki promptov bi se morali sinhronizirati med prijavljenimi brskalniki, ki podpirajo sinhronizacijo razširitev."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Uporablja se sinhronizirana shramba. Podatki promptov uporabljajo $1 kvote za sinhronizacijo (~100 KB skupaj v Firefoxu).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "API za shrambo ni na voljo. Prikazane so privzete vrednosti."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Shranjanih promptov ni bilo mogoče naložiti. Prikazane so privzete vrednosti."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "API za shrambo ni na voljo. Prompti niso bili shranjeni."
+	},
+	"options_status_add_one": {
+	  "message": "Pred shranjevanjem dodaj vsaj en prompt."
+	},
+	"options_status_missing_label": {
+	  "message": "Promptu $1 manjka oznaka.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Promptu $1 manjka besedilo prompta.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Prompti shranjeni."
+	},
+	"options_status_save_error": {
+	  "message": "Promptov ni bilo mogoče shraniti."
+	},
+	"options_status_storage_only_page": {
+	  "message": "API za shrambo ni na voljo. Privzete vrednosti so bile obnovljene samo na tej strani."
+	},
+	"options_status_restore_success": {
+	  "message": "Privzeti prompti obnovljeni."
+	},
+	"options_status_restore_error": {
+	  "message": "Privzetih vrednosti ni bilo mogoče obnoviti."
+	},
+	"tip_manage_prompts": {
+	  "message": "Namig: za upravljanje promptov uporabi ikono PromptTube"
+	},
+	"copy_prompt_label": {
+	  "message": "Kopiraj prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Kopiraj prompt"
+	},
+	"working": {
+	  "message": "Obdelava..."
+	},
+	"no_transcript_found": {
+	  "message": "Za ta video ni bil najden prepis"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompt + prepis kopirana"
+	},
+	"copy_failed": {
+	  "message": "Kopiranje ni uspelo"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Izberi predlogo prompta"
+	},
+	"copy_button_title": {
+	  "message": "Kopiraj prompt in prepis"
+	},
+	"unknown_title": {
+	  "message": "Neznan naslov"
+	},
+	"unknown_channel": {
+	  "message": "Neznan kanal"
+	},
+	"context_title_label": {
+	  "message": "Naslov"
+	},
+	"context_channel_label": {
+	  "message": "Kanal"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Povzetek"
+	},
+	"preset_summary_body": {
+	  "message": "Povzemi ta prepis z YouTuba.\nDaj mi:\n- jedrnat povzetek\n- ključne ugotovitve\n- glavni zaključek v enem kratkem odstavku"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Povzetek + analiza"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Povzemi in analiziraj ta prepis z YouTuba.\nDaj mi:\n- povzetek v 6–10 točkah\n- glavne teme ali argumente\n- kaj je najpomembnejše in zakaj\n- opazne prednosti, slabosti ali predpostavke"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Povzetek + dejanja"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Povzemi ta prepis z YouTuba in izlušči naslednje korake.\nDaj mi:\n- jedrnat povzetek\n- ključne ugotovitve\n- jasna dejanja\n- odločitve ali nadaljnje korake, ki jih je vredno spremljati"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Povzetek + preverjanje dejstev"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Povzemi ta prepis z YouTuba in označi vse, kar bi bilo treba preveriti.\nDaj mi:\n- jedrnat povzetek\n- glavne trditve\n- vse izjave, ki se zdijo negotove, pretirane ali verjetno potrebujejo preverjanje\n- kratek seznam preverjanja dejstev, kaj je treba najprej preveriti\nNato opravi preverjanje dejstev in mi daj:\n- povzetek ugotovitev\n- katere trditve so bile potrjene, ovržene ali ostajajo negotove"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Vodstveni brief"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Pretvori ta prepis z YouTuba v vodstveni brief.\nDaj mi:\n- kratek pregled na visoki ravni\n- najpomembnejše vpoglede\n- poslovne ali strateške posledice\n- glavna tveganja ali priložnosti"
+	},
+	"preset_study_notes_label": {
+	  "message": "Študijski zapiski"
+	},
+	"preset_study_notes_body": {
+	  "message": "Pretvori ta prepis z YouTuba v študijske zapiske.\nDaj mi:\n- strukturiran povzetek po temah\n- pomembne definicije ali pojme\n- verjetna izpitna ali diskusijska vprašanja\n- kratek povzetek za hitro ponovitev pozneje"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Kritika + priložnosti"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Kritično preglej ta prepis z YouTuba.\nDaj mi:\n- jedrnat povzetek\n- kaj je prepričljivo ali uporabno\n- kaj manjka, je šibko ali vprašljivo\n- ideje, priložnosti ali izboljšave, navdihnjene s tem"
+	}
+}

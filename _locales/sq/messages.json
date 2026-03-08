@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Shton mjete të lokalizuara promptesh në faqet e shikimit të YouTube: përdor modalitetin Standard ose të Avancuar, kopjo transkriptin dhe promptin e zgjedhur AI me një klikim, dhe redakto promptet e tua te Cilësimet."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Mënyra e promptit"
+	},
+	"popup_lede": {
+	  "message": "Zgjidh si të shfaqet PromptTube në faqet e shikimit të YouTube."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Mënyra e promptit"
+	},
+	"popup_mode_standard": {
+	  "message": "Standard"
+	},
+	"popup_mode_advanced": {
+	  "message": "E avancuar"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Shfaq një buton të thjeshtë për përmbledhje. Redaktoje atë prompt te Cilësimet."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Shfaq përzgjedhësin e plotë të prompteve me të gjitha shabllonet e disponueshme."
+	},
+	"popup_open_settings": {
+	  "message": "Hap cilësimet e prompteve"
+	},
+	"options_title": {
+	  "message": "Cilësimet e PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Shabllone promptesh"
+	},
+	"options_lede": {
+	  "message": "Redakto promptet e shfaqura në YouTube, shto të reja ose riktheji në vlerat e paracaktuara."
+	},
+	"options_section_title": {
+	  "message": "Promptet e tua"
+	},
+	"options_section_copy": {
+	  "message": "Çdo prompt ka nevojë për një etiketë dhe tekstin e udhëzimit që shtohet para transkriptit."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Prompti Përmbledhje përdoret në modalitetin Standard dhe nuk mund të hiqet."
+	},
+	"options_add_prompt": {
+	  "message": "Shto prompt"
+	},
+	"options_reset_defaults": {
+	  "message": "Rikthe parazgjedhjet"
+	},
+	"options_save_prompts": {
+	  "message": "Ruaj promptet"
+	},
+	"options_label": {
+	  "message": "Etiketë"
+	},
+	"options_label_placeholder": {
+	  "message": "Përmbledhje + analizë"
+	},
+	"options_body": {
+	  "message": "Teksti i promptit"
+	},
+	"options_body_placeholder": {
+	  "message": "Ju lutem përmblidhe këtë transkript..."
+	},
+	"options_remove": {
+	  "message": "Hiq"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Prompti Përmbledhje përdoret në modalitetin Standard dhe nuk mund të hiqet."
+	},
+	"options_storage_unavailable": {
+	  "message": "Ruajtja nuk është e disponueshme në këtë kontekst të shfletuesit."
+	},
+	"options_storage_local": {
+	  "message": "Po përdoret vetëm ruajtja lokale. Promptet nuk do të sinkronizohen mes shfletuesve."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Po përdoret ruajtja e sinkronizuar. Të dhënat e prompteve duhet të sinkronizohen mes shfletuesve të identifikuar që mbështesin sinkronizimin e shtesave."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Po përdoret ruajtja e sinkronizuar. Të dhënat e prompteve përdorin $1 nga kuota e sinkronizimit (~100 KB gjithsej në Firefox).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "Storage API nuk është i disponueshëm. Po shfaqen vlerat e paracaktuara."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Nuk u ngarkuan promptet e ruajtura. Po shfaqen vlerat e paracaktuara."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "Storage API nuk është i disponueshëm. Promptet nuk u ruajtën."
+	},
+	"options_status_add_one": {
+	  "message": "Shto të paktën një prompt para ruajtjes."
+	},
+	"options_status_missing_label": {
+	  "message": "Promptit $1 i mungon etiketa.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Promptit $1 i mungon teksti i promptit.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Promptet u ruajtën."
+	},
+	"options_status_save_error": {
+	  "message": "Promptet nuk u ruajtën dot."
+	},
+	"options_status_storage_only_page": {
+	  "message": "Storage API nuk është i disponueshëm. Parazgjedhjet u rikthyen vetëm në këtë faqe."
+	},
+	"options_status_restore_success": {
+	  "message": "Promptet e paracaktuara u rikthyen."
+	},
+	"options_status_restore_error": {
+	  "message": "Parazgjedhjet nuk u rikthyen dot."
+	},
+	"tip_manage_prompts": {
+	  "message": "Këshillë: përdor ikonën e PromptTube për të menaxhuar promptet"
+	},
+	"copy_prompt_label": {
+	  "message": "Kopjo promptin: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Kopjo promptin"
+	},
+	"working": {
+	  "message": "Duke punuar..."
+	},
+	"no_transcript_found": {
+	  "message": "Nuk u gjet transkript për këtë video"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompti + transkripti u kopjuan"
+	},
+	"copy_failed": {
+	  "message": "Kopjimi dështoi"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Zgjidh shabllonin e promptit"
+	},
+	"copy_button_title": {
+	  "message": "Kopjo promptin dhe transkriptin"
+	},
+	"unknown_title": {
+	  "message": "Titull i panjohur"
+	},
+	"unknown_channel": {
+	  "message": "Kanal i panjohur"
+	},
+	"context_title_label": {
+	  "message": "Titulli"
+	},
+	"context_channel_label": {
+	  "message": "Kanali"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Përmbledhje"
+	},
+	"preset_summary_body": {
+	  "message": "Përmblidhe këtë transkript të YouTube.\nMë jep:\n- një përmbledhje të shkurtër\n- pikat kryesore\n- përfundimin kryesor në një paragraf të shkurtër"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Përmbledhje + analizë"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Përmblidhe dhe analizoje këtë transkript të YouTube.\nMë jep:\n- një përmbledhje me 6-10 pika\n- temat ose argumentet kryesore\n- çfarë ka më shumë rëndësi dhe pse\n- çdo pikë të fortë, dobësi ose supozim të rëndësishëm"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Përmbledhje + veprime"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Përmblidhe këtë transkript të YouTube dhe nxirr hapat e ardhshëm.\nMë jep:\n- një përmbledhje të shkurtër\n- pikat kryesore\n- veprime të qarta\n- vendime ose ndjekje që ia vlen të monitorohen"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Përmbledhje + verifikim faktesh"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Përmblidhe këtë transkript të YouTube dhe shëno gjithçka që duhet verifikuar.\nMë jep:\n- një përmbledhje të shkurtër\n- pretendimet kryesore\n- çdo pohim që duket i pasigurt, i ekzagjeruar ose ka gjasa të kërkojë verifikim\n- një listë të shkurtër verifikimi për atë që duhet kontrolluar së pari\nPastaj bëje verifikimin dhe më jep:\n- një përmbledhje të asaj që gjete\n- cilat pretendime u konfirmuan, u hodhën poshtë ose mbetën të pasigurta"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Përmbledhje ekzekutive"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Ktheje këtë transkript të YouTube në një përmbledhje ekzekutive.\nMë jep:\n- një pamje të shkurtër në nivel të lartë\n- insight-et më të rëndësishme\n- implikimet biznesore ose strategjike\n- rreziqet ose mundësitë kryesore"
+	},
+	"preset_study_notes_label": {
+	  "message": "Shënime studimi"
+	},
+	"preset_study_notes_body": {
+	  "message": "Ktheje këtë transkript të YouTube në shënime studimi.\nMë jep:\n- një përmbledhje të strukturuar sipas temave\n- përkufizime ose koncepte të rëndësishme\n- pyetje të mundshme provimi ose diskutimi\n- një rikujtim të shkurtër që mund ta rishikoj shpejt më vonë"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Kritikë + mundësi"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Vlerësoje në mënyrë kritike këtë transkript të YouTube.\nMë jep:\n- një përmbledhje të shkurtër\n- çfarë është bindëse ose e dobishme\n- çfarë mungon, është e dobët ose e dyshimtë\n- ide, mundësi ose përmirësime të frymëzuara prej tij"
+	}
+}

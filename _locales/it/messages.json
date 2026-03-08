@@ -1,0 +1,254 @@
+{
+	"extName": {
+	  "message": "PromptTube"
+	},
+	"extensionDescription": {
+	  "message": "Aggiunge strumenti di prompt localizzati alle pagine di visualizzazione di YouTube: usa la modalità Standard o Avanzata, copia la trascrizione con il prompt AI selezionato in un clic e modifica i tuoi prompt nelle Impostazioni."
+	},
+	"actionTitle": {
+	  "message": "PromptTube"
+	},
+	"popup_title": {
+	  "message": "PromptTube"
+	},
+	"popup_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"popup_heading": {
+	  "message": "Modalità prompt"
+	},
+	"popup_lede": {
+	  "message": "Scegli come PromptTube appare nelle pagine di visualizzazione di YouTube."
+	},
+	"popup_mode_group_aria": {
+	  "message": "Modalità prompt"
+	},
+	"popup_mode_standard": {
+	  "message": "Standard"
+	},
+	"popup_mode_advanced": {
+	  "message": "Avanzata"
+	},
+	"popup_mode_standard_help": {
+	  "message": "Mostra un unico pulsante semplice per il riepilogo. Modifica quel prompt nelle Impostazioni."
+	},
+	"popup_mode_advanced_help": {
+	  "message": "Mostra il selettore completo dei prompt con tutti i modelli disponibili."
+	},
+	"popup_open_settings": {
+	  "message": "Apri impostazioni prompt"
+	},
+	"options_title": {
+	  "message": "Impostazioni di PromptTube"
+	},
+	"options_eyebrow": {
+	  "message": "PromptTube"
+	},
+	"options_heading": {
+	  "message": "Modelli di prompt"
+	},
+	"options_lede": {
+	  "message": "Modifica i prompt mostrati su YouTube, aggiungine di nuovi o ripristina quelli predefiniti."
+	},
+	"options_section_title": {
+	  "message": "I tuoi prompt"
+	},
+	"options_section_copy": {
+	  "message": "Ogni prompt richiede un’etichetta e il testo dell’istruzione da anteporre alla trascrizione."
+	},
+	"options_standard_prompt_note": {
+	  "message": "Il prompt Riepilogo viene usato in modalità Standard e non può essere rimosso."
+	},
+	"options_add_prompt": {
+	  "message": "Aggiungi prompt"
+	},
+	"options_reset_defaults": {
+	  "message": "Ripristina predefiniti"
+	},
+	"options_save_prompts": {
+	  "message": "Salva prompt"
+	},
+	"options_label": {
+	  "message": "Etichetta"
+	},
+	"options_label_placeholder": {
+	  "message": "Riepilogo + analisi"
+	},
+	"options_body": {
+	  "message": "Testo del prompt"
+	},
+	"options_body_placeholder": {
+	  "message": "Riassumi questa trascrizione..."
+	},
+	"options_remove": {
+	  "message": "Rimuovi"
+	},
+	"options_prompt_card_title": {
+	  "message": "Prompt $1",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_standard_prompt_locked": {
+	  "message": "Il prompt Riepilogo viene usato in modalità Standard e non può essere rimosso."
+	},
+	"options_storage_unavailable": {
+	  "message": "L’archiviazione non è disponibile in questo contesto del browser."
+	},
+	"options_storage_local": {
+	  "message": "Uso solo dell’archiviazione locale. I prompt non verranno sincronizzati tra browser."
+	},
+	"options_storage_sync_generic": {
+	  "message": "Uso dell’archiviazione sincronizzata. I dati dei prompt dovrebbero sincronizzarsi tra browser connessi che supportano la sincronizzazione delle estensioni."
+	},
+	"options_storage_sync_usage": {
+	  "message": "Uso dell’archiviazione sincronizzata. I dati dei prompt usano $1 della quota di sincronizzazione (~100 KB totali su Firefox).",
+	  "placeholders": {
+	    "size": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_storage_defaults_error": {
+	  "message": "API di archiviazione non disponibile. Visualizzazione dei predefiniti."
+	},
+	"options_status_load_saved_error": {
+	  "message": "Impossibile caricare i prompt salvati. Visualizzazione dei predefiniti."
+	},
+	"options_status_storage_unavailable": {
+	  "message": "API di archiviazione non disponibile. I prompt non sono stati salvati."
+	},
+	"options_status_add_one": {
+	  "message": "Aggiungi almeno un prompt prima di salvare."
+	},
+	"options_status_missing_label": {
+	  "message": "Al prompt $1 manca un’etichetta.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_missing_body": {
+	  "message": "Al prompt $1 manca il testo del prompt.",
+	  "placeholders": {
+	    "index": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"options_status_save_success": {
+	  "message": "Prompt salvati."
+	},
+	"options_status_save_error": {
+	  "message": "Impossibile salvare i prompt."
+	},
+	"options_status_storage_only_page": {
+	  "message": "API di archiviazione non disponibile. I predefiniti sono stati ripristinati solo in questa pagina."
+	},
+	"options_status_restore_success": {
+	  "message": "Prompt predefiniti ripristinati."
+	},
+	"options_status_restore_error": {
+	  "message": "Impossibile ripristinare i predefiniti."
+	},
+	"tip_manage_prompts": {
+	  "message": "Suggerimento: usa l’icona di PromptTube per gestire i prompt"
+	},
+	"copy_prompt_label": {
+	  "message": "Copia prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"copy_prompt_fallback": {
+	  "message": "Copia prompt"
+	},
+	"working": {
+	  "message": "Elaborazione..."
+	},
+	"no_transcript_found": {
+	  "message": "Nessuna trascrizione trovata per questo video"
+	},
+	"prompt_transcript_copied": {
+	  "message": "Prompt + trascrizione copiati"
+	},
+	"copy_failed": {
+	  "message": "Copia non riuscita"
+	},
+	"prompt_selected": {
+	  "message": "Prompt: $1",
+	  "placeholders": {
+	    "label": {
+	      "content": "$1"
+	    }
+	  }
+	},
+	"prompt_menu_aria": {
+	  "message": "Scegli modello di prompt"
+	},
+	"copy_button_title": {
+	  "message": "Copia prompt e trascrizione"
+	},
+	"unknown_title": {
+	  "message": "Titolo sconosciuto"
+	},
+	"unknown_channel": {
+	  "message": "Canale sconosciuto"
+	},
+	"context_title_label": {
+	  "message": "Titolo"
+	},
+	"context_channel_label": {
+	  "message": "Canale"
+	},
+	"context_url_label": {
+	  "message": "URL"
+	},
+	"preset_summary_label": {
+	  "message": "Riepilogo"
+	},
+	"preset_summary_body": {
+	  "message": "Riassumi questa trascrizione di YouTube.\nDammi:\n- un riepilogo conciso\n- i punti chiave\n- la conclusione principale in un breve paragrafo"
+	},
+	"preset_summary_analysis_label": {
+	  "message": "Riepilogo + analisi"
+	},
+	"preset_summary_analysis_body": {
+	  "message": "Riassumi e analizza questa trascrizione di YouTube.\nDammi:\n- un riepilogo in 6-10 punti\n- i temi o argomenti principali\n- ciò che conta di più e perché\n- eventuali punti di forza, debolezze o ipotesi rilevanti"
+	},
+	"preset_summary_actions_label": {
+	  "message": "Riepilogo + azioni"
+	},
+	"preset_summary_actions_body": {
+	  "message": "Riassumi questa trascrizione di YouTube ed estrai i prossimi passi.\nDammi:\n- un riepilogo conciso\n- i punti chiave\n- azioni chiare\n- eventuali decisioni o follow-up da monitorare"
+	},
+	"preset_summary_fact_check_label": {
+	  "message": "Riepilogo + verifica dei fatti"
+	},
+	"preset_summary_fact_check_body": {
+	  "message": "Riassumi questa trascrizione di YouTube e segnala tutto ciò che andrebbe verificato.\nDammi:\n- un riepilogo conciso\n- le principali affermazioni\n- le frasi che sembrano incerte, esagerate o probabilmente da verificare\n- una breve checklist di fact-checking su cosa verificare per primo\nPoi esegui la verifica e dammi:\n- un riepilogo di ciò che hai trovato\n- quali affermazioni sono state confermate, smentite o restano incerte"
+	},
+	"preset_executive_brief_label": {
+	  "message": "Executive brief"
+	},
+	"preset_executive_brief_body": {
+	  "message": "Trasforma questa trascrizione di YouTube in un executive brief.\nDammi:\n- una breve panoramica di alto livello\n- gli insight più importanti\n- implicazioni di business o strategiche\n- i principali rischi o opportunità"
+	},
+	"preset_study_notes_label": {
+	  "message": "Note di studio"
+	},
+	"preset_study_notes_body": {
+	  "message": "Trasforma questa trascrizione di YouTube in note di studio.\nDammi:\n- un riepilogo strutturato per argomento\n- definizioni o concetti importanti\n- probabili domande d’esame o di discussione\n- un breve ripasso da rivedere rapidamente più tardi"
+	},
+	"preset_critique_opportunities_label": {
+	  "message": "Critica + opportunità"
+	},
+	"preset_critique_opportunities_body": {
+	  "message": "Esamina criticamente questa trascrizione di YouTube.\nDammi:\n- un riepilogo conciso\n- ciò che è convincente o utile\n- ciò che manca, è debole o discutibile\n- idee, opportunità o miglioramenti ispirati da essa"
+	}
+}
