@@ -103,6 +103,32 @@ web-ext lint
 web-ext build --overwrite-dest
 ```
 
+## Firefox submission metadata
+To submit to AMO without retyping the listing text in the web form, use the checked-in [`amo-metadata.json`](./amo-metadata.json) file with `web-ext`.
+
+For a single build/release command, run:
+
+```bash
+./scripts/release-firefox.sh patch
+```
+
+The script:
+
+- increments the `manifest.json` version using `patch`, `minor`, or `major`
+- builds the extension into `web-ext-artifacts/`
+- uses [`amo-metadata.json`](./amo-metadata.json) for AMO listing translations
+- submits/signs automatically if `AMO_JWT_ISSUER` and `AMO_JWT_SECRET` are set
+- uses `AMO_CHANNEL=listed` by default; set `AMO_CHANNEL=unlisted` if needed
+
+Example:
+
+```bash
+export AMO_JWT_ISSUER="your-amo-jwt-issuer"
+export AMO_JWT_SECRET="your-amo-jwt-secret"
+export AMO_CHANNEL="listed"
+./scripts/release-firefox.sh minor
+```
+
 ## Folder structure
 
 ```
